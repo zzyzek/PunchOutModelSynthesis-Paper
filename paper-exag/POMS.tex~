@@ -1,0 +1,90 @@
+%% The first command in your LaTeX source must be the \documentclass command.
+%%
+%% Options:
+%% twocolumn : Two column layout.
+%% hf: enable header and footer.
+\documentclass[
+twocolumn,
+% hf,
+]{ceurart}
+
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{hyperref}
+
+%\usepackage[semicolon]{natbib}
+
+%%
+%% One can fix some overfulls
+\sloppy
+
+%%
+%% Minted listings support 
+%% Need pygment <http://pygments.org/> <http://pypi.python.org/pypi/Pygments>
+\usepackage{listings}
+%% auto break lines
+\lstset{breaklines=true}
+
+%%
+%% end of the preamble, start of the body of the document source.
+\begin{document}
+
+%%
+%% Rights management information.
+%% CC-BY is default license.
+\copyrightyear{2024}
+\copyrightclause{Copyright for this paper by its authors.
+  Use permitted under Creative Commons License Attribution 4.0
+  International (CC BY 4.0).}
+
+%%
+%% This command is for the conference information
+\conference{EXAG 2024: AIIDE Workshop on Experimental AI in Games, November 18--22, 2024, Lexington, KY, USA}
+
+%\title{ \textit{Punch Out Model Synthesis}: A Stochastic Algorithm for Constraint Based Tiling Generation}
+\title{ Punch Out Model Synthesis: A Stochastic Algorithm for Constraint Based Tiling Generation}
+
+\author[1]{Zzyv Zzyzek}[%
+  orcid=0009-0005-2175-1166,
+  email=zzyzek@thumpernet.com,
+  url=https://zzyzek.github.io/,
+]
+
+
+\begin{abstract}
+  As an artistic aid in tiled level design, Constraint Based Tiling Generation (CBTG) algorithms can help
+  to automatically create level realizations from a set of tiles and placement constraints.
+  Merrell's \textit{Model Synthesis} (MMS) and Gumin's \textit{Wave Function Collapse} (WFC) have been proposed
+  as Constraint Based Tiling Generation (CBTG) algorithms that work well for many scenarios but have limitations
+  in problem size, problem setup and solution biasing.
+  We present Punch Out Model Synthesis (POMS), a constraint based tiling generation algorithm,
+  that can handle large problem sizes, requires minimal assumptions
+  for setup and can help mitigate solution biasing.
+  POMS attempts to resolve indeterminate grid regions by trying to progressively realize sub-blocks, performing a
+  stochastic boundary erosion on previously resolved regions should sub-block resolution fail.
+  We highlight the results of running a reference implementation on different tile sets and
+  discuss a tile correlation length, implied by the tile constraints, and its role in choosing
+  an appropriate block size to aid POMS in successfully finding grid realizations.
+\end{abstract}
+
+\maketitle
+
+
+\input{01-Introduction.tex}
+\input{02-Algorithm.tex}
+\input{03-Results.tex}
+\input{04-Related-Work.tex}
+\input{06-Conclusion.tex}
+
+
+%\bibliographystyle{unsrtnat}
+\bibliography{07-References}
+
+\appendix
+\input{08-Appendix.tex}
+
+
+\end{document}
+
+%%
+%% End of file
