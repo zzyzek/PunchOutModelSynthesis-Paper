@@ -109,7 +109,7 @@ The set of available tile options at a cell is called the \textit{cell's tile do
 available tiles that can be placed at a given cell location.
 
 
-The problem of Constraint Based Tiling Generation (CBGT) is to
+The problem of Constraint Based Tiling Generation (CBTG) is to
 find a single tile assignment to each grid cell location subject to the tile constraints.
 That is, resolve every cell in the grid.
 
@@ -129,7 +129,7 @@ Each tile removed can have a cascading effect by potentially causing a tile in a
 The repeated process of removing unsupported tiles throughout a block region until a contradiction is encountered or the block region
 is in an Arc Consistent (AC) state is called \textit{constraint propagation}.
 Constraint propagation
-can be used as the basis for a Constraint Based Tiling Generation (CGBT) solver.
+can be used as the basis for a Constraint Based Tiling Generation (CBTG) solver.
 
 We differentiate a \textit{block level} solver and a \textit{grid level} solver.
 We define a \textit{block level} solver as an algorithm that
