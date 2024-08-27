@@ -70,7 +70,7 @@
    <dc:format>application/pdf</dc:format> 
    <dc:type><rdf:Bag><rdf:li>journal</rdf:li></rdf:Bag></dc:type>
    <dc:title><rdf:Alt><rdf:li xml:lang="x-default"> Punch Out Model Synthesis: A Stochastic Algorithm for Constraint Based Tiling Generation</rdf:li></rdf:Alt></dc:title>
-   <dc:creator><rdf:Seq><rdf:li>Zzyv Zzyzek</rdf:li></rdf:Seq></dc:creator>
+   <dc:creator><rdf:Seq><rdf:li> Author </rdf:li></rdf:Seq></dc:creator>
    <dc:rights><rdf:Alt><rdf:li xml:lang="x-default">© 2024 Copyright for this paper by its authors. Use permitted under Creative Commons License Attribution 4.0 International (CC BY 4.0).</rdf:li></rdf:Alt></dc:rights>
    <dc:description><rdf:Alt><rdf:li xml:lang="x-default">Layout by CEURART v0.5.2</rdf:li></rdf:Alt></dc:description>
   </rdf:Description> 
@@ -86,9 +86,9 @@
   </rdf:Description> 
   <rdf:Description rdf:about="" xmlns:xmp="http://ns.adobe.com/xap/1.0/"> 
    <xmp:CreatorTool>LaTeX with hyperref</xmp:CreatorTool> 
-   <xmp:ModifyDate>2024-08-27T00:45:19-04:00</xmp:ModifyDate> 
-   <xmp:CreateDate>2024-08-27T00:45:19-04:00</xmp:CreateDate> 
-   <xmp:MetadataDate>2024-08-27T00:45:19-04:00</xmp:MetadataDate> 
+   <xmp:ModifyDate>2024-08-27T02:31:53-04:00</xmp:ModifyDate> 
+   <xmp:CreateDate>2024-08-27T02:31:53-04:00</xmp:CreateDate> 
+   <xmp:MetadataDate>2024-08-27T02:31:53-04:00</xmp:MetadataDate> 
   </rdf:Description> 
   <rdf:Description rdf:about="" xmlns:xmpRights = "http://ns.adobe.com/xap/1.0/rights/"> 
    <xmpRights:Marked>True</xmpRights:Marked>
@@ -97,7 +97,7 @@
   </rdf:Description> 
   <rdf:Description rdf:about="" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/"> 
    <xmpMM:DocumentID>uuid:0C94C1D5-99DF-3EBA-3CB7-24CE9BA9ECE9</xmpMM:DocumentID> 
-   <xmpMM:InstanceID>uuid:DA2E2D9C-2525-EF09-8A79-D6588EBDCD1C</xmpMM:InstanceID> 
+   <xmpMM:InstanceID>uuid:620C2890-A0E7-EC31-694E-6C2E22DAEF05</xmpMM:InstanceID> 
   </rdf:Description> 
  </rdf:RDF> 
 </x:xmpmeta> 

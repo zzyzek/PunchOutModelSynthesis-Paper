@@ -1,1 +1,0 @@
-../ceurart.cls

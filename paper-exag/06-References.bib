@@ -1,0 +1,554 @@
+
+% Journals
+
+% First the Full Name is given, then the abbreviation used in the AMS Math
+% Reviews, with an indication if it could not be found there.
+% Note the 2nd overwrites the 1st, so swap them if you want the full name.
+
+ %{AMS}
+ @String{AMSTrans = "American Mathematical Society Translations" }
+ @String{AMSTrans = "Amer. Math. Soc. Transl." }
+ @String{BullAMS = "Bulletin of the American Mathematical Society" }
+ @String{BullAMS = "Bull. Amer. Math. Soc." }
+ @String{ProcAMS = "Proceedings of the American Mathematical Society" }
+ @String{ProcAMS = "Proc. Amer. Math. Soc." }
+ @String{TransAMS = "Transactions of the American Mathematical Society" }
+ @String{TransAMS = "Trans. Amer. Math. Soc." }
+
+ %ACM
+ @String{CACM = "Communications of the {ACM}" }
+ @String{CACM = "Commun. {ACM}" }
+ @String{CompServ = "Comput. Surveys" }
+ @String{JACM = "J. ACM" }
+ @String{ACMMathSoft = "{ACM} Transactions on Mathematical Software" }
+ @String{ACMMathSoft = "{ACM} Trans. Math. Software" }
+ @String{SIGNUM = "{ACM} {SIGNUM} Newsletter" }
+ @String{SIGNUM = "{ACM} {SIGNUM} Newslett." }
+
+ @String{AmerSocio = "American Journal of Sociology" }
+ @String{AmerStatAssoc = "Journal of the American Statistical Association" }
+ @String{AmerStatAssoc = "J. Amer. Statist. Assoc." }
+ @String{ApplMathComp = "Applied Mathematics and Computation" }
+ @String{ApplMathComp = "Appl. Math. Comput." }
+ @String{AmerMathMonthly = "American Mathematical Monthly" }
+ @String{AmerMathMonthly = "Amer. Math. Monthly" }
+ @String{BIT = "{BIT}" }
+ @String{BritStatPsych = "British Journal of Mathematical and Statistical
+          Psychology" }
+ @String{BritStatPsych = "Brit. J. Math. Statist. Psych." }
+ @String{CanMathBull = "Canadian Mathematical Bulletin" }
+ @String{CanMathBull = "Canad. Math. Bull." }
+ @String{CompApplMath = "Journal of Computational and Applied Mathematics" }
+ @String{CompApplMath = "J. Comput. Appl. Math." }
+ @String{CompPhys = "Journal of Computational Physics" }
+ @String{CompPhys = "J. Comput. Phys." }
+ @String{CompStruct = "Computers and Structures" }
+ @String{CompStruct = "Comput. \& Structures" }
+ @String{CompJour = "The Computer Journal" }
+ @String{CompJour = "Comput. J." }
+ @String{CompSysSci = "Journal of Computer and System Sciences" }
+ @String{CompSysSci = "J. Comput. System Sci." }
+ @String{Computing = "Computing" }
+ @String{ContempMath = "Contemporary Mathematics" }
+ @String{ContempMath = "Contemp. Math." }
+ @String{Crelle = "Crelle's Journal" }
+ @String{GiornaleMath = "Giornale di Mathematiche" }
+ @String{GiornaleMath = "Giorn. Mat." } % didn't find in AMS MR., ibid.
+
+ %IEEE
+ @String{Computer = "{IEEE} Computer" }
+ @String{IEEETransComp = "{IEEE} Transactions on Computers" }
+ @String{IEEETransComp = "{IEEE} Trans. Comput." }
+ @String{IEEETransAC = "{IEEE} Transactions on Automatic Control" }
+ @String{IEEETransAC = "{IEEE} Trans. Automat. Control" }
+ @String{IEEESpec = "{IEEE} Spectrum" } % didn't find in AMS MR
+ @String{ProcIEEE = "Proceedings of the {IEEE}" }
+ @String{ProcIEEE = "Proc. {IEEE}" } % didn't find in AMS MR
+ @String{IEEETransAeroElec = "{IEEE} Transactions on Aerospace and Electronic
+     Systems" }
+ @String{IEEETransAeroElec = "{IEEE} Trans. Aerospace Electron. Systems" }
+
+ @String{IMANumerAna = "{IMA} Journal of Numerical Analysis" }
+ @String{IMANumerAna = "{IMA} J. Numer. Anal." }
+ @String{InfProcLet = "Information Processing Letters" }
+ @String{InfProcLet = "Inform. Process. Lett." }
+ @String{InstMathApp = "Journal of the Institute of Mathematics and
+     its Applications" }
+ @String{InstMathApp = "J. Inst. Math. Appl." }
+ @String{IntControl = "International Journal of Control" }
+ @String{IntControl = "Internat. J. Control" }
+ @String{IntNumerEng = "International Journal for Numerical Methods in
+     Engineering" }
+ @String{IntNumerEng = "Internat. J. Numer. Methods Engrg." }
+ @String{IntSuper = "International Journal of Supercomputing Applications" }
+ @String{IntSuper = "Internat. J. Supercomputing Applic." } % didn't find
+%% in AMS MR
+ @String{Kibernetika = "Kibernetika" }
+ @String{JResNatBurStand = "Journal of Research of the National Bureau
+     of Standards" }
+ @String{JResNatBurStand = "J. Res. Nat. Bur. Standards" }
+ @String{LinAlgApp = "Linear Algebra and its Applications" }
+ @String{LinAlgApp = "Linear Algebra Appl." }
+ @String{MathAnaAppl = "Journal of Mathematical Analysis and Applications" }
+ @String{MathAnaAppl = "J. Math. Anal. Appl." }
+ @String{MathAnnalen = "Mathematische Annalen" }
+ @String{MathAnnalen = "Math. Ann." }
+ @String{MathPhys = "Journal of Mathematical Physics" }
+ @String{MathPhys = "J. Math. Phys." }
+ @String{MathComp = "Mathematics of Computation" }
+ @String{MathComp = "Math. Comp." }
+ @String{MathScand = "Mathematica Scandinavica" }
+ @String{MathScand = "Math. Scand." }
+ @String{TablesAidsComp = "Mathematical Tables and Other Aids to Computation" }
+ @String{TablesAidsComp = "Math. Tables Aids Comput." }
+ @String{NumerMath = "Numerische Mathematik" }
+ @String{NumerMath = "Numer. Math." }
+ @String{PacificMath = "Pacific Journal of Mathematics" }
+ @String{PacificMath = "Pacific J. Math." }
+ @String{ParDistComp = "Journal of Parallel and Distributed Computing" }
+ @String{ParDistComp = "J. Parallel and Distrib. Comput." } % didn't find
+%% in AMS MR
+ @String{ParComputing = "Parallel Computing" }
+ @String{ParComputing = "Parallel Comput." }
+ @String{PhilMag = "Philosophical Magazine" }
+ @String{PhilMag = "Philos. Mag." }
+ @String{ProcNAS = "Proceedings of the National Academy of Sciences
+                    of the USA" }
+ @String{ProcNAS = "Proc. Nat. Acad. Sci. U. S. A." }
+ @String{Psychometrika = "Psychometrika" }
+ @String{QuartMath = "Quarterly Journal of Mathematics, Oxford, Series (2)" }
+ @String{QuartMath = "Quart. J. Math. Oxford Ser. (2)" }
+ @String{QuartApplMath = "Quarterly of Applied Mathematics" }
+ @String{QuartApplMath = "Quart. Appl. Math." }
+ @String{RevueInstStat = "Review of the International Statisical Institute" }
+ @String{RevueInstStat = "Rev. Inst. Internat. Statist." }
+
+ %SIAM
+ @String{JSIAM = "Journal of the Society for Industrial and Applied
+     Mathematics" }
+ @String{JSIAM = "J. Soc. Indust. Appl. Math." }
+ @String{JSIAMB = "Journal of the Society for Industrial and Applied
+     Mathematics, Series B, Numerical Analysis" }
+ @String{JSIAMB = "J. Soc. Indust. Appl. Math. Ser. B Numer. Anal." }
+ @String{SIAMAlgMeth = "{SIAM} Journal on Algebraic and Discrete Methods" }
+ @String{SIAMAlgMeth = "{SIAM} J. Algebraic Discrete Methods" }
+ @String{SIAMAppMath = "{SIAM} Journal on Applied Mathematics" }
+ @String{SIAMAppMath = "{SIAM} J. Appl. Math." }
+ @String{SIAMComp = "{SIAM} Journal on Computing" }
+ @String{SIAMComp = "{SIAM} J. Comput." }
+ @String{SIAMMatrix = "{SIAM} Journal on Matrix Analysis and Applications" }
+ @String{SIAMMatrix = "{SIAM} J. Matrix Anal. Appl." }
+ @String{SIAMNumAnal = "{SIAM} Journal on Numerical Analysis" }
+ @String{SIAMNumAnal = "{SIAM} J. Numer. Anal." }
+ @String{SIAMReview = "{SIAM} Review" }
+ @String{SIAMReview = "{SIAM} Rev." }
+ @String{SIAMSciStat = "{SIAM} Journal on Scientific and Statistical
+     Computing" }
+ @String{SIAMSciStat = "{SIAM} J. Sci. Statist. Comput." }
+
+ @String{SoftPracExp = "Software Practice and Experience" }
+ @String{SoftPracExp = "Software Prac. Experience" } % didn't find in AMS MR
+ @String{StatScience = "Statistical Science" }
+ @String{StatScience = "Statist. Sci." }
+ @String{Techno = "Technometrics" }
+ @String{USSRCompMathPhys = "{USSR} Computational Mathematics and Mathematical
+     Physics" }
+ @String{USSRCompMathPhys = "{U. S. S. R.} Comput. Math. and Math. Phys." }
+ @String{VLSICompSys = "Journal of {VLSI} and Computer Systems" }
+ @String{VLSICompSys = "J. {VLSI} Comput. Syst." }
+ @String{ZAngewMathMech = "Zeitschrift fur Angewandte Mathematik und
+     Mechanik" }
+ @String{ZAngewMathMech = "Z. Angew. Math. Mech." }
+ @String{ZAngewMathPhys = "Zeitschrift fur Angewandte Mathematik und Physik" }
+ @String{ZAngewMathPhys = "Z. Angew. Math. Phys." }
+
+% Publishers % ================================================= |
+
+ @String{Academic = "Academic Press" }
+ @String{ACMPress = "{ACM} Press" }
+ @String{AdamHilger = "Adam Hilger" }
+ @String{AddisonWesley = "Addison-Wesley" }
+ @String{AllynBacon = "Allyn and Bacon" }
+ @String{AMS = "American Mathematical Society" }
+ @String{Birkhauser = "Birkha{\"u}ser" }
+ @String{CambridgePress = "Cambridge University Press" }
+ @String{Chelsea = "Chelsea" }
+ @String{ClaredonPress = "Claredon Press" }
+ @String{DoverPub = "Dover Publications" }
+ @String{Eyolles = "Eyolles" }
+ @String{HoltRinehartWinston = "Holt, Rinehart and Winston" }
+ @String{Interscience = "Interscience" }
+ @String{JohnsHopkinsPress = "The Johns Hopkins University Press" }
+ @String{JohnWileySons = "John Wiley and Sons" }
+ @String{Macmillan = "Macmillan" }
+ @String{MathWorks = "The Math Works Inc." }
+ @String{McGrawHill = "McGraw-Hill" }
+ @String{NatBurStd = "National Bureau of Standards" }
+ @String{NorthHolland = "North-Holland" }
+ @String{OxfordPress = "Oxford University Press" }  %address Oxford or London?
+ @String{PergamonPress = "Pergamon Press" }
+ @String{PlenumPress = "Plenum Press" }
+ @String{PrenticeHall = "Prentice-Hall" }
+ @String{SIAMPub = "{SIAM} Publications" }
+ @String{Springer = "Springer-Verlag" }
+ @String{TexasPress = "University of Texas Press" }
+ @String{VanNostrand = "Van Nostrand" }
+ @String{WHFreeman = "W. H. Freeman and Co." }
+
+@online{Gumin_2016,
+  author = {Maxim Gumin},
+  year = {2016},
+  title = {Wave Function Collapse Algorithm},
+  url = {https://github.com/mxgmn/WaveFunctionCollapse},
+  month = {Sep},
+  lastaccessed = {July 25, 2024}
+}
+
+% -  url = {https://github.com/ramakarl/just_math/tree/3ff9d10c3d170855cef1db970c0278b15e91fa13/math_belief_prop},
+%  url = {https://github.com/ramakarl/just_math},
+
+@online{Hoetzlein_2023,
+  author = {Rama Hoetzlein},
+  year = {2023},
+  title = {just\_math},
+  url = {https://github.com/ramakarl/just_math/tree/3ff9d10c3d170855cef1db970c0278b15e91fa13/math_belief_prop},
+  lastaccessed = {Nov 8, 2023}
+}
+
+url = {https://github.com/ramakarl/just_math/tree/ 3ff9d10c3d170855cef1db970c0278b15e91fa13/math_belief_prop},
+
+
+@online{Sherratt_2019,
+  author = {Stephen Sherratt},
+  year = {2019},
+  title = {Procedural Generation with Wave Function Collapse},
+  url = {https://www.gridbugs.org/wave-function-collapse/},
+  lastaccessed = {July 25, 2024}
+}
+
+
+
+@online{BorisTheBrave_cbtg_2021,
+  author = {Boris The Brave},
+  year = {2021},
+  title = {Constraint-Based Tile Generators},
+  url = {https://www.boristhebrave.com/2021/10/31/constraint-based-tile-generators/},
+  lastaccessed = {July 25, 2024}
+}
+
+@online{BorisTheBrave_wfc_2021,
+  author = {Boris The Brave},
+  year = {2021},
+  title = {Wave Function Collapse Explained},
+  url = {https://www.boristhebrave.com/2020/04/13/wave-function-collapse-explained/},
+  lastaccessed = {July 25, 2024}
+}
+
+
+@online{Kleinberg_2019,
+  author = {Marian Kleineberg},
+  year = {2019},
+	title = {Infinite procedurally generated city with the Wave Function Collapse algorithm},
+	url = {https://marian42.de/article/wfc/},
+	lastaccessed = {July 25, 2024}
+}
+
+@online{Donald_2024,
+  author = {Martin Donald},
+  year = {2024},
+  title = {Wave Function Collapse - Mixed Initiative Demo},
+  url = {https://bolddunkley.itch.io/wfc-mixed},
+  lastaccessed = {August 25, 2024}
+}
+
+@online{Heaton_2018,
+  author = {Robert Heaton},
+  year = {2018},
+  title = {The Wavefunction Collapse Algorithm explained very clearly},
+  url = {https://robertheaton.com/2018/12/17/wavefunction-collapse-algorithm/},
+  lastaccessed = {August 25, 2024}
+}
+
+
+@online{0x72_2bmmv,
+  author = {Robert Norenberg},
+  year = {2024},
+  title = {2Bit Micro Metroidvania Tileset},
+  url = {https://0x72.itch.io/2bitmicrometroidvaniatileset},
+  lastaccessed = {August 25, 2024}
+}
+
+@online{ThKaspar_micro,
+  author = {Kacper Woźniak},
+  year = {2015},
+  title = {Micro Tileset - Overworld and Dungeon},
+  url = {https://opengameart.org/content/micro-tileset-overworld-and-dungeon}
+  lastaccessed = {August 25, 2024}
+}
+
+@online{LUNARSIGNALS_oarpgo,
+  author = {LUNARSIGNALS},
+  year = {2016},
+  title = {Overhead Action RPG Overworld},
+  url = {https://opengameart.org/content/overhead-action-rpg-overworld},
+  lastaccessed = {August 25, 2024}
+}
+
+
+
+
+@article{Wang_Xia_Yap_2018,
+  author       = {Ruiwei Wang and
+                  Wei Xia and
+                  Roland H. C. Yap},
+  title        = {Correlation Heuristics for Constraint Programming},
+  journal      = {CoRR},
+  volume       = {abs/1805.02205},
+  year         = {2018},
+  url          = {http://arxiv.org/abs/1805.02205},
+  eprinttype    = {arXiv},
+  eprint       = {1805.02205},
+  timestamp    = {Mon, 13 Aug 2018 16:46:41 +0200},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-1805-02205.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+%10.1145/3102071.3110566,
+
+@inproceedings{Karth_Smith_2017,
+author = {Karth, Isaac and Smith, Adam M.},
+title = {WaveFunctionCollapse is constraint solving in the wild},
+year = {2017},
+isbn = {9781450353199},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3102071.3110566},
+doi = {10.1145/3102071.3110566},
+abstract = {Maxim Gumin's WaveFunctionCollapse (WFC) algorithm is an example-driven image generation algorithm emerging from the craft practice of procedural content generation. In WFC, new images are generated in the style of given examples by ensuring every local window of the output occurs somewhere in the input. Operationally, WFC implements a non-backtracking, greedy search method. This paper examines WFC as an instance of constraint solving methods. We trace WFC's explosive influence on the technical artist community, explain its operation in terms of ideas from the constraint solving literature, and probe its strengths by means of a surrogate implementation using answer set programming.},
+booktitle = {Proceedings of the 12th International Conference on the Foundations of Digital Games},
+articleno = {68},
+numpages = {10},
+keywords = {texture synthesis, procedural content generation, constraint solving},
+location = {Hyannis, Massachusetts},
+series = {FDG '17}
+}
+
+@ARTICLE{Karth_Smith_2022,
+  author={Karth, Isaac and Smith, Adam M.},
+  journal={IEEE Transactions on Games},
+  title={WaveFunctionCollapse: Content Generation via Constraint Solving and Machine Learning},
+  year={2022},
+  volume={14},
+  number={3},
+  pages={364-376},
+  keywords={Games;Search problems;Machine learning;Pipelines;Machine learning algorithms;Backtracking;Space exploration;Constraint solving;procedural content generation;rational reconstruction;search heuristics;WaveFunctionCollapse (WFC)},
+  doi={10.1109/TG.2021.3076368}
+}
+
+@inproceedings{Newgas_2021,
+author = {Newgas, Adam},
+title = {Tessera: A Practical System for Extended WaveFunctionCollapse},
+year = {2021},
+isbn = {9781450384223},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3472538.3472605},
+doi = {10.1145/3472538.3472605},
+abstract = {Constraint-based procedural generation has recently had a lot of interest following the publication of the WaveFunctionCollapse (WFC) algorithm, but usability issues have restricted the number of games and projects that have resulted. We present Tessera, a library and tool for WFC specifically designed to address the practical issues that arise from constraint based generation. We discuss the user interface of the tool and useful extensions to the base algorithm of WFC.},
+booktitle = {Proceedings of the 16th International Conference on the Foundations of Digital Games},
+articleno = {56},
+numpages = {7},
+keywords = {constraint solving, procedural content generation, wavefunctioncollapse},
+location = {Montreal, QC, Canada},
+series = {FDG '21}
+}
+
+@inproceedings{Nie_etall_2023,
+  author={Nie, Yuhe and Zheng, Shaoming and Zhuang, Zhan and Song, Xuan},
+  booktitle={2023 IEEE Conference on Games (CoG)},
+  title={Extend Wave Function Collapse Algorithm to Large-Scale Content Generation},
+  year={2023},
+  volume={},
+  number={},
+  pages={1-8},
+  keywords={Backtracking;Costs;Brushes;Games;Wave functions;Complexity theory;Time complexity;Wave Function Collapse;Procedural Content Generation;Tessellation;Constraint Satisfaction;Algorithm Optimization;Game Intelligence;Level Design},
+  doi={10.1109/CoG57401.2023.10333214}
+}
+
+@inproceedings{Alaka_Bidarra_Rafael_2023,
+author = {Alaka, Shaad and Bidarra, Rafael},
+title = {Hierarchical Semantic Wave Function Collapse},
+year = {2023},
+isbn = {9781450398558},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3582437.3587209},
+doi = {10.1145/3582437.3587209},
+abstract = {There are few proposals to improve the interactivity and control of wave function collapse (WFC) in a mixed-initiative setting. Moreover, most WFC algorithm variants operate on an simple, unstructured set of tiles. This limitation on the level of control provided to designers hampers their creative work in various ways. We propose Hierarchical Semantic WFC, a generalized approach to WFC that organizes its tile-set into a hierarchy akin to a taxonomy induced by the relation ‘consists-of’. In such a hierarchical structure, abstract tiles (i.e. non-leaf nodes) can represent the first sketchy intentions of a designer (e.g. forest, urban, desert,...) This allows a designer to interactively collapse a given area into abstract tiles, while subsequently, (and repeatedly, if desired) WFC can resolve each area into a variety of particular instances, by further collapsing it into (a valid combination of) its children tiles (whether leaves or not). We identify how this subtle tile-set change affects the whole WFC algorithm, describe a number of novel exploratory and interactive functions that this enables, and showcase these with a variety of examples generated with our prototype implementation. We conclude that these new mixed-initiative content generation methods can considerably reduce design iteration times and improve the assistance given to designers in expressing their creative intent.},
+booktitle = {Proceedings of the 18th International Conference on the Foundations of Digital Games},
+articleno = {68},
+numpages = {10},
+keywords = {mixed-initiative, object semantics, procedural content generation, wave function collapse},
+location = {Lisbon, Portugal},
+series = {FDG '23}
+}
+
+@inproceedings{Lucas_Volz_2019,
+author = {Lucas, Simon M. and Volz, Vanessa},
+title = {Tile pattern KL-divergence for analysing and evolving game levels},
+year = {2019},
+isbn = {9781450361118},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3321707.3321781},
+doi = {10.1145/3321707.3321781},
+abstract = {This paper provides a detailed investigation of using the Kullback-Leibler (KL) Divergence as a way to compare and analyse game-levels, and hence to use the measure as the objective function of an evolutionary algorithm to evolve new levels. We describe the benefits of its asymmetry for level analysis and demonstrate how (not surprisingly) the quality of the results depends on the features used. Here we use tile-patterns of various sizes as features.When using the measure for evolution-based level generation, we demonstrate that the choice of variation operator is critical in order to provide an efficient search process, and introduce a novel convolutional mutation operator to facilitate this. We compare the results with alternative generators, including evolving in the latent space of generative adversarial networks, and Wave Function Collapse. The results clearly show the proposed method to provide competitive performance, providing reasonable quality results with very fast training and reasonably fast generation.},
+booktitle = {Proceedings of the Genetic and Evolutionary Computation Conference},
+pages = {170–178},
+numpages = {9},
+keywords = {kullback-leibler divergence, latent vector evolution, procedural content generation, wave function collapse},
+location = {Prague, Czech Republic},
+series = {GECCO '19}
+}
+
+@inproceedings{Langendam_etall_2022,
+author = {Langendam, Thijmen Stefanus Leendert and Bidarra, Rafael},
+title = {miWFC - Designer Empowerment through mixed-initiative Wave Function Collapse},
+year = {2022},
+isbn = {9781450397957},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3555858.3563266},
+doi = {10.1145/3555858.3563266},
+abstract = {Wave Function Collapse (WFC) is a powerful generative algorithm, able to create locally-similar output based on a single example input. One of the inherent limitations of the original WFC is that it often requires users to understand its inner workings, and possibly make their own ad-hoc mods, to achieve satisfactory results. Besides distracting from your creative task, this strongly reduces the algorithm’s effective usefulness to a small group of technical users. We propose miWFC, a novel mixed-initiative approach to WFC aimed at overcoming these drawbacks. Its main focus is on providing intuitive control to its users, in a way that matches their usual creative workflow. Among its main features, this approach provides (i) interactive navigation through design history, including controlled backtracking, (ii) precise manual editing of the output for direct expression of design intent, and (iii) interactive manipulation of tile weights, to tweak the global appearance of the output. We evaluated a prototype implementation of our approach among game artists and other creative professionals, and concluded that its features were largely considered useful and supportive of their creative work.},
+booktitle = {Proceedings of the 17th International Conference on the Foundations of Digital Games},
+articleno = {66},
+numpages = {8},
+keywords = {constraint solving, human-computer interaction, interaction design, level generation, mixed-initiative, procedural content generation, texture synthesis, wave function collapse},
+location = {Athens, Greece},
+series = {FDG '22}
+}
+
+@article{Mohr_Henderson_1986,
+  title = {Arc and path consistency revisited},
+  journal = {Artificial Intelligence},
+  volume = {28},
+  number = {2},
+  pages = {225-233},
+  year = {1986},
+  issn = {0004-3702},
+  doi = {https://doi.org/10.1016/0004-3702(86)90083-4},
+  url = {https://www.sciencedirect.com/science/article/pii/0004370286900834},
+  author = {Roger Mohr and Thomas C. Henderson},
+  abstract = {Mackworth and Freuder have analyzed the time complexity of several constraint satisfaction algorithms [5]. We present here new algorithms for arc and path consistency and show that the arc consistency algorithm is optimal in time complexity and of the same-order space complexity as the earlier algorithms. A refined solution for the path consistency problem is proposed. However, the space complexity of the path consistency algorithm makes it practicable only for small problems. These algorithms are the result of the synthesis techniques used in alice (a general constraint satisfaction system) and local consistency methods [3].}
+}
+
+@inproceedings{Wallace1993WhyAI,
+  title={Why AC-3 is Almost Always Better than AC4 for Establishing Arc Consistency in CSPs},
+  author={Richard J. Wallace},
+  booktitle={International Joint Conference on Artificial Intelligence},
+  year={1993},
+  url={https://api.semanticscholar.org/CorpusID:17765393}
+}
+
+@article{Scurti_Verbrugge_2018,
+ title={Generating Paths with WFC},
+ volume={14},
+ url={https://ojs.aaai.org/index.php/AIIDE/article/view/13010},
+ DOI={10.1609/aiide.v14i1.13010},
+ abstractNote={ We describe a tool based on the Wave Function Collapse algorithm that performs example-based path generation on fixed maps. Our design aims at a practical system usable by non-programmers,
+ and includes both easy input control and multiple post-processing steps. The design is implemented in Unity and enables users to easily visualize the results of experimenting with different path descriptions and game levels.},
+ number={1},
+ journal={Proceedings of the AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment},
+ author={Scurti,
+ Hugo and Verbrugge,
+ Clark},
+ year={2018},
+ month={Sep.},
+ pages={271-273}
+}
+
+@article{Cooper_2022,
+  title={Sturgeon: Tile-Based Procedural Level Generation via Learned and Designed Constraints},
+  volume={18},
+  url={https://ojs.aaai.org/index.php/AIIDE/article/view/21944},
+  DOI={10.1609/aiide.v18i1.21944},
+  abstractNote={This work describes Sturgeon,
+  a system for tile-based level generation using constraints. We present a small mid-level constraint API that can be instantiated with various low-level solvers,
+  including portfolio solvers. We show how this mid-level API can be used to generate levels incorporating a variety of constraints,
+  including constraints learned from example levels and constraints provided by a designer. We incorporate a flexible constraint-based approach within the system for ensuring level goals are reachable. Finally,
+  we demonstrate the effectiveness of the system in a variety of games and show applications ranging from infilling and repair to expressive range coverage.},
+  number={1},
+  journal={Proceedings of the AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment},
+  author={Cooper, Seth},
+  year={2022},
+  month={Oct.},
+  pages={26-36}
+}
+
+@inproceedings{Merrell_2007,
+author = {Merrell, Paul},
+title = {Example-based model synthesis},
+year = {2007},
+isbn = {9781595936288},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/1230100.1230119},
+doi = {10.1145/1230100.1230119},
+abstract = {Model synthesis is a new approach to 3D modeling which automatically generates large models that resemble a small example model provided by the user. Model synthesis extends the 2D texture synthesis problem into higher dimensions and can be used to model many different objects and environments. The user only needs to provide an appropriate example model and does not need to provide any other instructions about how to generate the model. Model synthesis can be used to create symmetric models, models that change over time, and models that fit soft constraints. There are two important differences between our method and existing texture synthesis algorithms. The first is the use of a global search to find potential conflicts before adding new material to the model. The second difference is that we divide the problem of generating a large model into smaller subproblems which are easier to solve.},
+booktitle = {Proceedings of the 2007 Symposium on Interactive 3D Graphics and Games},
+pages = {105–112},
+numpages = {8},
+keywords = {texture synthesis, procedural modeling},
+location = {Seattle, Washington},
+series = {I3D '07}
+}
+
+% notes:
+% manual tile set creation (from video) (https://dl.acm.org/doi/10.1145/2421636.2421639)
+% metropolis fails miserably
+% kl-divergence looks good (I guess)
+% mc-sat, slice sampling and blockedsamplesat (neal 00, aux variables), (wei 04, slice)
+% use factor graph representation so I would assume this is more in line with a "block level algorithm".
+% product slice sampling (mira & tierney 97)
+%  
+@article{Yeh_etall_2013,
+author = {Yeh, Yi-Ting and Breeden, Katherine and Yang, Lingfeng and Fisher, Matthew and Hanrahan, Pat},
+title = {Synthesis of tiled patterns using factor graphs},
+year = {2013},
+issue_date = {January 2013},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {32},
+number = {1},
+issn = {0730-0301},
+url = {https://doi.org/10.1145/2421636.2421639},
+doi = {10.1145/2421636.2421639},
+abstract = {Patterns with pleasing structure are common in art, video games, and virtual worlds. We describe a method for synthesizing new patterns of tiles on a regular grid that are similar in appearance to a set of example patterns. Exemplars are used both to specify valid tile arrangements and to emphasize multi-tile structures. We model a pattern as a probabilistic graphical model called a factor graph. Factors represent the hard logical constraints between tiles, the soft statistical relationships that determine style, and the local dependencies between tiles at neighboring sites. We describe a simple method for learning factor functions from a small exemplar. We then synthesize new patterns through a stochastic search method that is inspired by MC-SAT. Efficient synthesis is challenging because of the combination of hard and soft constraints. Our synthesis algorithm, called BlockSS, scales linearly with the number of tiles and the hardness of the problem. We use our technique to model building facades, cities, and decorative patterns.},
+journal = {ACM Trans. Graph.},
+month = {feb},
+articleno = {3},
+numpages = {13},
+keywords = {slice sampling, procedural modeling, graphical models, example-based modeling, constrained synthesis, Factor Graphs}
+}
+
+@phdthesis{Merrell_2009,
+author = {Merrell, Paul},
+title = {Model Synthesis},
+year = {2009},
+note = { },
+publisher = {University of North Carolina at Chapel Hill},
+address = {Chapel Hill, NC, USA}
+}
+
+@online{Merrell_comparison_2021,
+  author = {Merrell, Paul},
+  year = {2021},
+	title = {Comparing Model Synthesis and Wave Function Collapse},
+	url = {https://paulmerrell.org/wp-content/uploads/2021/07/comparison.pdf},
+	lastaccessed = {July 25, 2024}
+}
+
+
+
+
