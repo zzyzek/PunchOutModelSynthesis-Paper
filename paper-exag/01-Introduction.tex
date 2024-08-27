@@ -18,20 +18,20 @@ POMS is a grid level stochastic Constraint Based Tiling Generation (CBTG) algori
 \begin{itemize}
   \item Requires minimal assumptions on initial set up state
   \item Has resources that scale primarily with block size and not grid size
-  \item Can reliably find realizations on arbitrarily sized grids with tile constraints that have finite influence length
+  \item Can reliably find realizations on arbitrarily sized grids with tile constraints that have finite correlation length
 \end{itemize}
 
 and primary drawbacks that:
 
 \begin{itemize}
-  \item Has limited success for tile constraints that have long range influence length
+  \item Has limited success for tile constraints that have long range correlation length
 \end{itemize}
 
 Further, we:
 
 \begin{itemize}
   \item Provide the results of running a reference implementation on a variety of tile sets (Section 3)
-  \item Explore the Tile Arc Consistent Correlation Length (TACCL) (Section 2), a heuristic for tile influence length,
+  \item Explore the Tile Arc Consistent Correlation Length (TACCL) (Section 2), a heuristic for tile correlation length,
         that is used to inform the block size choice and solution strategies for a variety of tile sets (Section 3)
 \end{itemize}
 
@@ -59,21 +59,21 @@ has over other cell tile options at distant locations.
 In this paper, we attempt to quantify an aspect of correlation length and use it
 to inform the block size choice.
 
-If there is a finite length of influence that one cell's tile choice has over another,
+If there is a finite length of correlation that one cell's tile choice has with another,
 any contradiction that might appear during the course of resolution are localized to a region.
 Reverting the region around the contradiction allows for another attempt at finding a
 realization without destroying
 the bulk of pre-existing realizations elsewhere in the grid.
 Under some conditions of configuration randomness, and for many tile constraints,
 resolved cells located far enough away from each other have little or no influence over one another.
-The influence distance informs the block size choice as block sizes chosen large enough allow
+The correlation distance informs the block size choice as block sizes chosen large enough allow
 for the tile values in the middle cells of a block to be chosen independent of any tiles fixed on the boundary.
 
 Expecting center tile choices to be independent of boundary tile values is, in general, unreasonable as
 the problem is known to be NP-Complete.
-Even under random configuration assumptions, the issue can be further complicated if the influence length is not
+Even under random configuration assumptions, the issue can be further complicated if the correlation length is not
 finite, or finite but large.
-Even though the general problem is likely intractable, or the finite influence length assumption is
+Even though the general problem is likely intractable, or the finite correlation length assumption is
 violated, many tile constraints are under constrained and the ability of POMS to overcome local constraints
 provides enough capability to find realizations.
 

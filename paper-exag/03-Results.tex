@@ -136,7 +136,8 @@ for the five tile sets listed in Table \ref{table:tilesets}.
 
 \subsection{Bounded Tile Arc Consistent Correlation Length (TACCL)}
 
-The first two tile sets that appear in Figure \ref{fig:2dexamples}, \textit{Pill Mortal} and LUNARSIGNAL's \textit{Overhead Action RPG Overworld} tile set, both
+The first two tile sets that appear in Figure \ref{fig:2dexamples}, \textit{Pill Mortal} and LUNARSIGNAL's \textit{Overhead Action RPG Overworld}
+(OARPGO) tile set, both
 have bounded Tile Arc Consistent Correlation lengths (TACCL).
 
 The \textit{Pill Mortal} tile set was generated from the exemplar image shown (Figure \ref{fig:2dexamples}, label \textit{a}), with a tile window of 2x2
@@ -150,13 +151,15 @@ The generated realization in Figure \ref{fig:2dexamples} (label \textit{c}) was 
 A uniform weighting for all 190 tiles was used.
 The block choice scheduler considered all unresolved tiles in the grid uniformly as candidates for the center of the block.
 
-LUNARSIGNAL's \textit{Overhead Action RPG Overworld} tile set was generated from the exemplar image show using a 3x3 tile window, with each tile consisting
+%LUNARSIGNAL's \textit{Overhead Action RPG Overworld} tile set was generated from the exemplar image show using a 3x3 tile window, with each tile consisting
+LUNARSIGNAL's OARPGO tile set was generated from the exemplar image show using a 3x3 tile window, with each tile consisting
 of 16x16 pixels.
 A 3x2 overlapping tile region was used to create the tile constraint set with wrap around boundary conditions.
 The tile set consists of 3031 tiles and a uniform tile weighting was chosen.
 In this case, a 3x3 window was chosen as a smaller 2x2 window was observed to not give good aesthetic results.
 
-When generating outputs using the \textit{Overhead Action RPG Overworld} tile set, the outer frame of the grid is pinned to an unresolved state.
+%When generating outputs using the \textit{Overhead Action RPG Overworld} tile set, the outer frame of the grid is pinned to an unresolved state.
+When generating outputs using the OARPGO tile set, the outer frame of the grid is pinned to an unresolved state.
 This is necessary as the tile constraint set was created with wrap around conditions and has no valid constraints that match the ``zero'' tile
 to the rest of the tile domain.
 
@@ -168,13 +171,15 @@ This has the effect of resolving regions from the ``center out'', never creating
   ensuring a large contiguous region during the course of the algorithm.
 From observation, other block choice strategies were not as successful as choosing block centers with a grid center bias.
 
-It should be noted that without wrap around boundary conditions, the \textit{Overhead Action RPG Overworld} tile set would have unbounded Tile Arc Consistent
-  Correlation Length (TACCL).
+%It should be noted that without wrap around boundary conditions, the \textit{Overhead Action RPG Overworld} tile set would have unbounded Tile Arc Consistent
+%It should be noted that without wrap around boundary conditions, the OARPGO tile set would have unbounded Tile Arc Consistent Correlation Length (TACCL).
+It should be noted that without wrap around boundary conditions, the OARPGO tile set would have unbounded TACCL.
 Further, without wrap around boundary conditions POMS has trouble finding solutions as the
 grid boundary region is non trivial for this tile set.
 The success of the grid center biased block choice strategy, the failure of other block choice strategies and the unbounded TACCL of
 non wrap around boundary conditions, could suggest that the bounded TACCL does not capture some longer range or unbounded constraints
-  embedded within the wrap around \textit{Overhead Action RPG Overworld} tile set constraints.
+  embedded within the wrap around OARPGO tile set constraints.
+%  embedded within the wrap around \textit{Overhead Action RPG Overworld} tile set constraints.
 
 Of note is the ``stuttering'' effect that happens with many features being repeated in a linear direction.
 For example, there are long regions of vertical rocks surrounded by water tiles that continue on downward until the
@@ -236,7 +241,7 @@ to create wrap around tile constraints.
 The 3D \textit{Brutal Plum} tile set was programatically generated from a set of 20 unique tiles that, after rotations and deduplication,
 grows to 90 tiles.
 Many of the tiles are aesthetically identical but are logically different to embed desired features, such as requiring certain
-logical tiles to be above or below other tiles, ensuring a contiguous connection to the ground plane.
+logical tiles to be above or below other tiles. %, ensuring a contiguous connection to the ground plane.
 In particular, non empty tiles must have a non empty path to the ground base plane, giving an implied global constraint.
 The global constraint is not captured by the Tile Arc Consistent Correlation Length (TACCL) and highlights
 the failure of the TACCL heuristic to properly capture an unbounded correlation length embedded in the tile set.
@@ -249,7 +254,6 @@ block size 22x22x22.
 For aesthetic reasons, a tile weighting that increases the likelihood of the empty tile, the arch tiles and
 stair tiles was chosen.
 The reader is referred to the reference implementation \input{FOOTNOTE_REPO.tex}
-%\footnote{ \url{https://github.com/zzyzek/POMS} }
 for further details.
 
 
