@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.5.21)  27 AUG 2024 11:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.5.21)  27 AUG 2024 11:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1415,7 +1415,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--20
  math _
  []
 
-[8]
+
 Underfull \hbox (badness 10000) in paragraph at lines 21--25
 \T1/LibertinusSerif-TLF/m/n/9 (+20) 2016. URL: [][]$https : / / opengameart . o
 rg / content /
@@ -1427,7 +1427,7 @@ Underfull \hbox (badness 1365) in paragraph at lines 26--30
  and dun-
  []
 
-
+[8]
 Underfull \hbox (badness 10000) in paragraph at lines 31--35
 []\T1/LibertinusSerif-TLF/m/n/9 (+20) R. Noren-berg, 2bit mi-cro metroid-va-nia
 
@@ -1475,9 +1475,7 @@ Underfull \hbox (badness 3482) in paragraph at lines 172--175
 plained,
  []
 
-) (./07-Appendix.tex [9]) [10
-
-] (./POMS.aux)
+) (./07-Appendix.tex) [9] (./POMS.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.24995pt have occurred.
@@ -1486,11 +1484,11 @@ Package rerunfilecheck Info: File `POMS.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 31186 strings out of 480171
- 582257 string characters out of 5894489
- 997891 words of memory out of 5000000
+ 31182 strings out of 480171
+ 582148 string characters out of 5894489
+ 999887 words of memory out of 5000000
  48012 multiletter control sequences out of 15000+600000
- 640463 words of font info for 396 fonts, out of 8000000 for 9000
+ 640086 words of font info for 394 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
  122i,21n,120p,10620b,2604s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_sfissr.e
@@ -1521,9 +1519,9 @@ ts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1
 amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbo
 ls/msbm10.pfb>
-Output written on POMS.pdf (10 pages, 6911687 bytes).
+Output written on POMS.pdf (9 pages, 6910105 bytes).
 PDF statistics:
- 370 PDF objects out of 1000 (max. 8388607)
- 58 named destinations out of 1000 (max. 500000)
+ 363 PDF objects out of 1000 (max. 8388607)
+ 57 named destinations out of 1000 (max. 500000)
  93340 words of extra memory for PDF output out of 106986 (max. 10000000)
 
