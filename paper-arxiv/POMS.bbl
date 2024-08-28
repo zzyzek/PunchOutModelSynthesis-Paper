@@ -1,0 +1,176 @@
+\begin{thebibliography}{22}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\href}[2]{#2}
+\providecommand{\path}[1]{#1}
+\providecommand{\DOIprefix}{doi:}
+\providecommand{\ArXivprefix}{arXiv:}
+\providecommand{\URLprefix}{URL: }
+\providecommand{\Pubmedprefix}{pmid:}
+\providecommand{\doi}[1]{\href{http://dx.doi.org/#1}{\path{#1}}}
+\providecommand{\Pubmed}[1]{\href{pmid:#1}{\path{#1}}}
+\providecommand{\bibinfo}[2]{#2}
+\ifx\xfnm\relax \def\xfnm[#1]{\unskip,\space#1}\fi
+%Type = Misc
+\bibitem[{Hoetzlein(2023)}]{Hoetzlein_2023}
+\bibinfo{author}{R.~Hoetzlein}, \bibinfo{title}{just\_math},
+  \bibinfo{year}{2023}. \URLprefix
+  \url{https://github.com/ramakarl/just_math/tree/3ff9d10c3d170855cef1db970c0278b15e91fa13/math_belief_prop}.
+%Type = Misc
+\bibitem[{LUNARSIGNALS(2016)}]{LUNARSIGNALS_oarpgo}
+\bibinfo{author}{LUNARSIGNALS}, \bibinfo{title}{Overhead action rpg overworld},
+  \bibinfo{year}{2016}. \URLprefix
+  \url{https://opengameart.org/content/overhead-action-rpg-overworld}.
+%Type = Misc
+\bibitem[{Woźniak(2015)}]{ThKaspar_micro}
+\bibinfo{author}{K.~Woźniak}, \bibinfo{title}{Micro tileset - overworld and
+  dungeon}, \bibinfo{year}{2015}. \URLprefix
+  \url{https://opengameart.org/content/micro-tileset-overworld-and-dungeon}.
+%Type = Misc
+\bibitem[{Norenberg(2024)}]{0x72_2bmmv}
+\bibinfo{author}{R.~Norenberg}, \bibinfo{title}{2bit micro metroidvania
+  tileset}, \bibinfo{year}{2024}. \URLprefix
+  \url{https://0x72.itch.io/2bitmicrometroidvaniatileset}.
+%Type = Misc
+\bibitem[{Brave(2021)}]{BorisTheBrave_cbtg_2021}
+\bibinfo{author}{B.~T. Brave}, \bibinfo{title}{Constraint-based tile
+  generators}, \bibinfo{year}{2021}. \URLprefix
+  \url{https://www.boristhebrave.com/2021/10/31/constraint-based-tile-generators/}.
+%Type = Inproceedings
+\bibitem[{Merrell(2007)}]{Merrell_2007}
+\bibinfo{author}{P.~Merrell},
+\newblock \bibinfo{title}{Example-based model synthesis},
+\newblock in: \bibinfo{booktitle}{Proceedings of the 2007 Symposium on
+  Interactive 3D Graphics and Games}, I3D '07, \bibinfo{publisher}{Association
+  for Computing Machinery}, \bibinfo{address}{New York, NY, USA},
+  \bibinfo{year}{2007}, p. \bibinfo{pages}{105–112}. \URLprefix
+  \url{https://doi.org/10.1145/1230100.1230119}.
+  \DOIprefix\doi{10.1145/1230100.1230119}.
+%Type = Phdthesis
+\bibitem[{Merrell(2009)}]{Merrell_2009}
+\bibinfo{author}{P.~Merrell}, \bibinfo{title}{Model Synthesis}, Ph.D. thesis,
+  \bibinfo{address}{Chapel Hill, NC, USA}, \bibinfo{year}{2009}.
+%Type = Misc
+\bibitem[{Gumin(2016)}]{Gumin_2016}
+\bibinfo{author}{M.~Gumin}, \bibinfo{title}{Wave function collapse algorithm},
+  \bibinfo{year}{2016}. \URLprefix
+  \url{https://github.com/mxgmn/WaveFunctionCollapse}.
+%Type = Misc
+\bibitem[{Merrell(2021)}]{Merrell_comparison_2021}
+\bibinfo{author}{P.~Merrell}, \bibinfo{title}{Comparing model synthesis and
+  wave function collapse}, \bibinfo{year}{2021}. \URLprefix
+  \url{https://paulmerrell.org/wp-content/uploads/2021/07/comparison.pdf}.
+%Type = Inproceedings
+\bibitem[{Wallace(1993)}]{Wallace1993WhyAI}
+\bibinfo{author}{R.~J. Wallace},
+\newblock \bibinfo{title}{Why ac-3 is almost always better than ac4 for
+  establishing arc consistency in csps},
+\newblock in: \bibinfo{booktitle}{International Joint Conference on Artificial
+  Intelligence}, \bibinfo{year}{1993}. \URLprefix
+  \url{https://api.semanticscholar.org/CorpusID:17765393}.
+%Type = Article
+\bibitem[{Mohr and Henderson(1986)}]{Mohr_Henderson_1986}
+\bibinfo{author}{R.~Mohr}, \bibinfo{author}{T.~C. Henderson},
+\newblock \bibinfo{title}{Arc and path consistency revisited},
+\newblock \bibinfo{journal}{Artificial Intelligence} \bibinfo{volume}{28}
+  (\bibinfo{year}{1986}) \bibinfo{pages}{225--233}. \URLprefix
+  \url{https://www.sciencedirect.com/science/article/pii/0004370286900834}.
+  \DOIprefix\doi{https://doi.org/10.1016/0004-3702(86)90083-4}.
+%Type = Inproceedings
+\bibitem[{Karth and Smith(2017)}]{Karth_Smith_2017}
+\bibinfo{author}{I.~Karth}, \bibinfo{author}{A.~M. Smith},
+\newblock \bibinfo{title}{Wavefunctioncollapse is constraint solving in the
+  wild},
+\newblock in: \bibinfo{booktitle}{Proceedings of the 12th International
+  Conference on the Foundations of Digital Games}, FDG '17,
+  \bibinfo{publisher}{Association for Computing Machinery},
+  \bibinfo{address}{New York, NY, USA}, \bibinfo{year}{2017}. \URLprefix
+  \url{https://doi.org/10.1145/3102071.3110566}.
+  \DOIprefix\doi{10.1145/3102071.3110566}.
+%Type = Article
+\bibitem[{Karth and Smith(2022)}]{Karth_Smith_2022}
+\bibinfo{author}{I.~Karth}, \bibinfo{author}{A.~M. Smith},
+\newblock \bibinfo{title}{Wavefunctioncollapse: Content generation via
+  constraint solving and machine learning},
+\newblock \bibinfo{journal}{IEEE Transactions on Games} \bibinfo{volume}{14}
+  (\bibinfo{year}{2022}) \bibinfo{pages}{364--376}.
+  \DOIprefix\doi{10.1109/TG.2021.3076368}.
+%Type = Misc
+\bibitem[{Kleineberg(2019)}]{Kleinberg_2019}
+\bibinfo{author}{M.~Kleineberg}, \bibinfo{title}{Infinite procedurally
+  generated city with the wave function collapse algorithm},
+  \bibinfo{year}{2019}. \URLprefix \url{https://marian42.de/article/wfc/}.
+%Type = Inproceedings
+\bibitem[{Newgas(2021)}]{Newgas_2021}
+\bibinfo{author}{A.~Newgas},
+\newblock \bibinfo{title}{Tessera: A practical system for extended
+  wavefunctioncollapse},
+\newblock in: \bibinfo{booktitle}{Proceedings of the 16th International
+  Conference on the Foundations of Digital Games}, FDG '21,
+  \bibinfo{publisher}{Association for Computing Machinery},
+  \bibinfo{address}{New York, NY, USA}, \bibinfo{year}{2021}. \URLprefix
+  \url{https://doi.org/10.1145/3472538.3472605}.
+  \DOIprefix\doi{10.1145/3472538.3472605}.
+%Type = Inproceedings
+\bibitem[{Nie et~al.(2023)Nie, Zheng, Zhuang, and Song}]{Nie_etall_2023}
+\bibinfo{author}{Y.~Nie}, \bibinfo{author}{S.~Zheng},
+  \bibinfo{author}{Z.~Zhuang}, \bibinfo{author}{X.~Song},
+\newblock \bibinfo{title}{Extend wave function collapse algorithm to
+  large-scale content generation},
+\newblock in: \bibinfo{booktitle}{2023 IEEE Conference on Games (CoG)},
+  \bibinfo{year}{2023}, pp. \bibinfo{pages}{1--8}.
+  \DOIprefix\doi{10.1109/CoG57401.2023.10333214}.
+%Type = Article
+\bibitem[{Cooper(2022)}]{Cooper_2022}
+\bibinfo{author}{S.~Cooper},
+\newblock \bibinfo{title}{Sturgeon: Tile-based procedural level generation via
+  learned and designed constraints},
+\newblock \bibinfo{journal}{Proceedings of the AAAI Conference on Artificial
+  Intelligence and Interactive Digital Entertainment} \bibinfo{volume}{18}
+  (\bibinfo{year}{2022}) \bibinfo{pages}{26--36}. \URLprefix
+  \url{https://ojs.aaai.org/index.php/AIIDE/article/view/21944}.
+  \DOIprefix\doi{10.1609/aiide.v18i1.21944}.
+%Type = Inproceedings
+\bibitem[{Alaka and Bidarra(2023)}]{Alaka_Bidarra_Rafael_2023}
+\bibinfo{author}{S.~Alaka}, \bibinfo{author}{R.~Bidarra},
+\newblock \bibinfo{title}{Hierarchical semantic wave function collapse},
+\newblock in: \bibinfo{booktitle}{Proceedings of the 18th International
+  Conference on the Foundations of Digital Games}, FDG '23,
+  \bibinfo{publisher}{Association for Computing Machinery},
+  \bibinfo{address}{New York, NY, USA}, \bibinfo{year}{2023}. \URLprefix
+  \url{https://doi.org/10.1145/3582437.3587209}.
+  \DOIprefix\doi{10.1145/3582437.3587209}.
+%Type = Inproceedings
+\bibitem[{Langendam and Bidarra(2022)}]{Langendam_etall_2022}
+\bibinfo{author}{T.~S.~L. Langendam}, \bibinfo{author}{R.~Bidarra},
+\newblock \bibinfo{title}{miwfc - designer empowerment through mixed-initiative
+  wave function collapse},
+\newblock in: \bibinfo{booktitle}{Proceedings of the 17th International
+  Conference on the Foundations of Digital Games}, FDG '22,
+  \bibinfo{publisher}{Association for Computing Machinery},
+  \bibinfo{address}{New York, NY, USA}, \bibinfo{year}{2022}. \URLprefix
+  \url{https://doi.org/10.1145/3555858.3563266}.
+  \DOIprefix\doi{10.1145/3555858.3563266}.
+%Type = Inproceedings
+\bibitem[{Lucas and Volz(2019)}]{Lucas_Volz_2019}
+\bibinfo{author}{S.~M. Lucas}, \bibinfo{author}{V.~Volz},
+\newblock \bibinfo{title}{Tile pattern kl-divergence for analysing and evolving
+  game levels},
+\newblock in: \bibinfo{booktitle}{Proceedings of the Genetic and Evolutionary
+  Computation Conference}, GECCO '19, \bibinfo{publisher}{Association for
+  Computing Machinery}, \bibinfo{address}{New York, NY, USA},
+  \bibinfo{year}{2019}, p. \bibinfo{pages}{170–178}. \URLprefix
+  \url{https://doi.org/10.1145/3321707.3321781}.
+  \DOIprefix\doi{10.1145/3321707.3321781}.
+%Type = Misc
+\bibitem[{Sherratt(2019)}]{Sherratt_2019}
+\bibinfo{author}{S.~Sherratt}, \bibinfo{title}{Procedural generation with wave
+  function collapse}, \bibinfo{year}{2019}. \URLprefix
+  \url{https://www.gridbugs.org/wave-function-collapse/}.
+%Type = Misc
+\bibitem[{Brave(2021)}]{BorisTheBrave_wfc_2021}
+\bibinfo{author}{B.~T. Brave}, \bibinfo{title}{Wave function collapse
+  explained}, \bibinfo{year}{2021}. \URLprefix
+  \url{https://www.boristhebrave.com/2020/04/13/wave-function-collapse-explained/}.
+
+\end{thebibliography}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.5.21)  27 AUG 2024 20:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.5.21)  27 AUG 2024 23:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1274,33 +1274,33 @@ LaTeX Font Info:    Font shape `T1/LibertinusSans-TLF/b/n' will be
 LaTeX Font Info:    Font shape `T1/LibertinusSans-TLF/m/it' will be
 (Font)              scaled to size 8.21255pt on input line 7.
 LaTeX Font Info:    Font shape `TS1/LibertinusSerif-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 19.
-LaTeX Font Info:    Calculating math sizes for size <8.21255> on input line 93.
+(Font)              scaled to size 9.0pt on input line 18.
+LaTeX Font Info:    Calculating math sizes for size <8.21255> on input line 92.
 
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <4.10628> not available
-(Font)              size <5> substituted on input line 93.
+(Font)              size <5> substituted on input line 92.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <4.10628> not available
-(Font)              size <5> substituted on input line 93.
+(Font)              size <5> substituted on input line 92.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <4.10628> not available
-(Font)              size <5> substituted on input line 93.
+(Font)              size <5> substituted on input line 92.
 
 LaTeX Font Info:    Font shape `T1/LibertinusSerif-TLF/m/n' will be
-(Font)              scaled to size 8.21255pt on input line 93.
+(Font)              scaled to size 8.21255pt on input line 92.
 [1
 
 
  </usr/share/texlive/texmf-dist/tex/latex/doclicense/images/doclicense-CC-by-88
 x31.pdf>]
 LaTeX Font Info:    Font shape `T1/LibertinusSerif-TLF/m/it' will be
-(Font)              scaled to size 9.0pt on input line 93.
+(Font)              scaled to size 9.0pt on input line 92.
 LaTeX Font Info:    Trying to load font information for T1+LibertinusMono-TLF o
-n input line 147.
+n input line 146.
 
 (/usr/share/texlive/texmf-dist/tex/latex/libertinus-type1/T1LibertinusMono-TLF.
 fd
@@ -1308,7 +1308,7 @@ File: T1LibertinusMono-TLF.fd 2020/08/22 (autoinst) Font definitions for T1/Lib
 ertinusMono-TLF.
 )
 LaTeX Font Info:    Font shape `T1/LibertinusMono-TLF/m/n' will be
-(Font)              scaled to size 7.65005pt on input line 147.
+(Font)              scaled to size 7.65005pt on input line 146.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `LibertinusMono-TLF' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
