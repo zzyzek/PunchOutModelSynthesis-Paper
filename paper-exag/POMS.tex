@@ -63,11 +63,14 @@ twocolumn,
 
 \maketitle
 
+\newcommand{\specialcell}[2][c]{\begin{tabular}[#1]{@{}l@{}}#2\end{tabular}}
+\newcommand{\specialcellCenter}[2][c]{\begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}
+
 
 \input{01-Introduction.tex}
-\input{04-Related-Work.tex}
-\input{02-Algorithm.tex}
-\input{03-Results.tex}
+\input{02-Related-Work.tex}
+\input{03-Algorithm.tex}
+\input{04-Results.tex}
 \input{05-Conclusion.tex}
 
 

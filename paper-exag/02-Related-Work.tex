@@ -25,20 +25,19 @@ Unfortunately, MMS has two major drawbacks, the second of which Merrell noticed 
         through single block level alterations.
 \end{itemize}
 
-%%%!!!!!
-Many of the tile sets and tile constraints that Merrell provides in \cite{Merrell_2007, Merrell_2009} have an "empty" tile that 
+Many of the tile sets and tile constraints that Merrell provides in \cite{Merrell_2007, Merrell_2009} have an ``empty'' tile that 
 has itself as an admissible neighbor, creating a situation where the initial fully resolved grid can be easily created
-by populating each cell with an "empty" tile.
+by populating each cell with an ``empty'' tile.
 All 2D tile sets and tile constraints presented in this paper do not have an initial state that can be created through
 the replication of just one tile throughout the grid and require some amount of knowledge about the tile constraints
 to create a fully resolved grid.
 
 In general, for some tile constraints, finding a class of fully resolved initial configurations might be done through engineering effort.
-For example, finding a small tileable block that is then able to be replicated through to the whole grid might be possible
+For example, it might be possible to find a small tileable block that is then able to be replicated through to the whole grid
 \footnote{ This method was suggested to the authors through personal communication with P. Merrell }.
 
 For other tile constraints, finding any fully resolved grid from an initially indeterminate state might be the goal.
-In such cases, running MMS is pointless, as MMS can't start without a solution but if a solution is known, MMS wouldn't
+In such cases, running MMS would defeat the purpose, as MMS can't start without a solution but if a solution is known, MMS wouldn't
 be needed.
 As an example, a tile set can be constructed where a grid realization connects two endpoints via a path
 without explicitely describing where the path meanders through the grid.
@@ -47,7 +46,11 @@ MMS would require a full realization of the path before it could start.
 %Depending on tile constraints, discovering an initially resolved grid might be a question of engineering
 %effort, so might not pose a theoretical impediment to using MMS.
 
-POMS sidesteps requiring an initially fully resolved grid by allowing the grid to be in an indeterminate state.
+POMS sidesteps the need for a fully realized initial configuration by allowing the grid to be in an indeterminate state.
+
+Note that, to the authors knowledge, no systematic examination of methods or strategies to create initial states
+to be fed into MMS has been done.
+The above discussion is informed through personal experimentation and through discussion with P. Merrell.
 
 The inability to handle certain types of unbounded constraints, such as the implicit top and bottom equal river count constraint that appear in
 Wo\'zniak's \textit{Forest Micro} tile set, is the deeper issue with MMS.
@@ -82,21 +85,52 @@ used to create algorithms that took advantage of it.
 POMS takes the ideas of tile correlation and the TACCL to inform its backtracking strategies when applied to the larger grid
 without needing the resource requirements that BMS, as a block level solver, would require.
 
+%\begin{table}[h]
+%  \label{table:CBTGComparison}
+%  \centering
+%  \begin{tabular}[t]{lccccc}
+%    \hline
+%    Algorithm & Solver Type & \specialcellCenter{Contradiction\\ Resiliance} & \specialcellCenter{Block Step \\ Consistent} & \specialcellCenter{Inderminate \\ Initial State} & Ergodic  \\
+%    \hline
+%    WFC  & Block & \textit{No}  & n/a         & \textbf{Yes} & \textbf{Yes} \\
+%    BMS  & Block & \textbf{Yes} & n/a         & \textbf{Yes} & \textbf{Yes} \\
+%    MMS  & Grid  & \textbf{Yes} & Yes         & \textit{No}  & \textit{No} \\
+%    POMS & Grid  & \textbf{Yes} & \textit{No} & \textbf{Yes} & \textbf{Yes} \\
+%    \hline
+%  \end{tabular}
+%  \caption{ \textbf{WFC}: Gumin's Wave Function Collapse \\ \textbf{BMS}: Breakout Model Synthesis \\ \textbf{MMS}: Merrell's Modify in Blocks Model Synthesis \\ \textbf{POMS}: Punch Out Model Synthesis (our algorithm) }
+%\end{table}
+
 \begin{table}[h]
-  \caption{ }
   \label{table:CBTGComparison}
   \centering
-  \begin{tabular}[t]{lcccccc}
+  \begin{tabular}[t]{lcccc}
     \hline
-    Algorithm & Block Level Solver & Grid Level Solver & Contradiction Resiliance & Block Step Consistent & Inderminate Initial State & Ergodic  \\
+     Algorithm & WFC & BMS & MMS & \textbf{POMS} \\
     \hline
-    Gumin's Wave Function Collapse (WFC)              & Yes & No  & No  & n/a & Yes & Yes \\
-    Breakout Model Synthesis (BMS)                    & Yes & No  & Yes & n/a & Yes & Yes \\
-    Merrell's Modify in Blocks Model Synthesis (MMS)  & No  & Yes & Yes & Yes & No  & No \\
-    Punch Out Model Synthesis (POMS)                  & No  & Yes & Yes & No  & Yes & Yes \\
+    \specialcellCenter{Solver Type} & Block & Block & Grid & \textbf{Grid} \\
+    \hline
+    \specialcellCenter{Contradiction \\ \ \ Resiliance} & No & Yes & Yes & \textbf{Yes} \\
+    \hline
+    \specialcellCenter{Block Step \\ \ \ Consistent} & n/a & n/a & Yes & \textit{\textbf{No}} \\
+    \hline
+    \specialcellCenter{Indeterminate \\ \ \ Initial State} & Yes & Yes & No & \textbf{Yes} \\
+    \hline
+    \specialcellCenter{Ergodic} & Yes & Yes & No & \textbf{Yes} \\
     \hline
   \end{tabular}
+  \caption{ \textbf{WFC}: Gumin's Wave Function Collapse \\ \textbf{BMS}: Breakout Model Synthesis \\ \textbf{MMS}: Merrell's Modify in Blocks Model Synthesis \\ \textbf{POMS}: Punch Out Model Synthesis (our algorithm) }
 \end{table}
+
+Table \ref{table:CBTGComparison} provides a summary of the differences between WFC, BMS, MMS and POMS.
+Here, \textit{contradiction resiliance} means that the algorithm can recover should a contradiction be encountered,
+\textit{block step consistent} means the algorithm is in an arc consistent state after every block resolution,
+\textit{indeterminate initial state} means the algorithm doesn't require a fully resolved initial configuration and
+\textit{ergodic} means that, in general, all solution states are possibly to reach.
+Note that an assertion of being \textit{ergodic} in this context only means solutions
+are possible and does not mean \textit{unbiased} as, depending on the tile constraints or configuration,
+solution biasing may occur.
+Punch Out Model Synthesis (POMS), the algorithm presented in this paper, is highlighted for ease of comparison.
 
 In terms of algorithms to ensure arc consistency, MMS and WFC have used AC3 and AC4.
 AC3 is easy to understand and can be performant if tile count is low but quickly suffers as tile count increases \cite{Wallace1993WhyAI}.
