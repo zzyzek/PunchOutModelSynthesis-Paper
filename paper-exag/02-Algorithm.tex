@@ -1,6 +1,13 @@
 \section{Algorithm}
 
-\subsection{Description}
+%\subsection{Description}
+
+Punch Out Model Synthesis (POMS) works to progressively resolve chosen
+blocks within a larger grid.
+Blocks that fully resolve are then saved back into the larger grid.
+Should blocks not be able to fully resolve, portions of the grid
+are reverted back to an indeterminate state, depending on the mode of failure.
+
 
 \begin{figure*}[ht]
   \centering
@@ -57,17 +64,6 @@
 
   \end{algorithmic}
 \end{algorithm}
-
-Algorithm \ref{alg:POMS} gives pseudo code for the Punch Out Model Synthesis (POMS) algorithm.
-Figure \ref{fig:alg} gives an overview of the POMS algorithm, highlighting
-a single step. Figure \ref{fig:pmrun} shows a slideshow of POMS being run on the \textit{Pill Mortal}
-tile set for a 64x64 grid size with 32x32 block size.
-
-Punch Out Model Synthesis (POMS) works to progressively resolve chosen
-blocks within a larger grid.
-Blocks that fully resolve are then saved back into the larger grid.
-Should blocks not be able to fully resolve, portions of the grid
-are reverted back to an indeterminate state, depending on the mode of failure.
 
 %Blocks are chosen from a block choice scheduler.
 %On successful block resolution, the fully realized block is incorporated back into the grid.
@@ -131,6 +127,12 @@ boundary tiles of fully resolved regions are probabilistically reverted to an in
 The process of probabilistically reverting boundary cell locations to indeterminate states is called \textit{erosion},
 with the \textit{probability of erosion} being a tunable parameter that sets the probability that a cell located on a resolved boundary
 is reverted.
+
+Algorithm \ref{alg:POMS} gives pseudo code for the Punch Out Model Synthesis (POMS) algorithm.
+Figure \ref{fig:alg} gives an overview of the POMS algorithm, highlighting
+a single step.
+Figure \ref{fig:pmrun} shows a slideshow of POMS being run on the \textit{Pill Mortal}
+tile set for a 64x64 grid size with 32x32 block size.
 
 The probability of erosion is managed by the \textit{Erosion Choice Scheduler} (ECS) as referenced in Algorithm \ref{alg:POMS}.
 We have found that a good choice for ECS is to increase the erosion probability by the number of failed attempts, allowing

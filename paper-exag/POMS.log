@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.5.21)  27 AUG 2024 23:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.5.21)  24 SEP 2024 21:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -914,25 +914,294 @@ Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
 \ALG@tmplength=\skip91
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
-) (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count350
-\lst@gtempboxa=\box68
-\lst@token=\toks43
-\lst@length=\count351
-\lst@currlwidth=\dimen265
-\lst@column=\count352
-\lst@pos=\count353
-\lst@lostspace=\dimen266
-\lst@width=\dimen267
-\lst@newlines=\count354
-\lst@lineno=\count355
-\lst@maxwidth=\dimen268
+) (/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks43
+\pgfutil@tempdima=\dimen265
+\pgfutil@tempdimb=\dimen266
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.t
+ex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box68
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2021/05/15 v3.1.9a (3.1.9a)
+))
+Package: pgf 2021/05/15 v3.1.9a (3.1.9a)
+
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2021/05/15 v3.1.9a (3.1.9a)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks44
+\pgfkeys@temptoks=\toks45
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.t
+ex
+\pgfkeys@tmptoks=\toks46
+))
+\pgf@x=\dimen267
+\pgf@y=\dimen268
+\pgf@xa=\dimen269
+\pgf@ya=\dimen270
+\pgf@xb=\dimen271
+\pgf@yb=\dimen272
+\pgf@xc=\dimen273
+\pgf@yc=\dimen274
+\pgf@xd=\dimen275
+\pgf@yd=\dimen276
+\w@pgf@writea=\write5
+\r@pgf@reada=\read4
+\c@pgf@counta=\count350
+\c@pgf@countb=\count351
+\c@pgf@countc=\count352
+\c@pgf@countd=\count353
+\t@pgf@toka=\toks47
+\t@pgf@tokb=\toks48
+\t@pgf@tokc=\toks49
+\pgf@sys@id@count=\count354
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2021/05/15 v3.1.9a (3.1.9a)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2021/05/15 v3.1.9a (3.1.9a)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.de
+f
+File: pgfsys-common-pdf.def 2021/05/15 v3.1.9a (3.1.9a)
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
+tex
+File: pgfsyssoftpath.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfsyssoftpath@smallbuffer@items=\count355
+\pgfsyssoftpath@bigbuffer@items=\count356
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
+tex
+File: pgfsysprotocol.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2021/05/15 v3.1.9a (3.1.9a)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen277
+\pgfmath@count=\count357
+\pgfmath@box=\box69
+\pgfmath@toks=\toks50
+\pgfmath@stack@operand=\toks51
+\pgfmath@stack@operation=\toks52
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonomet
+ric.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.cod
+e.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
+thmetics.code.tex)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count358
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
+x
+File: pgfcorepoints.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@picminx=\dimen278
+\pgf@picmaxx=\dimen279
+\pgf@picminy=\dimen280
+\pgf@picmaxy=\dimen281
+\pgf@pathminx=\dimen282
+\pgf@pathmaxx=\dimen283
+\pgf@pathminy=\dimen284
+\pgf@pathmaxy=\dimen285
+\pgf@xx=\dimen286
+\pgf@xy=\dimen287
+\pgf@yx=\dimen288
+\pgf@yy=\dimen289
+\pgf@zx=\dimen290
+\pgf@zy=\dimen291
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.
+code.tex
+File: pgfcorepathconstruct.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@path@lastx=\dimen292
+\pgf@path@lasty=\dimen293
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code
+.tex
+File: pgfcorepathusage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@shorten@end@additional=\dimen294
+\pgf@shorten@start@additional=\dimen295
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
+x
+File: pgfcorescopes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfpic=\box70
+\pgf@hbox=\box71
+\pgf@layerbox@main=\box72
+\pgf@picture@serial@count=\count359
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
+ode.tex
+File: pgfcoregraphicstate.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgflinewidth=\dimen296
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformation
+s.code.tex
+File: pgfcoretransformations.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@pt@x=\dimen297
+\pgf@pt@y=\dimen298
+\pgf@pt@temp=\dimen299
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.t
+ex
+File: pgfcoreobjects.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing
+.code.tex
+File: pgfcorepathprocessing.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.te
+x
+File: pgfcorearrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfarrowsep=\dimen300
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@max=\dimen301
+\pgf@sys@shading@range@num=\count360
+\pgf@shadingcount=\count361
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
+tex
+File: pgfcoreexternal.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfexternal@startupbox=\box73
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
+x
+File: pgfcorelayers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.c
+ode.tex
+File: pgfcoretransparency.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.
+tex
+File: pgfcorepatterns.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfnodeparttextbox=\box74
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65
+.sty
+Package: pgfcomp-version-0-65 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@nodesepstart=\dimen302
+\pgf@nodesepend=\dimen303
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
+.sty
+Package: pgfcomp-version-1-18 2021/05/15 v3.1.9a (3.1.9a)
+)) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2021/05/15 v3.1.9a (3.1.9a)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen304
+\pgffor@skip=\dimen305
+\pgffor@stack=\toks53
+\pgffor@toks=\toks54
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2021/05/15 v3.1.9a (3.1.9a)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
+.code.tex
+File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@plot@mark@count=\count362
+\pgfplotmarksize=\dimen306
+)
+\tikz@lastx=\dimen307
+\tikz@lasty=\dimen308
+\tikz@lastxsaved=\dimen309
+\tikz@lastysaved=\dimen310
+\tikz@lastmovetox=\dimen311
+\tikz@lastmovetoy=\dimen312
+\tikzleveldistance=\dimen313
+\tikzsiblingdistance=\dimen314
+\tikz@figbox=\box75
+\tikz@figbox@bg=\box76
+\tikz@tempbox=\box77
+\tikz@tempbox@bg=\box78
+\tikztreelevel=\count363
+\tikznumberofchildren=\count364
+\tikznumberofcurrentchild=\count365
+\tikz@fig@count=\count366
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfmatrixcurrentrow=\count367
+\pgfmatrixcurrentcolumn=\count368
+\pgf@matrix@numberofcolumns=\count369
+)
+\tikz@expandcount=\count370
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)))
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count371
+\lst@gtempboxa=\box79
+\lst@token=\toks55
+\lst@length=\count372
+\lst@currlwidth=\dimen315
+\lst@column=\count373
+\lst@pos=\count374
+\lst@lostspace=\dimen316
+\lst@width=\dimen317
+\lst@newlines=\count375
+\lst@lineno=\count376
+\lst@maxwidth=\dimen318
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-\c@lstnumber=\count356
-\lst@skipnumbers=\count357
-\lst@framebox=\box69
+\c@lstnumber=\count377
+\lst@skipnumbers=\count378
+\lst@framebox=\box80
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2020/03/24 1.8d listings configuration
@@ -945,7 +1214,7 @@ Package csquotes Info: ... none found.
 Package: ccicons 2017/10/30 v1.6 LaTeX support for Creative Commons icons
 )
 LaTeX Font Info:    Trying to load font information for T1+LibertinusSerif-TLF 
-on input line 30.
+on input line 31.
 
 (/usr/share/texlive/texmf-dist/tex/latex/libertinus-type1/T1LibertinusSerif-TLF
 .fd
@@ -953,45 +1222,45 @@ File: T1LibertinusSerif-TLF.fd 2020/08/22 (autoinst) Font definitions for T1/Li
 bertinusSerif-TLF.
 )
 LaTeX Font Info:    Font shape `T1/LibertinusSerif-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 30.
+(Font)              scaled to size 9.0pt on input line 31.
  (./POMS.aux)
 \openout1 = `POMS.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-Package scrbase Info: activating english \contentsname on input line 30.
-Package scrbase Info: activating english \listfigurename on input line 30.
-Package scrbase Info: activating english \listtablename on input line 30.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+Package scrbase Info: activating english \contentsname on input line 31.
+Package scrbase Info: activating english \listfigurename on input line 31.
+Package scrbase Info: activating english \listtablename on input line 31.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count358
-\scratchdimen=\dimen269
-\scratchbox=\box70
-\nofMPsegments=\count359
-\nofMParguments=\count360
-\everyMPshowfont=\toks44
-\MPscratchCnt=\count361
-\MPscratchDim=\dimen270
-\MPnumerator=\count362
-\makeMPintoPDFobject=\count363
-\everyMPtoPDFconversion=\toks45
+\scratchcounter=\count379
+\scratchdimen=\dimen319
+\scratchbox=\box81
+\nofMPsegments=\count380
+\nofMParguments=\count381
+\everyMPshowfont=\toks56
+\MPscratchCnt=\count382
+\MPscratchDim=\dimen320
+\MPnumerator=\count383
+\makeMPintoPDFobject=\count384
+\everyMPtoPDFconversion=\toks57
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -1001,18 +1270,18 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Info: Redefining \microtypecontext on input line 30.
-Package microtype Info: Applying patch `item' on input line 30.
-Package microtype Info: Applying patch `toc' on input line 30.
-Package microtype Info: Applying patch `eqnum' on input line 30.
-Package microtype Info: Applying patch `footnote' on input line 30.
+LaTeX Info: Redefining \microtypecontext on input line 31.
+Package microtype Info: Applying patch `item' on input line 31.
+Package microtype Info: Applying patch `toc' on input line 31.
+Package microtype Info: Applying patch `eqnum' on input line 31.
+Package microtype Info: Applying patch `footnote' on input line 31.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 30.
+LaTeX Info: Redefining \showhyphens on input line 31.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1020,7 +1289,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `LibertinusSerif-TLF' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-Package hyperref Info: Link coloring ON on input line 30.
+Package hyperref Info: Link coloring ON on input line 31.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -1031,15 +1300,15 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count364
+\c@section@level=\count385
 )
-LaTeX Info: Redefining \ref on input line 30.
-LaTeX Info: Redefining \pageref on input line 30.
-LaTeX Info: Redefining \nameref on input line 30.
+LaTeX Info: Redefining \ref on input line 31.
+LaTeX Info: Redefining \pageref on input line 31.
+LaTeX Info: Redefining \nameref on input line 31.
 
 (./POMS.out) (./POMS.out)
-\@outlinefile=\write5
-\openout5 = `POMS.out'.
+\@outlinefile=\write6
+\openout6 = `POMS.out'.
 
 Class scrartcl Info: loading recommended package `bookmark'.
 (scrartcl)           Using `bookmark' together with `hyperref' is recommended,
@@ -1048,17 +1317,17 @@ Class scrartcl Info: loading recommended package `bookmark'.
 (scrartcl)           `bookmarkpackage=false' before \begin{document} and
 (scrartcl)           you can avoid this message adding:
 (scrartcl)             \usepackage{bookmark}
-(scrartcl)           before \begin{document} on input line 30.
+(scrartcl)           before \begin{document} on input line 31.
 
 (/usr/share/texlive/texmf-dist/tex/latex/bookmark/bookmark.sty
 Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
 
 (/usr/share/texlive/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
 File: bkm-pdftex.def 2020-11-06 v1.29 bookmark driver for pdfTeX (HO)
-\BKM@id=\count365
+\BKM@id=\count386
 ))
-\c@mv@tabular=\count366
-\c@mv@boldtabular=\count367
+\c@mv@tabular=\count387
+\c@mv@boldtabular=\count388
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1096,15 +1365,15 @@ File: bkm-pdftex.def 2020-11-06 v1.29 bookmark driver for pdfTeX (HO)
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@lstlisting=\count368
+\c@lstlisting=\count389
 (./AUTHOR.tex)
-\verbatim@out=\write6
-\openout6 = `POMS.abs'.
+\verbatim@out=\write7
+\openout7 = `POMS.abs'.
 
 LaTeX Font Info:    Font shape `T1/LibertinusSerif-TLF/m/n' will be
-(Font)              scaled to size 15.55197pt on input line 64.
+(Font)              scaled to size 15.55197pt on input line 65.
 LaTeX Font Info:    Trying to load font information for T1+LibertinusSans-TLF o
-n input line 64.
+n input line 65.
 
 (/usr/share/texlive/texmf-dist/tex/latex/libertinus-type1/T1LibertinusSans-TLF.
 fd
@@ -1112,18 +1381,18 @@ File: T1LibertinusSans-TLF.fd 2020/08/22 (autoinst) Font definitions for T1/Lib
 ertinusSans-TLF.
 )
 LaTeX Font Info:    Font shape `T1/LibertinusSans-TLF/m/n' will be
-(Font)              scaled to size 15.55197pt on input line 64.
+(Font)              scaled to size 15.55197pt on input line 65.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `LibertinusSans-TLF' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/LibertinusSans-TLF/b/n' will be
-(Font)              scaled to size 15.55197pt on input line 64.
+(Font)              scaled to size 15.55197pt on input line 65.
 LaTeX Font Info:    Font shape `T1/LibertinusSans-TLF/b/n' will be
-(Font)              scaled to size 9.0pt on input line 64.
+(Font)              scaled to size 9.0pt on input line 65.
 LaTeX Font Info:    Font shape `T1/LibertinusSerif-TLF/m/n' will be
-(Font)              scaled to size 10.79997pt on input line 64.
-LaTeX Font Info:    Calculating math sizes for size <10.79997> on input line 64
+(Font)              scaled to size 10.79997pt on input line 65.
+LaTeX Font Info:    Calculating math sizes for size <10.79997> on input line 65
 .
 <<ot1.cmap>> (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
@@ -1131,20 +1400,20 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 )
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <7.55994> not available
-(Font)              size <8> substituted on input line 64.
+(Font)              size <8> substituted on input line 65.
 
 <<oml.cmap>>
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <7.55994> not available
-(Font)              size <8> substituted on input line 64.
+(Font)              size <8> substituted on input line 65.
 
 <<oms.cmap>>
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <7.55994> not available
-(Font)              size <8> substituted on input line 64.
+(Font)              size <8> substituted on input line 65.
 
 <<omx.cmap>>
-LaTeX Font Info:    Trying to load font information for U+msa on input line 64.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 65.
 
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -1152,7 +1421,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 64.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 65.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -1162,82 +1431,82 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Font shape `T1/LibertinusSerif-TLF/m/n' will be
-(Font)              scaled to size 7.55994pt on input line 64.
+(Font)              scaled to size 7.55994pt on input line 65.
 LaTeX Font Info:    Font shape `T1/LibertinusSerif-TLF/m/it' will be
-(Font)              scaled to size 7.55994pt on input line 64.
+(Font)              scaled to size 7.55994pt on input line 65.
 LaTeX Font Info:    Font shape `T1/LibertinusSerif-TLF/m/n' will be
-(Font)              scaled to size 12.96002pt on input line 64.
+(Font)              scaled to size 12.96002pt on input line 65.
 LaTeX Font Info:    Font shape `T1/LibertinusSerif-TLF/m/n' will be
-(Font)              scaled to size 7.50009pt on input line 64.
+(Font)              scaled to size 7.50009pt on input line 65.
 LaTeX Font Info:    Font shape `T1/LibertinusSerif-TLF/m/it' will be
-(Font)              scaled to size 7.50009pt on input line 64.
+(Font)              scaled to size 7.50009pt on input line 65.
 LaTeX Font Info:    Font shape `T1/LibertinusSerif-TLF/b/n' will be
-(Font)              scaled to size 9.0pt on input line 64.
+(Font)              scaled to size 9.0pt on input line 65.
  (./POMS.abs)
-LaTeX Font Info:    Calculating math sizes for size <7.50009> on input line 64.
+LaTeX Font Info:    Calculating math sizes for size <7.50009> on input line 65.
 
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <7.50009> not available
-(Font)              size <8> substituted on input line 64.
+(Font)              size <8> substituted on input line 65.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <3.75005> not available
-(Font)              size <5> substituted on input line 64.
+(Font)              size <5> substituted on input line 65.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <7.50009> not available
-(Font)              size <8> substituted on input line 64.
+(Font)              size <8> substituted on input line 65.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <3.75005> not available
-(Font)              size <5> substituted on input line 64.
+(Font)              size <5> substituted on input line 65.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <7.50009> not available
-(Font)              size <8> substituted on input line 64.
+(Font)              size <8> substituted on input line 65.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <3.75005> not available
-(Font)              size <5> substituted on input line 64.
+(Font)              size <5> substituted on input line 65.
 
 LaTeX Font Info:    Font shape `T1/LibertinusSerif-TLF/m/n' will be
-(Font)              scaled to size 5.25003pt on input line 64.
+(Font)              scaled to size 5.25003pt on input line 65.
 
-Package hyperref Warning: Ignoring empty anchor on input line 64.
+Package hyperref Warning: Ignoring empty anchor on input line 65.
 
 
-Package hyperref Warning: Ignoring empty anchor on input line 64.
+Package hyperref Warning: Ignoring empty anchor on input line 65.
 
 LaTeX Font Info:    Trying to load font information for U+fontawesomefree1 on i
-nput line 64.
+nput line 65.
 (/usr/share/texlive/texmf-dist/tex/latex/fontawesome5/ufontawesomefree1.fd)
 
-Package hyperref Warning: Ignoring empty anchor on input line 64.
+Package hyperref Warning: Ignoring empty anchor on input line 65.
 
 
-Package hyperref Warning: Ignoring empty anchor on input line 64.
+Package hyperref Warning: Ignoring empty anchor on input line 65.
 
 LaTeX Font Info:    Trying to load font information for U+fontawesomebrands1 on
- input line 64.
+ input line 65.
 (/usr/share/texlive/texmf-dist/tex/latex/fontawesome5/ufontawesomebrands1.fd)
 LaTeX Font Info:    Font shape `U/fontawesomebrands1/solid/n' in size <7.50009>
  not available
 (Font)              Font shape `U/fontawesomebrands1/regular/n' tried instead o
-n input line 64.
+n input line 65.
 
 
-Package hyperref Warning: Ignoring empty anchor on input line 64.
+Package hyperref Warning: Ignoring empty anchor on input line 65.
 
-<doclicense-CC-by-88x31.pdf, id=15, 90.3375pt x 31.61812pt>
+<doclicense-CC-by-88x31.pdf, id=18, 90.3375pt x 31.61812pt>
 File: doclicense-CC-by-88x31.pdf Graphic file (type pdf)
 <use doclicense-CC-by-88x31.pdf>
-Package pdftex.def Info: doclicense-CC-by-88x31.pdf  used on input line 64.
+Package pdftex.def Info: doclicense-CC-by-88x31.pdf  used on input line 65.
 (pdftex.def)             Requested size: 32.37479pt x 11.33087pt.
 LaTeX Font Info:    Font shape `T1/LibertinusSerif-TLF/m/n' will be
-(Font)              scaled to size 4.5pt on input line 64.
+(Font)              scaled to size 4.5pt on input line 65.
 LaTeX Font Info:    Trying to load font information for TS1+LibertinusSerif-TLF
- on input line 64.
+ on input line 65.
 
 (/usr/share/texlive/texmf-dist/tex/latex/libertinus-type1/TS1LibertinusSerif-TL
 F.fd
@@ -1245,13 +1514,13 @@ File: TS1LibertinusSerif-TLF.fd 2020/08/22 (autoinst) Font definitions for TS1/
 LibertinusSerif-TLF.
 )
 LaTeX Font Info:    Font shape `TS1/LibertinusSerif-TLF/m/n' will be
-(Font)              scaled to size 4.5pt on input line 64.
+(Font)              scaled to size 4.5pt on input line 65.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `LibertinusSerif-TLF' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Overfull \hbox (3.75005pt too wide) in paragraph at lines 64--64
+Overfull \hbox (3.75005pt too wide) in paragraph at lines 65--65
 [][][][]||$[]$ $[]$|  
  []
 
@@ -1264,7 +1533,7 @@ LaTeX Font Info:    Font shape `T1/LibertinusSans-TLF/b/n' will be
 (Font)              scaled to size 10.79997pt on input line 3.
 LaTeX Font Info:    Font shape `T1/LibertinusSans-TLF/m/n' will be
 (Font)              scaled to size 8.21255pt on input line 5.
-<teaser.png, id=16, 289.08pt x 78.2925pt>
+<teaser.png, id=19, 289.08pt x 78.2925pt>
 File: teaser.png Graphic file (type png)
 <use teaser.png>
 Package pdftex.def Info: teaser.png  used on input line 6.
@@ -1300,7 +1569,7 @@ x31.pdf>]
 LaTeX Font Info:    Font shape `T1/LibertinusSerif-TLF/m/it' will be
 (Font)              scaled to size 9.0pt on input line 92.
 LaTeX Font Info:    Trying to load font information for T1+LibertinusMono-TLF o
-n input line 146.
+n input line 151.
 
 (/usr/share/texlive/texmf-dist/tex/latex/libertinus-type1/T1LibertinusMono-TLF.
 fd
@@ -1308,7 +1577,7 @@ File: T1LibertinusMono-TLF.fd 2020/08/22 (autoinst) Font definitions for T1/Lib
 ertinusMono-TLF.
 )
 LaTeX Font Info:    Font shape `T1/LibertinusMono-TLF/m/n' will be
-(Font)              scaled to size 7.65005pt on input line 146.
+(Font)              scaled to size 7.65005pt on input line 151.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `LibertinusMono-TLF' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
@@ -1319,49 +1588,49 @@ Package microtype Info: Character `guilsinglleft ' is missing
 Package microtype Info: Character `guilsinglright ' is missing
 (microtype)             in font `T1/LibertinusMono-TLF/m/n/9'.
 (microtype)             Ignoring protrusion settings for this character.
-) (./02-Algorithm.tex
-<poms_figalg.png, id=37, 1346.98979pt x 897.22437pt>
-File: poms_figalg.png Graphic file (type png)
-<use poms_figalg.png>
-Package pdftex.def Info: poms_figalg.png  used on input line 7.
-(pdftex.def)             Requested size: 452.9679pt x 301.71176pt.
-<pm_slideshow.png, id=38, 838.332pt x 216.81pt>
-File: pm_slideshow.png Graphic file (type png)
-<use pm_slideshow.png>
-Package pdftex.def Info: pm_slideshow.png  used on input line 24.
-(pdftex.def)             Requested size: 452.9679pt x 117.14842pt.
-Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 34.
+) (./04-Related-Work.tex
+LaTeX Font Info:    Font shape `T1/LibertinusSerif-TLF/m/n' will be
+(Font)              scaled to size 6.0pt on input line 4.
  [2pdfTeX warning (ext4): destination with the same identifier (name{figure.1})
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.89 E
-      ach block chosen has its boundary pinned to the values as they appear ...
- <./teaser.png>] [3pdfTeX warning (ext4): destination with the same identifier 
-(name{figure.2}) has been already used, duplicate ignored
+l.18 
+      <./teaser.png>]) (./02-Algorithm.tex
+<poms_figalg.png, id=82, 1346.98979pt x 897.22437pt>
+File: poms_figalg.png Graphic file (type png)
+<use poms_figalg.png>
+Package pdftex.def Info: poms_figalg.png  used on input line 14.
+(pdftex.def)             Requested size: 452.9679pt x 301.71176pt.
+<pm_slideshow.png, id=83, 838.332pt x 216.81pt>
+File: pm_slideshow.png Graphic file (type png)
+<use pm_slideshow.png>
+Package pdftex.def Info: pm_slideshow.png  used on input line 31.
+(pdftex.def)             Requested size: 452.9679pt x 117.14842pt.
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
+put line 41.
+ [3] [4pdfTeX warning (ext4): destination with the same identifier (name{figure
+.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.108 O
-       nce a block is chosen, the block is initialized by adding the full ti...
-pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) ha
-s been already used, duplicate ignored
+l.116 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.108 O
-       nce a block is chosen, the block is initialized by adding the full ti...
- <./poms_figalg.png> <./pm_slideshow.png>]) (./03-Results.tex
-<tileset_rrti.png, id=71, 576.62234pt x 615.06383pt>
+l.116 
+       <./poms_figalg.png> <./pm_slideshow.png>]) (./03-Results.tex
+<tileset_rrti.png, id=120, 576.62234pt x 615.06383pt>
 File: tileset_rrti.png Graphic file (type png)
 <use tileset_rrti.png>
 Package pdftex.def Info: tileset_rrti.png  used on input line 4.
 (pdftex.def)             Requested size: 214.48395pt x 228.78073pt.
-<2d_poms_examples.png, id=72, 2609.75pt x 1682.285pt>
+<2d_poms_examples.png, id=121, 2609.75pt x 1682.285pt>
 File: 2d_poms_examples.png Graphic file (type png)
 <use 2d_poms_examples.png>
 Package pdftex.def Info: 2d_poms_examples.png  used on input line 16.
 (pdftex.def)             Requested size: 452.9679pt x 291.99135pt.
-<brutal-plum_cons.png, id=74, 1526.89595pt x 2186.55191pt>
+<brutal-plum_cons.png, id=123, 1526.89595pt x 2186.55191pt>
 File: brutal-plum_cons.png Graphic file (type png)
 <use brutal-plum_cons.png>
 Package pdftex.def Info: brutal-plum_cons.png  used on input line 24.
@@ -1370,35 +1639,32 @@ Package pdftex.def Info: brutal-plum_cons.png  used on input line 24.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[4pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) 
+[5pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.38 
-      <./tileset_rrti.png>] [5pdfTeX warning (ext4): destination with the same 
-identifier (name{figure.5}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.99 
-      <./2d_poms_examples.png>]
+l.49 
+      <./tileset_rrti.png>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[6pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) 
+[6pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.191 
+l.142 
+       <./2d_poms_examples.png>] [7pdfTeX warning (ext4): destination with the 
+same identifier (name{figure.6}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.196 
       pdfTeX warning (ext4): destination with the same identifier (name{table.1
 }) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.191 
-       <./brutal-plum_cons.png>] (./FOOTNOTE_REPO.tex
-LaTeX Font Info:    Font shape `T1/LibertinusSerif-TLF/m/n' will be
-(Font)              scaled to size 6.0pt on input line 1.
-)) (./04-Related-Work.tex
-[7]) (./05-Conclusion.tex (./FOOTNOTE_REPO.tex)) (./POMS.bbl
+l.196 
+       <./brutal-plum_cons.png>] (./FOOTNOTE_REPO.tex)) (./05-Conclusion.tex
+(./FOOTNOTE_REPO.tex)) (./POMS.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 16--20
 []\T1/LibertinusSerif-TLF/m/n/9 (+20) R. Hoet-zlein, just_math, 2023. URL:
  []
@@ -1417,62 +1683,62 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--20
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 21--25
-\T1/LibertinusSerif-TLF/m/n/9 (+20) 2016. URL: [][]$https : / / opengameart . o
-rg / content /
- []
-
-
-Underfull \hbox (badness 1365) in paragraph at lines 26--30
-[]\T1/LibertinusSerif-TLF/m/n/9 (+20) K. Wo¹-niak, Mi-cro tile-set - over-world
- and dun-
- []
-
-[8]
-Underfull \hbox (badness 10000) in paragraph at lines 31--35
-[]\T1/LibertinusSerif-TLF/m/n/9 (+20) R. Noren-berg, 2bit mi-cro metroid-va-nia
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 31--35
-\T1/LibertinusSerif-TLF/m/n/9 (+20) tile-set, 2024. URL: [][]$https : / / 0x72 
-. itch . io /
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 36--40
 \T1/LibertinusSerif-TLF/m/n/9 (+20) URL: [][]$https : / / www . boristhebrave .
  com / 2021 / 10 / 31 /
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 55--59
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 40--44
 []\T1/LibertinusSerif-TLF/m/n/9 (+20) M. Gu-min, Wave func-tion col-lapse al-go
 -
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 55--59
+Underfull \hbox (badness 10000) in paragraph at lines 40--44
 \T1/LibertinusSerif-TLF/m/n/9 (+20) rithm, 2016. URL: [][]$https : / / github .
  com / mxgmn /
  []
 
 
-Underfull \hbox (badness 6380) in paragraph at lines 73--80
+Underfull \hbox (badness 6380) in paragraph at lines 58--65
 []\T1/LibertinusSerif-TLF/m/n/9 (+20) R. Mohr, T. C. Hen-der-son,  Arc and path
 
  []
 
 
-Underfull \hbox (badness 1859) in paragraph at lines 73--80
+Underfull \hbox (badness 1859) in paragraph at lines 58--65
 \T1/LibertinusSerif-TLF/m/n/9 (+20) con-sis-tency re-vis-ited,  Ar-ti-fi-cial I
 n-tel-li-gence 28
  []
 
 
-Underfull \hbox (badness 3482) in paragraph at lines 172--175
-[]\T1/LibertinusSerif-TLF/m/n/9 (+20) B. T. Brave, Wave func-tion col-lapse ex-
-plained,
+Underfull \hbox (badness 5908) in paragraph at lines 157--161
+[]\T1/LibertinusSerif-TLF/m/n/9 (+20) A. New-gas, Wave func-tion col-lapse ex-p
+lained,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 162--166
+\T1/LibertinusSerif-TLF/m/n/9 (+20) 2016. URL: [][]$https : / / opengameart . o
+rg / content /
+ []
+
+
+Underfull \hbox (badness 1365) in paragraph at lines 167--171
+[]\T1/LibertinusSerif-TLF/m/n/9 (+20) K. Wo¹-niak, Mi-cro tile-set - over-world
+ and dun-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 172--175
+[]\T1/LibertinusSerif-TLF/m/n/9 (+20) R. Noren-berg, 2bit mi-cro metroid-va-nia
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 172--175
+\T1/LibertinusSerif-TLF/m/n/9 (+20) tile-set, 2024. URL: [][]$https : / / 0x72 
+. itch . io /
  []
 
 ) (./07-Appendix.tex) [9] (./POMS.aux)
@@ -1484,11 +1750,11 @@ Package rerunfilecheck Info: File `POMS.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 31179 strings out of 480171
- 582043 string characters out of 5894489
- 999887 words of memory out of 5000000
- 48012 multiletter control sequences out of 15000+600000
- 639816 words of font info for 392 fonts, out of 8000000 for 9000
+ 41139 strings out of 480171
+ 801350 string characters out of 5894489
+ 1184480 words of memory out of 5000000
+ 57761 multiletter control sequences out of 15000+600000
+ 640193 words of font info for 394 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
  122i,21n,120p,10620b,2604s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_sfissr.e
@@ -1519,9 +1785,9 @@ ts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1
 amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbo
 ls/msbm10.pfb>
-Output written on POMS.pdf (9 pages, 6909983 bytes).
+Output written on POMS.pdf (9 pages, 6912180 bytes).
 PDF statistics:
- 363 PDF objects out of 1000 (max. 8388607)
+ 368 PDF objects out of 1000 (max. 8388607)
  57 named destinations out of 1000 (max. 500000)
- 93340 words of extra memory for PDF output out of 106986 (max. 10000000)
+ 93352 words of extra memory for PDF output out of 106986 (max. 10000000)
 

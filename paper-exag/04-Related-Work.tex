@@ -1,7 +1,7 @@
 \section{Related Work}
 
 To our knowledge, Merrell was the first to introduce the modern formulation of Constraint Based Tiling Generation (CBTG)
-\footnote{The term \textit{Constraint Based Tile Generators} was coined by Boris the Brave \cite{BorisTheBrave_cbtg_2021} and have been adopted in this paper,
+\footnote{The term \textit{Constraint Based Tile Generators} was coined by Adam Newgas \cite{BorisTheBrave_cbtg_2021} and have been adopted in this paper,
 with slightly different wording, as the name for the specialization of the more general Constraint Satisfaction Problem.}
 \cite{Merrell_2007, Merrell_2009}.
 Merrell introduced a modify in blocks Model Synthesis (MMS) algorithm that starts with a fully resolved grid
@@ -25,8 +25,28 @@ Unfortunately, MMS has two major drawbacks, the second of which Merrell noticed 
         through single block level alterations.
 \end{itemize}
 
-Depending on tile constraints, discovering an initially resolved grid might be a question of engineering
-effort, so might not pose a theoretical impediment to using MMS.
+%%%!!!!!
+Many of the tile sets and tile constraints that Merrell provides in \cite{Merrell_2007, Merrell_2009} have an "empty" tile that 
+has itself as an admissible neighbor, creating a situation where the initial fully resolved grid can be easily created
+by populating each cell with an "empty" tile.
+All 2D tile sets and tile constraints presented in this paper do not have an initial state that can be created through
+the replication of just one tile throughout the grid and require some amount of knowledge about the tile constraints
+to create a fully resolved grid.
+
+In general, for some tile constraints, finding a class of fully resolved initial configurations might be done through engineering effort.
+For example, finding a small tileable block that is then able to be replicated through to the whole grid might be possible
+\footnote{ This method was suggested to the authors through personal communication with P. Merrell }.
+
+For other tile constraints, finding any fully resolved grid from an initially indeterminate state might be the goal.
+In such cases, running MMS is pointless, as MMS can't start without a solution but if a solution is known, MMS wouldn't
+be needed.
+As an example, a tile set can be constructed where a grid realization connects two endpoints via a path
+without explicitely describing where the path meanders through the grid.
+MMS would require a full realization of the path before it could start.
+
+%Depending on tile constraints, discovering an initially resolved grid might be a question of engineering
+%effort, so might not pose a theoretical impediment to using MMS.
+
 POMS sidesteps requiring an initially fully resolved grid by allowing the grid to be in an indeterminate state.
 
 The inability to handle certain types of unbounded constraints, such as the implicit top and bottom equal river count constraint that appear in
@@ -62,15 +82,30 @@ used to create algorithms that took advantage of it.
 POMS takes the ideas of tile correlation and the TACCL to inform its backtracking strategies when applied to the larger grid
 without needing the resource requirements that BMS, as a block level solver, would require.
 
+\begin{table}[h]
+  \caption{ }
+  \label{table:CBTGComparison}
+  \centering
+  \begin{tabular}[t]{lcccccc}
+    \hline
+    Algorithm & Block Level Solver & Grid Level Solver & Contradiction Resiliance & Block Step Consistent & Inderminate Initial State & Ergodic  \\
+    \hline
+    Gumin's Wave Function Collapse (WFC)              & Yes & No  & No  & n/a & Yes & Yes \\
+    Breakout Model Synthesis (BMS)                    & Yes & No  & Yes & n/a & Yes & Yes \\
+    Merrell's Modify in Blocks Model Synthesis (MMS)  & No  & Yes & Yes & Yes & No  & No \\
+    Punch Out Model Synthesis (POMS)                  & No  & Yes & Yes & No  & Yes & Yes \\
+    \hline
+  \end{tabular}
+\end{table}
+
 In terms of algorithms to ensure arc consistency, MMS and WFC have used AC3 and AC4.
 AC3 is easy to understand and can be performant if tile count is low but quickly suffers as tile count increases \cite{Wallace1993WhyAI}.
 AC4 is optimal, in general, but requires large amounts of auxiliary space \cite{Mohr_Henderson_1986}.
 POMS uses AC4 exclusively as tile count is often large (1,000 or more).
 
 
-CBTG
 %Constraint Based Tiling Generation (CBTG)
-are a specialization of a more general Constraint Satisfaction Problem (CSP).
+CBTGs are a specialization of a more general Constraint Satisfaction Problem (CSP).
 Karth and Smith offer some history of CSPs, some common concepts and algorithms in \cite{Karth_Smith_2017, Karth_Smith_2022}.
 Of note is Karth and Smith's observation that shallow backtracking does little to help resolve conflicts.
 
@@ -105,6 +140,6 @@ be input into WFC to produce novel results \cite{Karth_Smith_2017}.
 
 Automatic tile constraint creation from exemplar images was provided in Gumin's \textit{Wave Function Collapse} (WFC) project, \cite{Gumin_2016}.
 Sherratt provides a good introduction to the pre processing step for automatic tile constraint creation in \cite{Sherratt_2019}.
-Boris the Brave offers a nice introduction to WFC and automatic tile constraint creation in \cite{BorisTheBrave_wfc_2021}.
+Newgas offers a nice introduction to WFC and automatic tile constraint creation in \cite{BorisTheBrave_wfc_2021}.
 
 

@@ -17,24 +17,9 @@
   \bibinfo{year}{2023}. \URLprefix
   \url{https://github.com/ramakarl/just_math/tree/3ff9d10c3d170855cef1db970c0278b15e91fa13/math_belief_prop}.
 %Type = Misc
-\bibitem[{LUNARSIGNALS(2016)}]{LUNARSIGNALS_oarpgo}
-\bibinfo{author}{LUNARSIGNALS}, \bibinfo{title}{Overhead action rpg overworld},
-  \bibinfo{year}{2016}. \URLprefix
-  \url{https://opengameart.org/content/overhead-action-rpg-overworld}.
-%Type = Misc
-\bibitem[{Woźniak(2015)}]{ThKaspar_micro}
-\bibinfo{author}{K.~Woźniak}, \bibinfo{title}{Micro tileset - overworld and
-  dungeon}, \bibinfo{year}{2015}. \URLprefix
-  \url{https://opengameart.org/content/micro-tileset-overworld-and-dungeon}.
-%Type = Misc
-\bibitem[{Norenberg(2024)}]{0x72_2bmmv}
-\bibinfo{author}{R.~Norenberg}, \bibinfo{title}{2bit micro metroidvania
-  tileset}, \bibinfo{year}{2024}. \URLprefix
-  \url{https://0x72.itch.io/2bitmicrometroidvaniatileset}.
-%Type = Misc
-\bibitem[{Brave(2021)}]{BorisTheBrave_cbtg_2021}
-\bibinfo{author}{B.~T. Brave}, \bibinfo{title}{Constraint-based tile
-  generators}, \bibinfo{year}{2021}. \URLprefix
+\bibitem[{Newgas(2021)}]{BorisTheBrave_cbtg_2021}
+\bibinfo{author}{A.~Newgas}, \bibinfo{title}{Constraint-based tile generators},
+  \bibinfo{year}{2021}. \URLprefix
   \url{https://www.boristhebrave.com/2021/10/31/constraint-based-tile-generators/}.
 %Type = Inproceedings
 \bibitem[{Merrell(2007)}]{Merrell_2007}
@@ -168,9 +153,24 @@
   function collapse}, \bibinfo{year}{2019}. \URLprefix
   \url{https://www.gridbugs.org/wave-function-collapse/}.
 %Type = Misc
-\bibitem[{Brave(2021)}]{BorisTheBrave_wfc_2021}
-\bibinfo{author}{B.~T. Brave}, \bibinfo{title}{Wave function collapse
-  explained}, \bibinfo{year}{2021}. \URLprefix
+\bibitem[{Newgas(2021)}]{BorisTheBrave_wfc_2021}
+\bibinfo{author}{A.~Newgas}, \bibinfo{title}{Wave function collapse explained},
+  \bibinfo{year}{2021}. \URLprefix
   \url{https://www.boristhebrave.com/2020/04/13/wave-function-collapse-explained/}.
+%Type = Misc
+\bibitem[{LUNARSIGNALS(2016)}]{LUNARSIGNALS_oarpgo}
+\bibinfo{author}{LUNARSIGNALS}, \bibinfo{title}{Overhead action rpg overworld},
+  \bibinfo{year}{2016}. \URLprefix
+  \url{https://opengameart.org/content/overhead-action-rpg-overworld}.
+%Type = Misc
+\bibitem[{Woźniak(2015)}]{ThKaspar_micro}
+\bibinfo{author}{K.~Woźniak}, \bibinfo{title}{Micro tileset - overworld and
+  dungeon}, \bibinfo{year}{2015}. \URLprefix
+  \url{https://opengameart.org/content/micro-tileset-overworld-and-dungeon}.
+%Type = Misc
+\bibitem[{Norenberg(2024)}]{0x72_2bmmv}
+\bibinfo{author}{R.~Norenberg}, \bibinfo{title}{2bit micro metroidvania
+  tileset}, \bibinfo{year}{2024}. \URLprefix
+  \url{https://0x72.itch.io/2bitmicrometroidvaniatileset}.
 
 \end{thebibliography}

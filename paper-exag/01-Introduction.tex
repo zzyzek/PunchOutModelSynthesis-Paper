@@ -4,7 +4,7 @@
 
 \begin{figure*}[ht]
   \includegraphics[width=\textwidth]{teaser.png}
-  \caption{Examples of different example outputs from different tile sets. From left to right, \textit{Pill Mortal}, \textit{Micro Forest}, \textit{Overhead Action RPG Overworld} and \textit{Brutal Plum}}
+  \caption{Examples of different example outputs from different tile sets. From left to right, the \textit{Pill Mortal} tile set, the \textit{Forest Micro} tile set, the \textit{Overhead Action RPG Overworld} tile set and the \textit{Brutal Plum} tile set}
   \label{fig:teaser}
 \end{figure*}
 
@@ -15,7 +15,7 @@ grid to find a tile placement realization subject to pairwise tile constraints i
 POMS is a grid level stochastic Constraint Based Tiling Generation (CBTG) algorithm whose primary benefits are:
 
 \begin{itemize}
-  \item Requires minimal assumptions on initial set up state
+  \item Requires minimal assumptions on initial setup state
   \item Has resources that scale primarily with block size and not grid size
   \item Can reliably find realizations on arbitrarily sized grids with tile constraints that have finite correlation length
 \end{itemize}
@@ -91,11 +91,16 @@ of the Punch Out Model Synthesis (POMS) algorithm.
 
 A \textit{grid} is a collection of \textit{cells} in the shape of a rectangular cuboid,
 of size $N_x \cdot N_y \cdot N_z$, ($N_x, N_y, N_z \in \mathbb{Z}_{+}$).
-Each cell has the potential to hold up to $D$ \textit{tiles} ($D \in \mathbb{Z}_+$), with valid neighboring tile placement
-subject to a set of provided \textit{tile constraints}.
+
+Each cell in the grid is a variable whose domain is $D$ \textit{tiles} ($D \in \mathbb{N}$).
+Values in neighboring cells are subject to a set of provided \textit{tile constraints}.
+%
+%Each cell has the potential to hold up to $D$ \textit{tiles} ($D \in \mathbb{Z}_+$), with valid neighboring tile placement
+%subject to a set of provided \textit{tile constraints}.
+%
 Here, the set of tile constraints is pairwise, and only nearest neighbor in each of the major grid dimensions ($\pm X, \pm Y, \pm Z$).
 
-A tile at a grid cell location is said to have \textit{support} from a direction if there is at least
+A tile at a grid cell location is said to have \textit{support from a direction} if there is at least
 one tile in the neighboring grid cell direction that respects the tile constraints.
 A tile, at a grid cell location, \textit{has support} or \textit{is supported} if a tile has support in each direction.
 
@@ -120,13 +125,13 @@ and that can be smaller than the grid size ($1 \le M_x \le N_x, 1 \le M_y \le N_
 
 If every tile in every cell in a block is supported, the block of cells is said to be in an \textit{Arc Consistent} (AC) state.
 That is, subject to the tile constraints, if every tile in every cell in a block region has at least one valid neighboring tile, the block region
-is said to be in an Arc Consistent (AC) state.
+is said to be in an Arc Consistent state.
 
-One method of attempting to put a block region into an Arc Consistent (AC) state is to remove tiles that have no support from the list of permissible
+One method of attempting to put a block region into an Arc Consistent state is to remove tiles that have no support from the list of permissible
 tiles at a cell location.
 Each tile removed can have a cascading effect by potentially causing a tile in a neighboring cell to be unsupported.
 The repeated process of removing unsupported tiles throughout a block region until a contradiction is encountered or the block region
-is in an Arc Consistent (AC) state is called \textit{constraint propagation}.
+is in an Arc Consistent state is called \textit{constraint propagation}.
 Constraint propagation
 can be used as the basis for a Constraint Based Tiling Generation (CBTG) solver.
 

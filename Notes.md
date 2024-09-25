@@ -37,7 +37,7 @@ In particular, in certain cases, translational symmetry can be used to create an
 state to be fed into Merrell's Modify in blocks Model Synthesis (MMS).
 
 This concept is obliquely mentioned in the paper with "engineering effort" but may want to be
-put more explicitely or prominently.
+put more explicitly or prominently.
 
 To be more verbose:
 
@@ -49,14 +49,14 @@ To be more verbose:
     or generalized in any way
   - I'm skeptical as to how to automate this as finding a ground state is akin to finding a solution
     in the first place, so there's no real benefit
-    + so maybe this should be mentioned more explicitely
+    + so maybe this should be mentioned more explicitly
 
 So, I did mention this in the paper but it's I guess a subtle point.
 
 * For some tile sets, under certain conditions, finding an initial state for MMS is probably not hard
   - Tile constraints with wrap around conditions might be easily discoverable with a modest block size
-  - Hard constraints might be easily solveable in certain cases (e.g. Pill Mortal)
-* For unbouned correlation length tile constraints, this will not work and is precisely why other
+  - Hard constraints might be easily solvable in certain cases (e.g. Pill Mortal)
+* For unbounded correlation length tile constraints, this will not work and is precisely why other
   methods (than MMS) are needed
   - not clear how to translate a template tile to create initial state
   - solution of initial state is tantamount to solution, which is precluded by MMS in the first place
@@ -82,7 +82,7 @@ the "results" section can be paired down to not be so verbose and/or the tile ru
 
 Here's a rough idea of what I think is appropriate:
 
-| Algorithm | Block Level Solver | Grid Level Solver | Contradiction Resiliance | Block Step Consistent | Inderterminate Initial State | Ergodic |
+| Algorithm | Block Level Solver | Grid Level Solver | Contradiction Resilience | Block Step Consistent | Indeterminate Initial State | Ergodic |
 |---|---|---|---|---|---|---|
 | WFC  | Yes | No  | No  | n/a | Yes | Yes |
 | BMS  | Yes | No  | Yes | n/a | Yes | Yes |
@@ -99,7 +99,7 @@ Shortening Results Exposition
 There's a lot of text devoted to what the block size is, what the tile size is, etc.
 This probably can be done in a table with references to it in each section of the results.
 
-The results segmentation into bounded and unbouned TACCL might still be appropriate but only
+The results segmentation into bounded and unbounded TACCL might still be appropriate but only
 mentioning the relevant bits about each tile set is probably the better use of space.
 
 The tile size (stride) choice, the tile block window size, the boundary conditions, etc. can all
@@ -308,7 +308,7 @@ Again no, for the same reason.
 
 > I can't tell how useful this new system is since there is no comparison against other CBTG systems for the same domains.
 
-The comparison to Merrell's Model Synthesis and Gumin's WFC is diretly made in the *Related Works* section.
+The comparison to Merrell's Model Synthesis and Gumin's WFC is directly made in the *Related Works* section.
 
 I suspect the reviewer didn't get as far as the *Related Work* section or didn't read it.
 
@@ -337,8 +337,8 @@ From the introduction:
 I'm not sure I really need to justify the name but for future reference, here are some reasons I think are valid:
 
 * "Punch Out Model Synthesis" is catchy and memorable (1980s video game reference)
-* The block choice is effecitvely "punching out" a section of the grid to work on.
-* The ability to backtrack and get out of a local minimum also gives another meaning to "pucnh out" as the algorithm can overcome the local minima
+* The block choice is effectively "punching out" a section of the grid to work on.
+* The ability to backtrack and get out of a local minimum also gives another meaning to "punch out" as the algorithm can overcome the local minima
 
 I think the last statement is unfair, as the above bullet points demonstrate.
 I again suspect the reviewer was frustrated and didn't properly try to engage with the text to answer their concerns or questions.
@@ -363,7 +363,7 @@ Further details:
   - the 3D tile set has known infinite correlation length but finite TACCL, whereas the 2D (oarpgo) only has a suspected
     infinite correlation length but finite TACCL
 
-This could be stated more explicitely.
+This could be stated more explicitly.
 
 I don't agree that this is an unfixable weakness.
 
@@ -373,7 +373,7 @@ The *Results* section discusses different Block Choice Schedulers and why they'r
 
 The Erosion Choice Scheduler is pretty much fixed in its operation but was abstracted out because it didn't seem like a stretch.
 The point is taken that this is maybe not something that should be prematurely abstracted away but I also don't think it's such
-an impedement to anyone trying to understand the algorithm to overlook.
+an impediment to anyone trying to understand the algorithm to overlook.
 
 I don't agree these are unfixable weaknesses.
 
@@ -421,7 +421,7 @@ Compare with other papers in this area that provide an algorithm description and
 
 > The paper doesn't follow a traditional format for a research paper, or even of other papers produced in this workshop, and reads more like a manual for a system. I'd recommend the authors refer to other papers in the field for proper formatting and readability.
 
-In other words, put the *Related Works* section at the begining.
+In other words, put the *Related Works* section at the beginning.
 
 I did refer to other papers for readability.
 Better critiques will yield better results from me.
@@ -431,7 +431,7 @@ Venting general frustration without specific points for improvement is not helpf
 
 Another *Related Works* critique.
 
-It looks like there's more of a general condemntation but it's hard to tease out what they're actually harping on, or where to improve.
+It looks like there's more of a general condemnation but it's hard to tease out what they're actually harping on, or where to improve.
 This maybe is just a general vent from the reviewer who thinks the paper is a lost cause.
 
 > Strengths SCORE: 4 (The contribution is interesting, and I would want to talk to authors about it at the coffee break.)
@@ -442,7 +442,7 @@ This maybe is just a general vent from the reviewer who thinks the paper is a lo
 >
 > Overall Score SCORE: 0 (borderline paper)
 
-Confusing. Paper is interesting, has fixable weaknesses, unfixable weakenesses are minor but, nope, overall flat out reject.
+Confusing. Paper is interesting, has fixable weaknesses, unfixable weaknesses are minor but, nope, overall flat out reject.
 
 ## Reviewer 2
 
@@ -457,9 +457,9 @@ IMO, some of this is fair.
 * focusing on MRF is way outside of scope (more on this below)
 * personally, I had major problems understanding what other areas could help in this regard
   - most belief propagation is not really used for this regular grid constraint satisfaction problems
-  - most other algorithms in CSPs are overaly general and used in arbitrary graph models
+  - most other algorithms in CSPs are overly general and used in arbitrary graph models
   - when regular grids are used, they're usually used for image segmentation, etc.
-  - a lot of attention is given to MRFs with other, more restrictive assumptions (robust? gaussian? something something fourier transform?),
+  - a lot of attention is given to MRFs with other, more restrictive assumptions (robust? Gaussian? something something Fourier transform?),
     which most likely is not appropriate for this domain
 * even if there's adjacent work, the use in this domain is novel (level design, see WFC, MMS)
 
@@ -471,14 +471,14 @@ Some notes on MRF:
 * (loopy) BP was tried and offered some success but:
   - has large memory footprint (message keeping)
   - takes time to converge
-  - complex algorithms to help convergence (residiual bp, splash, etc.)
+  - complex algorithms to help convergence (residual BP, splash, etc.)
   - doesn't provide enough of an inference boost to warrant the time/space/code complexity
 
 BP also pretty much assumes a local tree-like structure on the graph, which these regular structures violate.
 Splash BP, for example, imposes a min. span tree (I think?) to do inference but it's not clear if that'll really work in this
 context, or if it does, how helpful it'll be.
 
-Anway, my view is that this is "novel research".
+Anyway, my view is that this is "novel research".
 
 ### Unfixable Weaknesses
 
@@ -515,11 +515,11 @@ Omitted due to space. Maybe consider putting in.
 
 > In the definition of TAACL, it was unclear to me what "The maximum distance the cells in the grid are altered" means in this context. Is this referring to an edit distance? Or, just a Manhattan distance from the start grid to the furthest away modified grid cell?
 
-Yes, I was vague, due to space mostly. Consider making this more rigourous.
+Yes, I was vague, due to space mostly. Consider making this more rigorous.
 
 The distance is Euclidean norm. I also sidestepped the anisotropy, which further confounds the choice.
 
-Consider addressing this head on more. The Euclidean norm should at least be explicitely mentioned.
+Consider addressing this head on more. The Euclidean norm should at least be explicitly mentioned.
 
 > Are the TAACL plots in Figure 5 heat maps computed after a number of simulation runs with different initial grid configurations? If so, how many simulation runs are there? If not, I'm confused as to how the TAACL values in these grids can be as high as 10^6, since none of the grid examples shown appear to have a "distance" which can be so large. Also, I went to reference [1] to seek more detail here, and the sketch of TAACL provided in Breakout-Model-Synthesis.md section "Radius of Influence" wasn't enough to address more detailed questions.
 
@@ -530,7 +530,7 @@ The note about how the TACCL plots are made should be in the description.
 
 The reference is to an effectively unpublished work-in-progress code base.
 The original ideas were developed and published there.
-Credit was given because it's due but it's not a rigourous treatis, introduction or print-ready publication.
+Credit was given because it's due but it's not a rigorous treatise, introduction or print-ready publication.
 
 Regardless, TACCL needs more attention here to avoid confusion.
 
@@ -546,7 +546,7 @@ Regardless, TACCL needs more attention here to avoid confusion.
 ## Review
 
 I think this is par for the course?
-I remember hearing somewhere there's one reviewer who hates it, one reviewer who finds it acceptible but thinks it should have
+I remember hearing somewhere there's one reviewer who hates it, one reviewer who finds it acceptable but thinks it should have
 some other orthogonal ingredient in it and on reviewer who's rooting for it?
 
 Anyway, thanks to the anonymous reviewers, your feedback is much appreciated.
@@ -558,21 +558,21 @@ Anyway, thanks to the anonymous reviewers, your feedback is much appreciated.
 
 Actionable items:
 
-* Move *Related Work* to beginning.
+* Move *Related Work* to beginning. (working on it)
   - Nice to experiment but it's a resounding failure. Every single reviewer scoffed at it. Merrell scoffed at it. I like it at the end but its too jarring to keep in.
 * Put the comparison table in
 * Shorten results exposition
-* Explicitely mention TACCL calculation in figure
+* Explicitly mention TACCL calculation in figure
   - make sure to include Euclidean distance
-  - try to make it as clear as possbile
-  - address the anistropy, even if to say "eyeballing it, taking maximum in one direction"
+  - try to make it as clear as possible
+  - address the anisotropy, even if to say "eyeballing it, taking maximum in one direction"
 * Put in blurb about infallible models
 * Consider discussing MMS ("Tileable Blocks" above)
 * Reviewer 2 suggestions
-	- In the introduction section, change “set up” to “setup”.
-	- In the definitions section, italicize “support from a direction” instead of just “support” to further differentiate from “has support” which is defined later in the paragraph.
-	- In the definitions section, elaborate on what it means to “hold up to D tiles”, f.x. Changing it to “hold a superposition of D tiles while unresolved” for clarity.
-	- In the definitions section, the acronym Arc Consistent (AC) is defined four times in a short span in the third and fourth last paragraphs. This is unnecessary.
-	- In the description section, I would move the first paragraph lower as it is a bit uncomfortable to start a section with references to figures and algorithms. The section would be easier to read if it were moved below the paragraph that is currently the second paragraph in the section.
+	- In the introduction section, change “set up” to “setup”. (done)
+	- In the definitions section, italicize “support from a direction” instead of just “support” to further differentiate from “has support” which is defined later in the paragraph. (done)
+	- In the definitions section, elaborate on what it means to “hold up to D tiles”, f.x. Changing it to “hold a superposition of D tiles while unresolved” for clarity. (done?)
+	- In the definitions section, the acronym Arc Consistent (AC) is defined four times in a short span in the third and fourth last paragraphs. This is unnecessary. (done?)
+	- In the description section, I would move the first paragraph lower as it is a bit uncomfortable to start a section with references to figures and algorithms. The section would be easier to read if it were moved below the paragraph that is currently the second paragraph in the section. (done?)
   - if you don't take these suggestions, have a good reason not to
 
