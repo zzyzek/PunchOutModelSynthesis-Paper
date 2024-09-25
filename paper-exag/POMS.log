@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.5.21)  24 SEP 2024 23:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.5.21)  25 SEP 2024 00:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1319,28 +1319,28 @@ Package microtype Info: Character `guilsinglleft ' is missing
 Package microtype Info: Character `guilsinglright ' is missing
 (microtype)             in font `T1/LibertinusMono-TLF/m/n/9'.
 (microtype)             Ignoring protrusion settings for this character.
-) (./04-Related-Work.tex
+) (./02-Related-Work.tex
 LaTeX Font Info:    Font shape `T1/LibertinusSerif-TLF/m/n' will be
 (Font)              scaled to size 6.0pt on input line 4.
  [2pdfTeX warning (ext4): destination with the same identifier (name{figure.1})
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.22   \item T
-              he requirement of an initially resolved state to start MMS mig...
+l.20 U
+      nfortunately, MMS has two major drawbacks, the second of which Merrell...
  <./teaser.png>]
 LaTeX Font Info:    Font shape `T1/LibertinusSans-TLF/b/it' in size <8.21255> n
 ot available
 (Font)              Font shape `T1/LibertinusSans-TLF/b/sl' tried instead on in
-put line 115.
+put line 116.
 LaTeX Font Info:    Font shape `T1/LibertinusSans-TLF/b/sl' will be
-(Font)              scaled to size 8.21255pt on input line 115.
+(Font)              scaled to size 8.21255pt on input line 116.
  [3pdfTeX warning (ext4): destination with the same identifier (name{table.1}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.164 
-      ]) (./02-Algorithm.tex
+l.163 
+      ]) (./03-Algorithm.tex
 <poms_figalg.png, id=99, 1346.98979pt x 897.22437pt>
 File: poms_figalg.png Graphic file (type png)
 <use poms_figalg.png>
@@ -1353,63 +1353,60 @@ Package pdftex.def Info: pm_slideshow.png  used on input line 31.
 (pdftex.def)             Requested size: 452.9679pt x 117.14842pt.
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
 put line 41.
- [4]) (./03-Results.tex
-<tileset_rrti.png, id=122, 576.62234pt x 615.06383pt>
+ [4] [5pdfTeX warning (ext4): destination with the same identifier (name{figure
+.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.173 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+3}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.173 
+       <./poms_figalg.png> <./pm_slideshow.png>]) (./04-Results.tex
+<tileset_rrti.png, id=130, 576.62234pt x 615.06383pt>
 File: tileset_rrti.png Graphic file (type png)
 <use tileset_rrti.png>
 Package pdftex.def Info: tileset_rrti.png  used on input line 4.
 (pdftex.def)             Requested size: 214.48395pt x 228.78073pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<2d_poms_examples.png, id=123, 2609.75pt x 1682.285pt>
+<2d_poms_examples.png, id=131, 2609.75pt x 1682.285pt>
 File: 2d_poms_examples.png Graphic file (type png)
 <use 2d_poms_examples.png>
 Package pdftex.def Info: 2d_poms_examples.png  used on input line 16.
 (pdftex.def)             Requested size: 452.9679pt x 291.99135pt.
-<brutal-plum_cons.png, id=125, 1526.89595pt x 2186.55191pt>
+<brutal-plum_cons.png, id=133, 1526.89595pt x 2186.55191pt>
 File: brutal-plum_cons.png Graphic file (type png)
 <use brutal-plum_cons.png>
 Package pdftex.def Info: brutal-plum_cons.png  used on input line 24.
 (pdftex.def)             Requested size: 214.48395pt x 307.1161pt.
 
+
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[5pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) 
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[6pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.38 
-     pdfTeX warning (ext4): destination with the same identifier (name{figure.3
-}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.38 
-      <./poms_figalg.png> <./pm_slideshow.png>] [6pdfTeX warning (ext4): destin
-ation with the same identifier (name{figure.4}) has been already used, duplicat
-e ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.128 
-      pdfTeX warning (ext4): destination with the same identifier (name{table.2
-}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.128 
+l.142 
        <./tileset_rrti.png>] [7pdfTeX warning (ext4): destination with the same
  identifier (name{figure.5}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.183 
-       <./2d_poms_examples.png>] (./FOOTNOTE_REPO.tex) [8pdfTeX warning (ext4):
- destination with the same identifier (name{figure.6}) has been already used, d
-uplicate ignored
+l.173 
+      pdfTeX warning (ext4): destination with the same identifier (name{table.2
+}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.258 f
-       or further details. <./brutal-plum_cons.png>]) (./05-Conclusion.tex
-(./FOOTNOTE_REPO.tex)) (./POMS.bbl
+l.173 
+       <./2d_poms_examples.png>] [8pdfTeX warning (ext4): destination with the 
+same identifier (name{figure.6}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.249 
+       <./brutal-plum_cons.png>]) (./05-Conclusion.tex) (./POMS.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 16--20
 []\T1/LibertinusSerif-TLF/m/n/9 (+20) R. Hoet-zlein, just_math, 2023. URL:
  []
@@ -1456,13 +1453,13 @@ Underfull \hbox (badness 1859) in paragraph at lines 58--65
 n-tel-li-gence 28
  []
 
-
+[9]
 Underfull \hbox (badness 5908) in paragraph at lines 157--161
 []\T1/LibertinusSerif-TLF/m/n/9 (+20) A. New-gas, Wave func-tion col-lapse ex-p
 lained,
  []
 
-[9]
+
 Underfull \hbox (badness 10000) in paragraph at lines 162--166
 \T1/LibertinusSerif-TLF/m/n/9 (+20) 2016. URL: [][]$https : / / opengameart . o
 rg / content /
@@ -1497,10 +1494,10 @@ Package rerunfilecheck Info: File `POMS.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 31201 strings out of 480171
- 582785 string characters out of 5894489
- 999108 words of memory out of 5000000
- 48015 multiletter control sequences out of 15000+600000
+ 31195 strings out of 480171
+ 582664 string characters out of 5894489
+ 999133 words of memory out of 5000000
+ 48014 multiletter control sequences out of 15000+600000
  646759 words of font info for 402 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
  122i,21n,120p,10620b,2604s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1532,9 +1529,9 @@ live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on POMS.pdf (10 pages, 6983563 bytes).
+Output written on POMS.pdf (10 pages, 6984510 bytes).
 PDF statistics:
- 372 PDF objects out of 1000 (max. 8388607)
+ 373 PDF objects out of 1000 (max. 8388607)
  59 named destinations out of 1000 (max. 500000)
  97428 words of extra memory for PDF output out of 106986 (max. 10000000)
 
