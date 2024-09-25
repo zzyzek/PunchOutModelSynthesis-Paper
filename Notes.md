@@ -558,16 +558,21 @@ Anyway, thanks to the anonymous reviewers, your feedback is much appreciated.
 
 Actionable items:
 
-* Move *Related Work* to beginning. (working on it)
-  - Nice to experiment but it's a resounding failure. Every single reviewer scoffed at it. Merrell scoffed at it. I like it at the end but its too jarring to keep in.
-* Put the comparison table in
-* Shorten results exposition
-* Explicitly mention TACCL calculation in figure
+#### wip
+
+* Shorten results exposition (wip)
+* Explicitly mention TACCL calculation in figure (wip)
   - make sure to include Euclidean distance
   - try to make it as clear as possible
   - address the anisotropy, even if to say "eyeballing it, taking maximum in one direction"
-* Put in blurb about infallible models
-* Consider discussing MMS ("Tileable Blocks" above)
+
+#### done
+
+* Move *Related Work* to beginning. (done)
+  - Nice to experiment but it's a resounding failure. Every single reviewer scoffed at it. Merrell scoffed at it. I like it at the end but its too jarring to keep in.
+* Put the comparison table in (done)
+* Put in blurb about infallible models (done)
+* Consider discussing MMS ("Tileable Blocks" above) (done, mostly)
 * Reviewer 2 suggestions
 	- In the introduction section, change “set up” to “setup”. (done)
 	- In the definitions section, italicize “support from a direction” instead of just “support” to further differentiate from “has support” which is defined later in the paragraph. (done)
