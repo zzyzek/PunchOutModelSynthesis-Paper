@@ -15,7 +15,7 @@
 \begin{figure*}[ht]
   \includegraphics[width=\textwidth]{2d_poms_examples.png}
   \caption{Tile Arc Consistent Correlation Length (TACCL) plots, source exemplar image and example output for four 2D tile sets as listed in Table \ref{table:tilesets}.
-           The TACCL, exemplar image and example 64x64 output using a block size of 8x8 for the \textit{Pill Mortal} tile set are shown in a), b) and c) respectively. The TACCL, exemplar image and an example 256x256 output using a block size of 50x70 for LUNARSIGNAL's \textit{Overhead Action RPG Overworld} are shown in d), e) and f) respectively. The TACCL, exemplar image and an example 128x128 output using a block size of 48x48 for Wo\'zniak's \textit{Forest Micro} tile set are shown in g), h) and i) respectively. The TACCL, exemplar image and an example 128x128 output using a block size of 48x48 for 0x72's \textit{Two Bit Micro Metroidvania} tile set are shown in j), k), l) respectively. }
+           The TACCL, exemplar image and example 64x64 output using a block size of 8x8 for the \textit{Pill Mortal} tile set are shown in a), b) and c) respectively. The TACCL, exemplar image and an example 256x256 output using a block size of 50x70 for LUNARSIGNALS' \textit{Overhead Action RPG Overworld} are shown in d), e) and f) respectively. The TACCL, exemplar image and an example 128x128 output using a block size of 48x48 for Wo\'zniak's \textit{Forest Micro} tile set are shown in g), h) and i) respectively. The TACCL, exemplar image and an example 128x128 output using a block size of 48x48 for 0x72's \textit{Two Bit Micro Metroidvania} tile set are shown in j), k), l) respectively. }
   \label{fig:2dexamples}
 \end{figure*}
 
@@ -50,10 +50,10 @@ in Figure \ref{fig:rrti_tileset}.
 Boundary constraints need special consideration.
 One option is to only allow a special ``zero'' tile at grid boundaries, ensuring ``zero'' tile constraints are added
 for tile pairs that fall across the edge boundaries of the exemplar image.
-This is the option chosen for Wo\'zniak's \textit{Forest Micro} tile set and can be seen in the ``zero'' (grey) tiles present for
+This is the option chosen for Wo\'zniak's \textit{Forest Micro} tile set and can be seen in the ``zero'' (gray) tiles present for
 the super tiles listed in Figure \ref{fig:rrti_tileset} (\textit{c}).
 Another option is to have wrap around boundary conditions, with a sliding window that wraps around from right to left and from down to up.
-This is what is done for the LUNARSIGNAL's \textit{Overhead Action RPG Overworld} tile set.
+This is what is done for the LUNARSIGNALS' \textit{Overhead Action RPG Overworld} tile set.
 
 For the automatic tile constraint creation from exemplar images, some artistic input is needed in choosing tile size, window size and boundary conditions.
 The tile sizes, window sizes and boundary conditions for the 2D tile sets used in this paper were chosen through inspection and experimentation.
@@ -136,7 +136,7 @@ for the five tile sets listed in Table \ref{table:tilesets}.
 
 \subsection{Bounded Tile Arc Consistent Correlation Length (TACCL)}
 
-The first two tile sets that appear in Figure \ref{fig:2dexamples}, \textit{Pill Mortal} and LUNARSIGNAL's \textit{Overhead Action RPG Overworld}
+The first two tile sets that appear in Figure \ref{fig:2dexamples}, \textit{Pill Mortal} and LUNARSIGNALS' \textit{Overhead Action RPG Overworld}
 (OARPGO) tile set, both
 have bounded Tile Arc Consistent Correlation lengths (TACCL).
 
@@ -151,8 +151,8 @@ The generated realization in Figure \ref{fig:2dexamples} (label \textit{c}) was 
 A uniform weighting for all 190 tiles was used.
 The block choice scheduler considered all unresolved tiles in the grid uniformly as candidates for the center of the block.
 
-%LUNARSIGNAL's \textit{Overhead Action RPG Overworld} tile set was generated from the exemplar image show using a 3x3 tile window, with each tile consisting
-LUNARSIGNAL's OARPGO tile set was generated from the exemplar image show using a 3x3 tile window, with each tile consisting
+%LUNARSIGNALS' \textit{Overhead Action RPG Overworld} tile set was generated from the exemplar image show using a 3x3 tile window, with each tile consisting
+LUNARSIGNALS' OARPGO tile set was generated from the exemplar image show using a 3x3 tile window, with each tile consisting
 of 16x16 pixels.
 A 3x2 overlapping tile region was used to create the tile constraint set with wrap around boundary conditions.
 The tile set consists of 3031 tiles and a uniform tile weighting was chosen.
@@ -239,7 +239,7 @@ to create wrap around tile constraints.
 %was kept as is to highlight the fact that an unbounded correlation length might not be relevant in finding solutions
 %for some tile sets.
 
-The 3D \textit{Brutal Plum} tile set was programatically generated from a set of 20 unique tiles that, after rotations and deduplication,
+The 3D \textit{Brutal Plum} tile set was programmatically generated from a set of 20 unique tiles that, after rotations and deduplication,
 grows to 90 tiles.
 Many of the tiles are aesthetically identical but are logically different to embed desired features, such as requiring certain
 logical tiles to be above or below other tiles. %, ensuring a contiguous connection to the ground plane.

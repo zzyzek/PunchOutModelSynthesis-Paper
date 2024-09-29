@@ -41,7 +41,7 @@ For other tile constraints, finding any fully resolved grid from an initially in
 In such cases, running MMS would defeat the purpose, as MMS can't start without a solution but if a solution is known, MMS wouldn't
 be needed.
 As an example, a tile set can be constructed where a grid realization connects two endpoints via a path
-without explicitely describing where the path meanders through the grid.
+without explicitly describing where the path meanders through the grid.
 MMS would require a full realization of the path before it could start.
 
 %Depending on tile constraints, discovering an initially resolved grid might be a question of engineering
@@ -111,7 +111,7 @@ without needing the resource requirements that BMS, as a block level solver, wou
     \hline
     \specialcellCenter{Solver Type} & Block & Block & Grid & \textbf{Grid} \\
     \hline
-    \specialcellCenter{Contradiction \\ \ \ Resiliance} & No & Yes & Yes & \textbf{Yes} \\
+    \specialcellCenter{Contradiction \\ \ \ Resilience} & No & Yes & Yes & \textbf{Yes} \\
     \hline
     \specialcellCenter{Block Step \\ \ \ Consistent} & n/a & n/a & Yes & \textit{\textbf{No}} \\
     \hline
@@ -124,7 +124,7 @@ without needing the resource requirements that BMS, as a block level solver, wou
 \end{table}
 
 Table \ref{table:CBTGComparison} provides a summary of the differences between WFC, BMS, MMS and POMS.
-Here, \textit{contradiction resiliance} means that the algorithm can recover should a contradiction be encountered,
+Here, \textit{contradiction resilience} means that the algorithm can recover should a contradiction be encountered,
 \textit{block step consistent} means the algorithm is in an arc consistent state after every block resolution,
 \textit{indeterminate initial state} means the algorithm doesn't require a fully resolved initial configuration and
 \textit{ergodic} means that, in general, all solution states are possibly to reach.
@@ -155,14 +155,14 @@ While this can produce large scenes, the tile constraints are conditioned so tha
 that block resolution can fail without any recourse on how to continue.
 
 Of note is Merrell's discussion of \textit{infallible} models \cite{Merrell_2009}, where the tile constraints are
-conditioned so as to never be able to encouter a contradiction.
-For infallible models, infinite block chaining is always achievable as there is no possibility of contradictions occuring.
+conditioned so as to never be able to encounter a contradiction.
+For infallible models, infinite block chaining is always achievable as there is no possibility of contradictions occurring.
 Though infallible models represent a case that is always solvable,
 it's unclear how possible or how difficult it is convert tile constraints from exemplar scenes to infallible models.
 In particular, all tile sets considered in this paper are fallible models
 
 Newgas provides \texttt{Tessera}, a software project that implements WFC along with options for a variety of constraints \cite{Newgas_2021}.
-Nie et all provide an extension to WFC to infinite grids but require the tile set to be \textit{complete} or \textit{sub-complete}
+Nie et al. provide an extension to WFC to infinite grids but require the tile set to be \textit{complete} or \textit{sub-complete}
 which may be difficult for tile sets in the wild \cite{Nie_etall_2023}.
 Cooper introduces \texttt{Sturgeon} that incorporates a mid level API to specify more explicit and longer range constraints as an addition
 to WFC \cite{Cooper_2022}.
