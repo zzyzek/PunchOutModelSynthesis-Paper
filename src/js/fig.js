@@ -703,8 +703,10 @@ function mkText(sx, sy) {
   //ty = sy + 550;
   tx = sx + 135;
   ty = sy + 500;
-  let grid_accept0 = new Two.Text("d)", tx-100-30, ty, style);
-  let grid_accept1 = new Two.Text("Success", tx-100+5, ty, style);
+  let grid_accept0 = new Two.Text("d)", tx-140, ty, style);
+  grid_accept0.alignment = "left";
+  let grid_accept1 = new Two.Text("Success", tx-123, ty, style);
+  grid_accept1.alignment = "left";
   grid_accept1.fill= "rgba(0, 180, 0, 0.95)";
   grid_accept1.stroke = "rgba(0,0,0,0.15)";
 
@@ -713,38 +715,49 @@ function mkText(sx, sy) {
   //var grid_accept0 = new Two.Text("d) Success,", tx-100,ty, style);
   two.add(grid_accept0);
   two.add(grid_accept1);
-  var grid_accept2 = new Two.Text("incorporate resolved block into grid", tx-10,ty+20, style);
+  var grid_accept2 = new Two.Text("incorporate resolved block into grid", tx-123,ty+20, style);
+  grid_accept2.alignment = "left";
   two.add(grid_accept2);
 
   //tx = sx + 450;
   //ty = sy + 550;
   tx = sx + 360;
   ty = sy + 500;
-  let grid_resfail0 = new Two.Text("e)", tx-60,ty, style);
-  let grid_resfail1 = new Two.Text("Resolution failure,", tx+8,ty, style);
+  let grid_resfail0 = new Two.Text("e)", tx-65,ty, style);
+  grid_resfail0.alignment = "left";
+  let grid_resfail1 = new Two.Text("Resolution failure,", tx-48,ty, style);
   grid_resfail1.fill = "rgba(100,0,0,0.95)";
+  grid_resfail1.alignment = "left";
   two.add(grid_resfail0);
   two.add(grid_resfail1);
 
   appendPostProcess( "color", grid_resfail1.id );
 
 
-  let grid_resfail2 = new Two.Text("erode resolved area boundaries", tx+45,ty+20, style);
+  let grid_resfail2 = new Two.Text("restore block and erode", tx-48,ty+20, style);
+  grid_resfail2.alignment = "left";
   two.add(grid_resfail2);
+
+  let grid_resfail3 = new Two.Text("resolved area boundaries", tx-48,ty+40, style);
+  grid_resfail3.alignment = "left";
+  two.add(grid_resfail3);
 
   //tx = sx + 730;
   //ty = sy + 550;
   tx = sx + 645;
   ty = sy + 500;
-  let grid_setfail0 = new Two.Text("f)", tx-45,ty, style);
-  let grid_setfail1 = new Two.Text("Setup failure,", tx+5,ty, style);
+  let grid_setfail0 = new Two.Text("f)", tx-50,ty, style);
+  grid_setfail0.alignment = "left";
+  let grid_setfail1 = new Two.Text("Setup failure,", tx-35,ty, style);
+  grid_setfail1.alignment = "left"
   grid_setfail1.fill = "rgba(200,0,0,0.95)";
 
   appendPostProcess( "color", grid_setfail1.id );
 
   two.add(grid_setfail0);
   two.add(grid_setfail1);
-  var grid_setfail2 = new Two.Text("revert block area in grid to unresolved", tx+80,ty+20, style);
+  var grid_setfail2 = new Two.Text("revert block area in grid to unresolved", tx-35,ty+20, style);
+  grid_setfail2.alignment = "left"
   two.add(grid_setfail2);
 
 
@@ -956,6 +969,12 @@ function mkgrid_res(cx,cy) {
     "dx": b0_dx, "dy": b0_dy
   };
 
+  let highlight_block_rect = two.makeRectangle( b0_x, b0_y, b0_w, b0_h );
+  highlight_block_rect.fill = "rgba(0,255,0,0.215)";
+  highlight_block_rect.stroke = "rgba(100,150,100,0.5)";
+  appendPostProcess( "color", highlight_block_rect.id );
+  g_fig_ctx.geom.push(highlight_block_rect);
+
   let info = {
     "block": block_info
   };
@@ -1123,6 +1142,12 @@ function mkgrid_erode(cx,cy) {
     "dx": b0_dx, "dy": b0_dy
   };
 
+  let highlight_block_rect = two.makeRectangle( b0_x, b0_y, b0_w, b0_h );
+  highlight_block_rect.fill = "rgba(100,50,0,0.1)";
+  highlight_block_rect.stroke = "rgba(100,50,0,0.0125)";
+  appendPostProcess( "color", highlight_block_rect.id );
+  g_fig_ctx.geom.push(highlight_block_rect);
+
 
   let info = {
     "block": block_info
@@ -1226,6 +1251,13 @@ function mkgrid_revert(cx,cy) {
     "w": b0_w, "h": b0_h,
     "dx": b0_dx, "dy": b0_dy
   };
+
+  let highlight_block_rect = two.makeRectangle( b0_x, b0_y, b0_w, b0_h );
+  highlight_block_rect.fill = "rgba(255,0,0,0.05)";
+  highlight_block_rect.stroke = "rgba(150,100,100,0.125)";
+  appendPostProcess( "color", highlight_block_rect.id );
+  g_fig_ctx.geom.push(highlight_block_rect);
+
 
   let info = {
     "block": block_info
