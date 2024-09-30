@@ -8,16 +8,17 @@ Blocks that fully resolve are then saved back into the larger grid.
 Should blocks not be able to fully resolve, portions of the grid
 are reverted back to an indeterminate state, depending on the mode of failure.
 
+%  \includesvg[width=\textwidth]{poms_figalg.svg}
 
 \begin{figure*}[ht]
   \centering
-  \includegraphics[width=\textwidth]{poms_figalg.png}
+  \includegraphics[width=\textwidth]{poms_figalg.pdf}
   \caption{a) A block is chosen in the partially resolved grid, based on a block choice scheduler
   b) Once the block is chosen, the boundary is pinned if not on the a grid boundary and the center put
   into an indeterminate state. c) The block level solver attempts to find a solution for the block,
   with any pinned boundary restrictions d) If successful, the block is incorporated back into the grid.
   e) If the block solver algorithm failed to resolve, after some maximum iteration count, say, then
-  the grid is reverted to its previous state and resolved boundaries are eroded based on an erosion
+  the grid is restored to its previous state and resolved boundaries are eroded based on an erosion
   choice scheduler. f) If the block solver algorithm failed to start because the block could not be
   put into an arc consistent state given the tiles pinned on the boundary, the block area in the grid is reverted
   to an indeterminate state.}

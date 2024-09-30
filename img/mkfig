@@ -1,0 +1,3 @@
+#!/bin/bash
+
+inkscape poms_figalg.svg --export-filename=poms_figalg.pdf
