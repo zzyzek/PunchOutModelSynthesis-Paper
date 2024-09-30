@@ -39,7 +39,7 @@ tile constraints.
 
 POMS works by initially setting the grid in an indeterminate state and progressively realizing
 sub blocks of the grid.
-Block boundary edges that fall within the larger grid body are pinned so that, should a
+Block boundary edges that fall within the larger grid body are \textit{pinned} so that, should a
 block realization succeed, the block can be re-integrated back into the larger grid.
 Should block level realization fail, depending on the type of block realization failure,
 either the failed block region is set to an indeterminate state
@@ -80,13 +80,14 @@ Unfortunately, for many tile sets, simple global constraints, tile distribution 
 are enough to
 confound POMS into failing to find a realization.
 Different choices for block scheduling policies, 
-different block based level algorithms and other strategies
+different block resolution algorithms
+and other parameter choices
 can help mitigate these shortcomings and will be briefly addressed (Section 4).
 
 
 \subsection{Definitions}
 
-We discuss some preliminary ideas before discussing details
+We discuss some preliminary ideas before describing details
 of the Punch Out Model Synthesis (POMS) algorithm.
 
 A \textit{grid} is a collection of \textit{cells} in the shape of a rectangular cuboid,
@@ -142,7 +143,7 @@ throughout its run.
 A \textit{grid level} solver need not keep full state of the grid and often will only keep minimal information about whether
 a grid cell is resolved or is in an indeterminate state.
 A block level solver typically needs more resources as, for example,
-it might maintain a memory intensive data structures associated
+it might maintain a memory intensive data structure associated
 with maintaining arc consistency.
 
 POMS is a grid level solver with one of its input parameters designated to specify
@@ -151,7 +152,7 @@ In this paper we use \textit{Breakout Model Synthesis} (BMS), a stochastic block
 introduced in Hoetzlein's \texttt{just\_math} project  \cite{Hoetzlein_2023}.
 For completeness, pseudo-code for \textit{Breakout Model Synthesis} is given in Appendix A.
 
-Note that since  POMS is a grid level solver, the grid can be in an arc inconsistent
+Note that since  POMS is a grid level solver, the grid can be in an arc \textit{inconsistent}
 state during the course of the algorithm.
 This poses no problem in and of itself as the block level solver will attempt to put the block
 in an arc consistent state while trying to make progress towards a fully resolved

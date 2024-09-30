@@ -56,8 +56,8 @@ are reverted back to an indeterminate state, depending on the mode of failure.
         \State Set $B$ region to indeterminate state in $G$
       \ElsIf{ $A(B)$ fails to find a full resolution in $B$ }
         \State Erode boundaries in $G$ using $ECS$
-      \Else
-        \State Copy fully resolved tiles from $B$ into $G$ \Comment{success}
+      \Else \Comment{success}
+        \State Copy fully resolved tiles from $B$ into $G$
       \EndIf
 
     \EndWhile

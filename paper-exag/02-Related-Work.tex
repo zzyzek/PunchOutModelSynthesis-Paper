@@ -4,12 +4,13 @@ To our knowledge, Merrell was the first to introduce the modern formulation of C
 \footnote{The term \textit{Constraint Based Tile Generators} was coined by Adam Newgas \cite{BorisTheBrave_cbtg_2021} and has been adopted in this paper,
 with slightly different wording, as the name for the specialization of the more general Constraint Satisfaction Problem.}
 \cite{Merrell_2007, Merrell_2009}.
-Merrell introduced a modify in blocks Model Synthesis (MMS) algorithm that starts with a fully resolved grid
+Merrell introduced a Modify in blocks Model Synthesis (MMS) algorithm that starts with a fully resolved grid
 and applies a one shot block level constraint solver on sub-blocks within the grid.
 
-Merrell noticed that the block level algorithm undergoes a phase transition of solvability, with a decreasing probability
-for successful block resolution as block size increases
-\footnote{ Note that the phase transition is only for \textit{fallible} models. \textit{Infallible} models will be discussed briefly later in this section }.
+Merrell noticed that the block level algorithm undergoes a phase transition of solvability
+\footnote{ Note that the phase transition is only for \textit{fallible} models. \textit{Infallible} models will be discussed briefly later in this section }
+, with a decreasing probability
+for successful block resolution as block size increases.
 Instead of attempting to resolve a large grid in one try, the MMS algorithm progressively resolves sub-blocks and re-integrates them back into the grid.
 If a block level resolution fails, the block is discarded without altering the grid and another block is chosen.
 
@@ -29,9 +30,9 @@ Unfortunately, MMS has two major drawbacks, the second of which Merrell noticed 
 Many of the tile sets and tile constraints that Merrell provides in \cite{Merrell_2007, Merrell_2009} have an ``empty'' tile that 
 has itself as an admissible neighbor, creating a situation where the initial fully resolved grid can be easily created
 by populating each cell with an ``empty'' tile.
-All 2D tile sets and tile constraints presented in this paper do not have an initial state that can be created through
-the replication of just one tile throughout the grid and require some amount of knowledge about the tile constraints
-to create a fully resolved grid.
+All 2D tile sets and tile constraints presented in this paper do not have a valid resolution with a single replicated
+tile and require some amount of knowledge about the tile constraints
+to create a fully resolved configuration.
 
 In general, for some tile constraints, finding a class of fully resolved initial configurations might be done through engineering effort.
 For example, it might be possible to find a small tileable block that is then able to be replicated through to the whole grid
@@ -49,9 +50,11 @@ MMS would require a full realization of the path before it could start.
 
 POMS sidesteps the need for a fully realized initial configuration by allowing the grid to be in an indeterminate state.
 
-Note that, to the authors knowledge, no systematic examination of methods or strategies to create initial states
-to be fed into MMS has been done.
-The above discussion is informed through personal experimentation and through discussion with P. Merrell.
+%% maybe put in conclusion?
+%%
+%Note that, to the authors knowledge, no systematic examination of methods or strategies to create initial states
+%to be fed into MMS has been done.
+%The above discussion is informed through personal experimentation and through discussion with P. Merrell.
 
 The inability to handle certain types of unbounded constraints, such as the implicit top and bottom equal river count constraint that appear in
 Wo\'zniak's \textit{Forest Micro} tile set (section 4), is the deeper issue with MMS.
@@ -107,7 +110,7 @@ without needing the resource requirements that BMS, as a block level solver, wou
   \centering
   \begin{tabular}[t]{lcccc}
     \hline
-     Algorithm & WFC & BMS & MMS & \textbf{POMS} \\
+     \textit{Algorithm} & \textit{WFC} & \textit{BMS} & \textit{MMS} & \textit{POMS} \\
     \hline
     \specialcellCenter{Solver Type} & Block & Block & Grid & \textbf{Grid} \\
     \hline
@@ -156,10 +159,10 @@ that block resolution can fail without any recourse on how to continue.
 
 Of note is Merrell's discussion of \textit{infallible} models \cite{Merrell_2009}, where the tile constraints are
 conditioned so as to never be able to encounter a contradiction.
-For infallible models, infinite block chaining is always achievable as there is no possibility of contradictions occurring.
+For infallible models, infinite block chaining is always achievable as there is no possibility of a contradiction occurring.
 Though infallible models represent a case that is always solvable,
 it's unclear how possible or how difficult it is convert tile constraints from exemplar scenes to infallible models.
-In particular, all tile sets considered in this paper are fallible models
+In particular, all tile sets considered in this paper are fallible models.
 
 Newgas provides \texttt{Tessera}, a software project that implements WFC along with options for a variety of constraints \cite{Newgas_2021}.
 Nie et al. provide an extension to WFC to infinite grids but require the tile set to be \textit{complete} or \textit{sub-complete}

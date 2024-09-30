@@ -5,6 +5,8 @@
 
   <title>fig</title>
 
+  <script type='text/javascript' src='js/FileSaver.js'></script>
+
   <!--  <link rel="icon" type="image/png" href="images/favicon.ico"> -->
   <script type='text/javascript' src='js/two.js'></script>
   <script type='text/javascript' src='js/mp_path.js'></script>
@@ -15,7 +17,7 @@
   <svg  xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink"
         width="6" height="6" viewBox="0 0 6 6" xml:space="preserve">
-<defs>
+<defs id='custom_defs'>
 
 <!-- 20 -->
 <pattern id="pattern-xannonball_" patternUnits="userSpaceOnUse" width="12" height="12">
@@ -27,25 +29,40 @@
 
 <!-- 20 dark green -->
 <pattern id="pattern-cannonball" patternUnits="userSpaceOnUse" width="12" height="12">
-    <circle cx="0" cy="6" r="2" style="stroke: var(--pattern-channel-1, rgba(139,220,116,1))" fill="rgba(139,220,116,1)" />
-    <circle cx="12" cy="6" r="2" style="stroke: var(--pattern-channel-1, rgba(139,220,116,1))" fill="rgba(139,220,116,1)" />
-    <circle cx="6" cy="0" r="2" style="stroke: var(--pattern-channel-1, rgba(139,220,116,1))" fill="rgba(139,220,116,1)" />
-    <circle cx="6" cy="12" r="2" style="stroke: var(--pattern-channel-1, rgba(139,220,116,1))" fill="rgba(139,220,116,1)" />
+    <circle cx="0" cy="6" r="2" style="stroke: var(--pattern-channel-1, rgb(139,220,116))" fill="rgb(139,220,116)" />
+    <circle cx="12" cy="6" r="2" style="stroke: var(--pattern-channel-1, rgb(139,220,116))" fill="rgb(139,220,116)" />
+    <circle cx="6" cy="0" r="2" style="stroke: var(--pattern-channel-1, rgb(139,220,116))" fill="rgb(139,220,116)" />
+    <circle cx="6" cy="12" r="2" style="stroke: var(--pattern-channel-1, rgb(139,220,116))" fill="rgb(139,220,116)" />
+</pattern>
+
+<!-- 20 dark green -->
+<pattern id="pattern-cannonball-big" patternUnits="userSpaceOnUse" width="18" height="18">
+    <circle cx="0" cy="9" r="3" style="stroke: var(--pattern-channel-1, rgb(139,220,116))" fill="rgb(139,220,116)" />
+    <circle cx="18" cy="9" r="3" style="stroke: var(--pattern-channel-1, rgb(139,220,116))" fill="rgb(139,220,116)" />
+    <circle cx="9" cy="0" r="3" style="stroke: var(--pattern-channel-1, rgb(139,220,116))" fill="rgb(139,220,116)" />
+    <circle cx="9" cy="18" r="3" style="stroke: var(--pattern-channel-1, rgb(139,220,116))" fill="rgb(139,220,116)" />
+</pattern>
+
+<pattern id="pattern-cannonball-huge" patternUnits="userSpaceOnUse" width="24" height="24">
+    <circle cx="0" cy="12" r="4" style="stroke: var(--pattern-channel-1, rgb(139,220,116))" fill="rgb(139,220,116)" />
+    <circle cx="24" cy="12" r="4" style="stroke: var(--pattern-channel-1, rgb(139,220,116))" fill="rgb(139,220,116)" />
+    <circle cx="12" cy="0" r="4" style="stroke: var(--pattern-channel-1, rgb(139,220,116))" fill="rgb(139,220,116)" />
+    <circle cx="12" cy="24" r="4" style="stroke: var(--pattern-channel-1, rgb(139,220,116))" fill="rgb(139,220,116)" />
 </pattern>
 
 <pattern id="pattern-cannonball_bak" patternUnits="userSpaceOnUse" width="12" height="12">
-    <circle cx="0" cy="6" r="2" style="stroke: var(--pattern-channel-1, rgba(139,177,116,1))" fill="rgba(139,177,116,1)" />
-    <circle cx="12" cy="6" r="2" style="stroke: var(--pattern-channel-1, rgba(139,177,116,1))" fill="rgba(139,177,116,1)" />
-    <circle cx="6" cy="0" r="2" style="stroke: var(--pattern-channel-1, rgba(139,177,116,1))" fill="rgba(139,177,116,1)" />
-    <circle cx="6" cy="12" r="2" style="stroke: var(--pattern-channel-1, rgba(139,177,116,1))" fill="rgba(139,177,116,1)" />
+    <circle cx="0" cy="6" r="2" style="stroke: var(--pattern-channel-1, rgb(139,177,116))" fill="rgb(139,177,116)" />
+    <circle cx="12" cy="6" r="2" style="stroke: var(--pattern-channel-1, rgb(139,177,116))" fill="rgb(139,177,116)" />
+    <circle cx="6" cy="0" r="2" style="stroke: var(--pattern-channel-1, rgb(139,177,116))" fill="rgb(139,177,116)" />
+    <circle cx="6" cy="12" r="2" style="stroke: var(--pattern-channel-1, rgb(139,177,116))" fill="rgb(139,177,116)" />
 </pattern>
 
 <!-- 20 -->
 <pattern id="pattern-cannonball-lg" patternUnits="userSpaceOnUse" width="12" height="12" >
-    <circle cx="0" cy="6" r="2" style="stroke: var(--pattern-channel-1, rgba(167,196,151,1))" fill="rgba(167,196,151,1)" />
-    <circle cx="12" cy="6" r="2" style="stroke: var(--pattern-channel-1, rgba(167,196,151,1))" fill="rgba(167,196,151,1)" />
-    <circle cx="6" cy="0" r="2" style="stroke: var(--pattern-channel-1, rgba(167,196,151,1))" fill="rgba(167,196,151,1)" />
-    <circle cx="6" cy="12" r="2" style="stroke: var(--pattern-channel-1, rgba(167,196,151,1))" fill="rgba(167,196,151,1)" />
+    <circle cx="0" cy="6" r="2" style="stroke: var(--pattern-channel-1, rgb(167,196,151))" fill="rgb(167,196,151)" />
+    <circle cx="12" cy="6" r="2" style="stroke: var(--pattern-channel-1, rgb(167,196,151))" fill="rgb(167,196,151)" />
+    <circle cx="6" cy="0" r="2" style="stroke: var(--pattern-channel-1, rgb(167,196,151))" fill="rgb(167,196,151)" />
+    <circle cx="6" cy="12" r="2" style="stroke: var(--pattern-channel-1, rgb(167,196,151))" fill="rgb(167,196,151)" />
 </pattern>
 
 
@@ -61,12 +78,20 @@
 
 <!-- 3 dark blue -->
 <pattern id="pattern-Rdiag" patternUnits="userSpaceOnUse" width="8" height="8">
-    <path d="M-1,1 l4,-4 M0,8 l8,-8 M6,10 l4,-4" stroke="rgba(155,195,212,1)" style="stroke: var(--pattern-channel-1, rgba(155,195,212,1))" />
+    <path d="M-1,1 l4,-4 M0,8 l8,-8 M6,10 l4,-4" stroke="rgb(155,195,212)" style="stroke: var(--pattern-channel-1, rgb(155,195,212))" stroke-width="1.125" />
+</pattern>
+
+<pattern id="pattern-Rdiag-big" patternUnits="userSpaceOnUse" width="12" height="12">
+    <path d="M-1.5,1.5 l6,-6 M0,12 l12,-12 M9,15 l6,-6" stroke="rgb(155,195,212)" style="stroke: var(--pattern-channel-1, rgb(155,195,212))" stroke-width="1.75" />
 </pattern>
 
 <!-- 31 -->
 <pattern id="pattern-cgrid" patternUnits="userSpaceOnUse" width="4" height="4">
     <circle cx="2" cy="2" r="1" fill="currentcolor" style="fill: var(--pattern-channel-1, currentcolor)" />
+</pattern>
+
+<pattern id="pattern-cgrid-big" patternUnits="userSpaceOnUse" width="6" height="6">
+    <circle cx="3" cy="3" r="1.5" fill="currentcolor" style="fill: var(--pattern-channel-1, currentcolor)" />
 </pattern>
 
 <!-- 39 -->
@@ -76,13 +101,17 @@
 </pattern>
 
 <!-- 6 -->
-<pattern id="pattern-ldiag_base" patternUnits="userSpaceOnUse" width="6" height="6">
+<pattern id="xxxpattern-ldiag_base" patternUnits="userSpaceOnUse" width="6" height="6">
     <path d="M7,1 l-2,-2 M0,0 l6,6 M1,7 l-2,-2" stroke="currentcolor" style="stroke: var(--pattern-channel-1, currentcolor)" />
 </pattern>
 
 <!-- 6 mid blue -->
 <pattern id="pattern-ldiag" patternUnits="userSpaceOnUse" width="6" height="6">
-    <path d="M7,1 l-2,-2 M0,0 l6,6 M1,7 l-2,-2" stroke="rgba(164,216,224,1)" style="stroke: var(--pattern-channel-1, rgba(164,216,224,1))" />
+    <path d="M7,1 l-2,-2 M0,0 l6,6 M1,7 l-2,-2" stroke="rgb(164,216,224)" style="stroke: var(--pattern-channel-1, rgb(164,216,224))" />
+</pattern>
+
+<pattern id="pattern-ldiag-big" patternUnits="userSpaceOnUse" width="9" height="9">
+    <path d="M10.5,1.5 l-3,-3 M0,0 l9,9 M1.5,10.5 l-3,-3" stroke="rgb(164,216,224)" style="stroke: var(--pattern-channel-1, rgb(164,216,224))" stroke-width='1.7' />
 </pattern>
 
 
