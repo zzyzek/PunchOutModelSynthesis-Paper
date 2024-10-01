@@ -57,31 +57,41 @@ This is what is done for the LUNARSIGNALS' \textit{Overhead Action RPG Overworld
 
 For the automatic tile constraint creation from exemplar images, some artistic input is needed in choosing tile size, window size and boundary conditions.
 The tile sizes, window sizes and boundary conditions for the 2D tile sets used in this paper were chosen through inspection and experimentation.
-An in depth explanation of automatic tile constraint creation is beyond the scope of this paper and references will be provided later (Section 4).
+An in depth explanation of automatic tile constraint creation is beyond the scope of this paper and readers are referred to \cite{Gumin_2016, Sherratt_2019, BorisTheBrave_wfc_2021} for further details.
 The five tile sets we use here are summarized in Table \ref{table:tilesets}.
 
 As a simple, measurable quantity to help understand the correlation length implied by the tile constraints, we define a Tile Arc Consistent Correlation
 Length (TACCL), as first mentioned in Hoetzlein's \texttt{just\_math} project \cite{Hoetzlein_2023}.
-Starting from an indeterminate grid, the center cell is resolved to a tile and constraint propagation is performed to put the grid
-back into an arc consistent state.
-The maximum distance the cells in the grid are altered is the Tile Arc Consistent Correlation Length (TACCL).
-Algorithm \ref{alg:taccl} provides pseudo code to determine the Tile Arc Consistent Correlation length.
+The computation of the TACCL is done as a pre-processing step independent of the POMS algorithm.
+The idea is to iterate through each tile in isolation and record the maximum distance constraint propagation reaches when resolving a center cell.
+
+Starting from a small test grid set to an indeterminate state,
+the center cell is resolved to a tile and constraint propagation is performed to put the grid
+into an arc consistent state.
+The size of a bounding box that minimally encompases every cell whose tile domain was altered during the constraint propagation is then saved.
+The grid is then reverted to an indeterminate state and the next tile is chosen to resolve, repeating the process and updating the maximum distances
+of the minimum encompasing bounding box for each tile tested.
+
+The Tile Arc Consistent Correlation (TACCL) is the maximum extent of the saved bounding boxes from iterating through all tiles.
+Algorithm \ref{alg:taccl} provides psuedo-code for the TACCL calculation.
 
 \begin{algorithm}
   \caption{Tile Arc Consistent Correlation Length}
   \label{alg:taccl}
   \begin{algorithmic}
     \State \textbf{Output:} Tile Arc Consistent Correlation Length $L$
-    \State \textbf{Input:} Block Size $N$
-    \State Create a block $B$ of dimension $N$
+    \State \textbf{Input:} Block Size $(M _ x, M _ y, M _ z)$
+    \State Create a block $B$ of size $(M _ x, M _ y, M _ z)$
+    \State Put block $B$ in a fully indeterminate state
     \State $L=1$
-    \For { tile every tile $t$ }
-      \State Put block $B$ in a fully indeterminate state
-      \State Apply initial setup restrictions to $B$
-      \State Resolve center cell in $B$ to $t$, make $B$ arc consistent
-      \State Save maximum length, $d$, of altered cells
-      \If{ $d > L$ }
-        \State $L = d$
+    \For { tile every tile $t \in D$ }
+      \State $B' = B$
+      \State Apply initial setup restrictions to $B'$
+      \State Resolve center cell, $c$, in $B'$ to $t$
+      \State Make $B'$ arc consistent
+      \State Find mininum bounding box, $bbox$, \\ \ \ \ \ \ \ \ \ encompassing altered cells of $B'$
+      \If{ $\max _ { x, y, z } bbox  > L$ }
+        \State $L = \max _ { x, y, z } bbox $
       \EndIf
     \EndFor
     \State Return $L$
@@ -90,13 +100,17 @@ Algorithm \ref{alg:taccl} provides pseudo code to determine the Tile Arc Consist
 
 %The TACCL is easy to measure but can fail to capture long range or unbounded correlations.
 
+For the sake of brevity, no checks are performed in Algorithm \ref{alg:taccl} to determine if the calculated value
+is as large as the input block size ($M _ x, M _ y, M _ z$).
+In such a case, either the TACCL is unbounded or the test block size is smaller than the TACCL and would
+need to be increased.
+
 The TACCL is meant to estimate the correlation length of an underlying tile constraint set but can be misleading as some
-tile sets will have a finite TACCL even though correlation lengths can be unbounded.
+tile constraints will have a finite TACCL even though correlation lengths can be unbounded.
 An unbounded TACCL implies an unbounded correlation length but the converse is not true and a finite TACCL
 does not necessarily imply a finite correlation length.
 The \textit{Brutal Plum} tile set, that has an unbounded correlation length but finite TACCL,
 displays this phenomenon and will be discussed later in this section.
-
 
 % thanks to egreg from https://tex.stackexchange.com/a/19678/304687
 %
@@ -112,7 +126,7 @@ displays this phenomenon and will be discussed later in this section.
   \centering
   \begin{tabular}[t]{lccc}
     \hline
-     Tile Set & Tile Count & Dim. & \specialcellCenter{Tile Arc \\ Consistent \\ Correlation \\ Length (x/y)} \\
+     \textit{Tile Set} & \textit{Tile Count} & \textit{Dim.} & \specialcellCenter{\textit{Tile Arc} \\ \textit{Consistent} \\ \textit{Correlation} \\ \textit{Length (x/y)}} \\
      \hline
      \textit{Pill Mortal} & 190 & 2D & 24 \\
      \specialcell{\textit{Overhead Action} \\ \ \ \textit{RPG Overworld}} \cite{LUNARSIGNALS_oarpgo} & 3031 & 2D & 50/70 \\
@@ -123,8 +137,15 @@ displays this phenomenon and will be discussed later in this section.
   \end{tabular}
 \end{table}
 
+The TACCL is an ad-hoc heuristic measure of tile constraint correlation.
+Even though the TACCL has severe limitations, it can still be used to inform block size choice for POMS.
+Through the authors investigation, many tile sets and tile constraints will fail to find realizations should the block size be significantly
+smaller than the TACCL.
+A more thorough and detailed analysis of the TACCL is beyond the scope of this paper.
+
 Figure \ref{fig:2dexamples} and Figure \ref{fig:brutal_plum} show the TACCL, reference images and example runs
 for the five tile sets listed in Table \ref{table:tilesets}.
+
 
 %The Tile Arc Consistent Correlation length (TACCL), reference images and example runs
 %for the tile sets listed in Table \ref{table:tilesets} are shown in 

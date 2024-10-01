@@ -52,12 +52,12 @@ are reverted back to an indeterminate state, depending on the mode of failure.
       \State Initialize $B$ to indeterminate state
       \State From $G$, set and pin $B$ edges not on $G$ boundary
       \State Apply initial setup restrictions to $B$
-      \State Run $A(B)$ \Comment{Attempt to resolve $B$ with $A$}
+      \State Run $A(B)$ \Comment{\textit{Attempt to resolve $B$ with $A$}}
       \If{ initial arc consistency is impossible for $B$ }
         \State Set $B$ region to indeterminate state in $G$
       \ElsIf{ $A(B)$ fails to find a full resolution in $B$ }
         \State Erode boundaries in $G$ using $ECS$
-      \Else \Comment{success}
+      \Else \Comment{\textit{success}}
         \State Copy fully resolved tiles from $B$ into $G$
       \EndIf
 
@@ -111,14 +111,14 @@ Once setup restrictions are imposed, an attempt is made to run the constraint pr
 put the block in an arc consistent state.
 
 %When first choosing a block, an initial attempt is made to put it into an arc consistent state.
-If the block is successfully put in an arc consistent state, the block level resolution algorithm proceeds and attempts to find a fully realized block.
+If the block is successfully put in an initial arc consistent state, the block level resolution algorithm proceeds and attempts to find a fully realized block.
 If a fully realized block is found, it's put back into the grid and the algorithm
 continues on by choosing another block until the grid is fully realized.
 
 Should the initial attempt to put the block choice into an arc consistent state fail,
 the block region is reverted to an indeterminate state in the grid.
 The motivation for reverting the whole block region, as opposed to just relying on erosion,
-is that if a block cannot be put into an arc consistent state, subject to its pinned
+is that if a block cannot be put into an initial arc consistent state, subject to its pinned
 boundary values, there might be a strong contradiction that requires an aggressive
 back-off strategy.
 
@@ -141,7 +141,7 @@ for a more aggressive erosion strategy should block resolution become increasing
 Without the erosion, block level solvers could be doomed
 to perpetually attempt resolution on blocks with identical initial state.
 The erosion provides a backtracking mechanism, allowing for a change in initial state
-of chosen blocks and potentially removing contradictions on resolved regions in the grid.
+of chosen blocks and removal of implied contradictions that can occur from previously resolved regions in the grid.
 
 Maximum iteration counts can be added so that POMS or the underlying block level resolution
 algorithm ($A$) don't loop forever.

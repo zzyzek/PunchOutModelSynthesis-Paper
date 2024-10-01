@@ -24,7 +24,7 @@ Unfortunately, MMS has two major drawbacks, the second of which Merrell noticed 
   \item The requirement of an initially resolved state to start MMS might be difficult to achieve, either in a practical
         or theoretical sense.
   \item Features bigger than the chosen block size will be missed by MMS as there is no way to realize larger features
-        through single block level alterations.
+        through a single block level alteration.
 \end{itemize}
 
 Many of the tile sets and tile constraints that Merrell provides in \cite{Merrell_2007, Merrell_2009} have an ``empty'' tile that 
@@ -105,21 +105,22 @@ without needing the resource requirements that BMS, as a block level solver, wou
 %  \caption{ \textbf{WFC}: Gumin's Wave Function Collapse \\ \textbf{BMS}: Breakout Model Synthesis \\ \textbf{MMS}: Merrell's Modify in Blocks Model Synthesis \\ \textbf{POMS}: Punch Out Model Synthesis (our algorithm) }
 %\end{table}
 
+%    & \multicolumn{4}{c}{\textit{Algorithm}} \\
+
 \begin{table}[h]
   \label{table:CBTGComparison}
   \centering
-  \begin{tabular}[t]{lcccc}
-    \hline
-     \textit{Algorithm} & \textit{WFC} & \textit{BMS} & \textit{MMS} & \textit{POMS} \\
+  \begin{tabular}[t]{l|cccc}
+      & \textit{WFC} & \textit{BMS} & \textit{MMS} & \textit{POMS} \\
     \hline
     \specialcellCenter{Solver Type} & Block & Block & Grid & \textbf{Grid} \\
-    \hline
+    \cline{1-1}
     \specialcellCenter{Contradiction \\ \ \ Resilience} & No & Yes & Yes & \textbf{Yes} \\
-    \hline
+    \cline{1-1}
     \specialcellCenter{Block Step \\ \ \ Consistent} & n/a & n/a & Yes & \textit{\textbf{No}} \\
-    \hline
+    \cline{1-1}
     \specialcellCenter{Indeterminate \\ \ \ Initial State} & Yes & Yes & No & \textbf{Yes} \\
-    \hline
+    \cline{1-1}
     \specialcellCenter{Ergodic} & Yes & Yes & No & \textbf{Yes} \\
     \hline
   \end{tabular}
@@ -134,12 +135,12 @@ Here, \textit{contradiction resilience} means that the algorithm can recover sho
 Note that an assertion of being \textit{ergodic} in this context only means solutions
 are possible and does not mean \textit{unbiased} as, depending on the tile constraints or configuration,
 solution biasing may occur.
-Punch Out Model Synthesis (POMS), the algorithm presented in this paper, is highlighted for ease of comparison.
+The features of Punch Out Model Synthesis (POMS) in Table \ref{table:CBTGComparison} are highlighted for ease of comparison.
 
 In terms of algorithms to ensure arc consistency, MMS and WFC have used AC3 and AC4.
 AC3 is easy to understand and can be performant if tile count is low but quickly suffers as tile count increases \cite{Wallace1993WhyAI}.
 AC4 is optimal, in general, but requires large amounts of auxiliary space \cite{Mohr_Henderson_1986}.
-POMS uses AC4 exclusively as tile count is often large (1,000 or more).
+The refernce implementation of POMS uses AC4 exclusively as tile count is often large (1,000 or more).
 
 
 %Constraint Based Tiling Generation (CBTG)
@@ -183,8 +184,14 @@ to attempt to get a better understanding of how biased the resulting generated m
 Karth and Smith use a vector-quantized variational auto encoder (VQ-VAE) to create reduced tile domain maps which can then
 be input into WFC to produce novel results \cite{Karth_Smith_2017}.
 
-Automatic tile constraint creation from exemplar scenes was provided in Gumin's \textit{Wave Function Collapse} (WFC) project, \cite{Gumin_2016}.
-Sherratt provides a good introduction to the pre processing step for automatic tile constraint creation in \cite{Sherratt_2019}.
-Newgas offers a nice introduction to WFC and automatic tile constraint creation in \cite{BorisTheBrave_wfc_2021}.
+%Automatic tile constraint creation from exemplar scenes was provided in Gumin's \textit{Wave Function Collapse} (WFC) project, \cite{Gumin_2016}.
 
+Though automatic tile constraint creation and constraint based tile generation are distinct ideas, they are often
+bundled together as manually creating tile constraints can be labor intensive and the resulting tile constraints
+are an input requirement to constraint based tile generation problems.
+Gumin's \textit{Wave Function Collapse} project highlighted an automatic tile constraint creation from exemplar
+scenes \cite{Gumin_2016}.
+Many resources exist to explain automatic tile constraint creation in detail but of note are Sherrat's summary in
+\cite{Sherratt_2019} and an introduction by Newgas in \cite{BorisTheBrave_wfc_2021}.
+We breifly go over automatic tile constraint generation in more detail later in this paper (Section 4).
 

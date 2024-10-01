@@ -37,13 +37,13 @@ Further, we:
 Here, a grid realization is a single tile assignment per grid cell that respects the
 tile constraints.
 
-POMS works by initially setting the grid in an indeterminate state and progressively realizing
+POMS works by initially setting the grid to an indeterminate state and progressively realizing
 sub blocks of the grid.
 Block boundary edges that fall within the larger grid body are \textit{pinned} so that, should a
 block realization succeed, the block can be re-integrated back into the larger grid.
 Should block level realization fail, depending on the type of block realization failure,
 either the failed block region is set to an indeterminate state
-or the block region is reverted to its previous state and all realized region boundaries within the grid
+or the block region is restored to its previous state and all realized region boundaries within the grid
 are considered for \textit{erosion} by probabilistically
 setting them to an indeterminate state.
 
@@ -136,7 +136,7 @@ is in an arc consistent state is called \textit{constraint propagation}.
 Constraint propagation
 can be used as the basis for a Constraint Based Tiling Generation (CBTG) solver.
 
-We differentiate a \textit{block level} solver and a \textit{grid level} solver.
+In this paper, we define two distinct classes of solvers that we call \textit{block level} solvers and \textit{grid level} solvers.
 We define a \textit{block level} solver as an algorithm that
 keeps full state of the block it is trying to solve by propagating constraints and maintaining arc consistency
 throughout its run.
