@@ -102,7 +102,7 @@ Algorithm \ref{alg:taccl} provides psuedo-code for the TACCL calculation.
 
 For the sake of brevity, no checks are performed in Algorithm \ref{alg:taccl} to determine if the calculated value
 is as large as the input block size ($M _ x, M _ y, M _ z$).
-In such a case, either the TACCL is unbounded or the test block size is smaller than the TACCL and would
+In such a case, either the TACCL is unbounded or the test block size is smaller than the TACCL and the test block size would
 need to be increased.
 
 The TACCL is meant to estimate the correlation length of an underlying tile constraint set but can be misleading as some
@@ -167,6 +167,8 @@ The TACCL is an ad-hoc heuristic measure of tile constraint correlation.
 Even though the TACCL has severe limitations, it can still be used to inform block size choice for POMS.
 Through the authors investigation, many tile sets and tile constraints will fail to find realizations should the block size be significantly
 smaller than the TACCL.
+The TACCL is motivated by the intuition that there are many local energy minima, that is a noisy and approximately the size of the correlation length, that must
+be overcome in order to make progress.
 A more thorough and detailed analysis of the TACCL is beyond the scope of this paper.
 
 Table \ref{table:tilesets} provides information for five tile sets, \textit{Pill Mortal}, \textit{Overhead Action RPG Overworld},
