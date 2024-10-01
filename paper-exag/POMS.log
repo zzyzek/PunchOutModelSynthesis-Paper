@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.5.21)  30 SEP 2024 23:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.5.21)  1 OCT 2024 01:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -914,24 +914,48 @@ Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
 \ALG@tmplength=\skip91
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
-) (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count350
+) (/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2020/10/26 v3.5g Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
+\captionmargin=\dimen265
+\captionmargin@=\dimen266
+\captionwidth=\dimen267
+\caption@tempdima=\dimen268
+\caption@indent=\dimen269
+\caption@parindent=\dimen270
+\caption@hangindent=\dimen271
+Package caption Info: KOMA-Script document class detected.
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption-koma.sto
+File: caption-koma.sto 2020/09/21 v2.0b Adaption of the caption package to the 
+KOMA-Script document classes (AR)
+))
+\c@caption@flags=\count350
+\c@continuedfloat=\count351
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: wrapfig package is loaded.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count352
 \lst@gtempboxa=\box68
 \lst@token=\toks43
-\lst@length=\count351
-\lst@currlwidth=\dimen265
-\lst@column=\count352
-\lst@pos=\count353
-\lst@lostspace=\dimen266
-\lst@width=\dimen267
-\lst@newlines=\count354
-\lst@lineno=\count355
-\lst@maxwidth=\dimen268
+\lst@length=\count353
+\lst@currlwidth=\dimen272
+\lst@column=\count354
+\lst@pos=\count355
+\lst@lostspace=\dimen273
+\lst@width=\dimen274
+\lst@newlines=\count356
+\lst@lineno=\count357
+\lst@maxwidth=\dimen275
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-\c@lstnumber=\count356
-\lst@skipnumbers=\count357
+\c@lstnumber=\count358
+\lst@skipnumbers=\count359
 \lst@framebox=\box69
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
@@ -945,7 +969,7 @@ Package csquotes Info: ... none found.
 Package: ccicons 2017/10/30 v1.6 LaTeX support for Creative Commons icons
 )
 LaTeX Font Info:    Trying to load font information for T1+LibertinusSerif-TLF 
-on input line 33.
+on input line 34.
 
 (/usr/share/texlive/texmf-dist/tex/latex/libertinus-type1/T1LibertinusSerif-TLF
 .fd
@@ -953,44 +977,44 @@ File: T1LibertinusSerif-TLF.fd 2020/08/22 (autoinst) Font definitions for T1/Li
 bertinusSerif-TLF.
 )
 LaTeX Font Info:    Font shape `T1/LibertinusSerif-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 33.
+(Font)              scaled to size 9.0pt on input line 34.
  (./POMS.aux)
 \openout1 = `POMS.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-Package scrbase Info: activating english \contentsname on input line 33.
-Package scrbase Info: activating english \listfigurename on input line 33.
-Package scrbase Info: activating english \listtablename on input line 33.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+Package scrbase Info: activating english \contentsname on input line 34.
+Package scrbase Info: activating english \listfigurename on input line 34.
+Package scrbase Info: activating english \listtablename on input line 34.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count358
-\scratchdimen=\dimen269
+\scratchcounter=\count360
+\scratchdimen=\dimen276
 \scratchbox=\box70
-\nofMPsegments=\count359
-\nofMParguments=\count360
+\nofMPsegments=\count361
+\nofMParguments=\count362
 \everyMPshowfont=\toks44
-\MPscratchCnt=\count361
-\MPscratchDim=\dimen270
-\MPnumerator=\count362
-\makeMPintoPDFobject=\count363
+\MPscratchCnt=\count363
+\MPscratchDim=\dimen277
+\MPnumerator=\count364
+\makeMPintoPDFobject=\count365
 \everyMPtoPDFconversion=\toks45
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1001,18 +1025,18 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Info: Redefining \microtypecontext on input line 33.
-Package microtype Info: Applying patch `item' on input line 33.
-Package microtype Info: Applying patch `toc' on input line 33.
-Package microtype Info: Applying patch `eqnum' on input line 33.
-Package microtype Info: Applying patch `footnote' on input line 33.
+LaTeX Info: Redefining \microtypecontext on input line 34.
+Package microtype Info: Applying patch `item' on input line 34.
+Package microtype Info: Applying patch `toc' on input line 34.
+Package microtype Info: Applying patch `eqnum' on input line 34.
+Package microtype Info: Applying patch `footnote' on input line 34.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 33.
+LaTeX Info: Redefining \showhyphens on input line 34.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1020,7 +1044,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `LibertinusSerif-TLF' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-Package hyperref Info: Link coloring ON on input line 33.
+Package hyperref Info: Link coloring ON on input line 34.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -1031,11 +1055,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count364
+\c@section@level=\count366
 )
-LaTeX Info: Redefining \ref on input line 33.
-LaTeX Info: Redefining \pageref on input line 33.
-LaTeX Info: Redefining \nameref on input line 33.
+LaTeX Info: Redefining \ref on input line 34.
+LaTeX Info: Redefining \pageref on input line 34.
+LaTeX Info: Redefining \nameref on input line 34.
 
 (./POMS.out) (./POMS.out)
 \@outlinefile=\write5
@@ -1048,17 +1072,17 @@ Class scrartcl Info: loading recommended package `bookmark'.
 (scrartcl)           `bookmarkpackage=false' before \begin{document} and
 (scrartcl)           you can avoid this message adding:
 (scrartcl)             \usepackage{bookmark}
-(scrartcl)           before \begin{document} on input line 33.
+(scrartcl)           before \begin{document} on input line 34.
 
 (/usr/share/texlive/texmf-dist/tex/latex/bookmark/bookmark.sty
 Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
 
 (/usr/share/texlive/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
 File: bkm-pdftex.def 2020-11-06 v1.29 bookmark driver for pdfTeX (HO)
-\BKM@id=\count365
+\BKM@id=\count367
 ))
-\c@mv@tabular=\count366
-\c@mv@boldtabular=\count367
+\c@mv@tabular=\count368
+\c@mv@boldtabular=\count369
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1096,15 +1120,18 @@ File: bkm-pdftex.def 2020-11-06 v1.29 bookmark driver for pdfTeX (HO)
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@lstlisting=\count368
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: listings package is loaded.
+Package caption Info: End \AtBeginDocument code.
+\c@lstlisting=\count370
 (./AUTHOR.tex)
 \verbatim@out=\write6
 \openout6 = `POMS.abs'.
 
 LaTeX Font Info:    Font shape `T1/LibertinusSerif-TLF/m/n' will be
-(Font)              scaled to size 15.55197pt on input line 67.
+(Font)              scaled to size 15.55197pt on input line 68.
 LaTeX Font Info:    Trying to load font information for T1+LibertinusSans-TLF o
-n input line 67.
+n input line 68.
 
 (/usr/share/texlive/texmf-dist/tex/latex/libertinus-type1/T1LibertinusSans-TLF.
 fd
@@ -1112,18 +1139,18 @@ File: T1LibertinusSans-TLF.fd 2020/08/22 (autoinst) Font definitions for T1/Lib
 ertinusSans-TLF.
 )
 LaTeX Font Info:    Font shape `T1/LibertinusSans-TLF/m/n' will be
-(Font)              scaled to size 15.55197pt on input line 67.
+(Font)              scaled to size 15.55197pt on input line 68.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `LibertinusSans-TLF' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/LibertinusSans-TLF/b/n' will be
-(Font)              scaled to size 15.55197pt on input line 67.
+(Font)              scaled to size 15.55197pt on input line 68.
 LaTeX Font Info:    Font shape `T1/LibertinusSans-TLF/b/n' will be
-(Font)              scaled to size 9.0pt on input line 67.
+(Font)              scaled to size 9.0pt on input line 68.
 LaTeX Font Info:    Font shape `T1/LibertinusSerif-TLF/m/n' will be
-(Font)              scaled to size 10.79997pt on input line 67.
-LaTeX Font Info:    Calculating math sizes for size <10.79997> on input line 67
+(Font)              scaled to size 10.79997pt on input line 68.
+LaTeX Font Info:    Calculating math sizes for size <10.79997> on input line 68
 .
 <<ot1.cmap>> (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
@@ -1131,20 +1158,20 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 )
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <7.55994> not available
-(Font)              size <8> substituted on input line 67.
+(Font)              size <8> substituted on input line 68.
 
 <<oml.cmap>>
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <7.55994> not available
-(Font)              size <8> substituted on input line 67.
+(Font)              size <8> substituted on input line 68.
 
 <<oms.cmap>>
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <7.55994> not available
-(Font)              size <8> substituted on input line 67.
+(Font)              size <8> substituted on input line 68.
 
 <<omx.cmap>>
-LaTeX Font Info:    Trying to load font information for U+msa on input line 67.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 68.
 
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -1152,7 +1179,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 67.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 68.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -1162,82 +1189,82 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Font shape `T1/LibertinusSerif-TLF/m/n' will be
-(Font)              scaled to size 7.55994pt on input line 67.
+(Font)              scaled to size 7.55994pt on input line 68.
 LaTeX Font Info:    Font shape `T1/LibertinusSerif-TLF/m/it' will be
-(Font)              scaled to size 7.55994pt on input line 67.
+(Font)              scaled to size 7.55994pt on input line 68.
 LaTeX Font Info:    Font shape `T1/LibertinusSerif-TLF/m/n' will be
-(Font)              scaled to size 12.96002pt on input line 67.
+(Font)              scaled to size 12.96002pt on input line 68.
 LaTeX Font Info:    Font shape `T1/LibertinusSerif-TLF/m/n' will be
-(Font)              scaled to size 7.50009pt on input line 67.
+(Font)              scaled to size 7.50009pt on input line 68.
 LaTeX Font Info:    Font shape `T1/LibertinusSerif-TLF/m/it' will be
-(Font)              scaled to size 7.50009pt on input line 67.
+(Font)              scaled to size 7.50009pt on input line 68.
 LaTeX Font Info:    Font shape `T1/LibertinusSerif-TLF/b/n' will be
-(Font)              scaled to size 9.0pt on input line 67.
+(Font)              scaled to size 9.0pt on input line 68.
  (./POMS.abs)
-LaTeX Font Info:    Calculating math sizes for size <7.50009> on input line 67.
+LaTeX Font Info:    Calculating math sizes for size <7.50009> on input line 68.
 
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <7.50009> not available
-(Font)              size <8> substituted on input line 67.
+(Font)              size <8> substituted on input line 68.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <3.75005> not available
-(Font)              size <5> substituted on input line 67.
+(Font)              size <5> substituted on input line 68.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <7.50009> not available
-(Font)              size <8> substituted on input line 67.
+(Font)              size <8> substituted on input line 68.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <3.75005> not available
-(Font)              size <5> substituted on input line 67.
+(Font)              size <5> substituted on input line 68.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <7.50009> not available
-(Font)              size <8> substituted on input line 67.
+(Font)              size <8> substituted on input line 68.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <3.75005> not available
-(Font)              size <5> substituted on input line 67.
+(Font)              size <5> substituted on input line 68.
 
 LaTeX Font Info:    Font shape `T1/LibertinusSerif-TLF/m/n' will be
-(Font)              scaled to size 5.25003pt on input line 67.
+(Font)              scaled to size 5.25003pt on input line 68.
 
-Package hyperref Warning: Ignoring empty anchor on input line 67.
+Package hyperref Warning: Ignoring empty anchor on input line 68.
 
 
-Package hyperref Warning: Ignoring empty anchor on input line 67.
+Package hyperref Warning: Ignoring empty anchor on input line 68.
 
 LaTeX Font Info:    Trying to load font information for U+fontawesomefree1 on i
-nput line 67.
+nput line 68.
 (/usr/share/texlive/texmf-dist/tex/latex/fontawesome5/ufontawesomefree1.fd)
 
-Package hyperref Warning: Ignoring empty anchor on input line 67.
+Package hyperref Warning: Ignoring empty anchor on input line 68.
 
 
-Package hyperref Warning: Ignoring empty anchor on input line 67.
+Package hyperref Warning: Ignoring empty anchor on input line 68.
 
 LaTeX Font Info:    Trying to load font information for U+fontawesomebrands1 on
- input line 67.
+ input line 68.
 (/usr/share/texlive/texmf-dist/tex/latex/fontawesome5/ufontawesomebrands1.fd)
 LaTeX Font Info:    Font shape `U/fontawesomebrands1/solid/n' in size <7.50009>
  not available
 (Font)              Font shape `U/fontawesomebrands1/regular/n' tried instead o
-n input line 67.
+n input line 68.
 
 
-Package hyperref Warning: Ignoring empty anchor on input line 67.
+Package hyperref Warning: Ignoring empty anchor on input line 68.
 
 <doclicense-CC-by-88x31.pdf, id=15, 90.3375pt x 31.61812pt>
 File: doclicense-CC-by-88x31.pdf Graphic file (type pdf)
 <use doclicense-CC-by-88x31.pdf>
-Package pdftex.def Info: doclicense-CC-by-88x31.pdf  used on input line 67.
+Package pdftex.def Info: doclicense-CC-by-88x31.pdf  used on input line 68.
 (pdftex.def)             Requested size: 32.37479pt x 11.33087pt.
 LaTeX Font Info:    Font shape `T1/LibertinusSerif-TLF/m/n' will be
-(Font)              scaled to size 4.5pt on input line 67.
+(Font)              scaled to size 4.5pt on input line 68.
 LaTeX Font Info:    Trying to load font information for TS1+LibertinusSerif-TLF
- on input line 67.
+ on input line 68.
 
 (/usr/share/texlive/texmf-dist/tex/latex/libertinus-type1/TS1LibertinusSerif-TL
 F.fd
@@ -1245,13 +1272,13 @@ File: TS1LibertinusSerif-TLF.fd 2020/08/22 (autoinst) Font definitions for TS1/
 LibertinusSerif-TLF.
 )
 LaTeX Font Info:    Font shape `TS1/LibertinusSerif-TLF/m/n' will be
-(Font)              scaled to size 4.5pt on input line 67.
+(Font)              scaled to size 4.5pt on input line 68.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `LibertinusSerif-TLF' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Overfull \hbox (3.75005pt too wide) in paragraph at lines 67--67
+Overfull \hbox (3.75005pt too wide) in paragraph at lines 68--68
 [][][][]||$[]$ $[]$|  
  []
 
@@ -1269,6 +1296,8 @@ File: teaser.png Graphic file (type png)
 <use teaser.png>
 Package pdftex.def Info: teaser.png  used on input line 6.
 (pdftex.def)             Requested size: 452.9679pt x 122.68532pt.
+LaTeX Font Info:    Font shape `T1/LibertinusSerif-TLF/m/n' will be
+(Font)              scaled to size 8.21255pt on input line 7.
 LaTeX Font Info:    Font shape `T1/LibertinusSans-TLF/b/n' will be
 (Font)              scaled to size 8.21255pt on input line 7.
 LaTeX Font Info:    Font shape `T1/LibertinusSans-TLF/m/it' will be
@@ -1292,8 +1321,6 @@ LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <4.10628> not available
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <4.10628> not available
 (Font)              size <5> substituted on input line 95.
 
-LaTeX Font Info:    Font shape `T1/LibertinusSerif-TLF/m/n' will be
-(Font)              scaled to size 8.21255pt on input line 95.
 [1
 
 
@@ -1322,47 +1349,28 @@ Package microtype Info: Character `guilsinglright ' is missing
 ) (./02-Related-Work.tex
 LaTeX Font Info:    Font shape `T1/LibertinusSerif-TLF/m/n' will be
 (Font)              scaled to size 6.0pt on input line 4.
- [2pdfTeX warning (ext4): destination with the same identifier (name{figure.1})
- has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.20 
-      <./teaser.png>]
+ [2 <./teaser.png>]
 LaTeX Font Info:    Font shape `T1/LibertinusSans-TLF/b/it' in size <8.21255> n
 ot available
 (Font)              Font shape `T1/LibertinusSans-TLF/b/sl' tried instead on in
-put line 120.
+put line 118.
 LaTeX Font Info:    Font shape `T1/LibertinusSans-TLF/b/sl' will be
-(Font)              scaled to size 8.21255pt on input line 120.
- [3pdfTeX warning (ext4): destination with the same identifier (name{table.1}) 
-has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.176 
-      ]) (./03-Algorithm.tex
-<poms_figalg.pdf, id=101, 662.475pt x 451.6875pt>
+(Font)              scaled to size 8.21255pt on input line 118.
+ [3]) (./03-Algorithm.tex
+<poms_figalg.pdf, id=102, 662.475pt x 451.6875pt>
 File: poms_figalg.pdf Graphic file (type pdf)
 <use poms_figalg.pdf>
 Package pdftex.def Info: poms_figalg.pdf  used on input line 15.
 (pdftex.def)             Requested size: 452.9679pt x 308.8389pt.
-<pm_slideshow.png, id=102, 838.332pt x 216.81pt>
+<pm_slideshow.png, id=103, 838.332pt x 216.81pt>
 File: pm_slideshow.png Graphic file (type png)
 <use pm_slideshow.png>
 Package pdftex.def Info: pm_slideshow.png  used on input line 32.
 (pdftex.def)             Requested size: 452.9679pt x 117.14842pt.
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
 put line 42.
- [4] [5pdfTeX warning (ext4): destination with the same identifier (name{figure
-.2}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.162 
-      pdfTeX warning (ext4): destination with the same identifier (name{figure.
-3}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.162 
-       <./poms_figalg.pdf> <./pm_slideshow.png>]) (./04-Results.tex
+
+[4] [5 <./poms_figalg.pdf> <./pm_slideshow.png>]) (./04-Results.tex
 <tileset_rrti.png, id=340, 576.62234pt x 615.06383pt>
 File: tileset_rrti.png Graphic file (type png)
 <use tileset_rrti.png>
@@ -1382,31 +1390,11 @@ Package pdftex.def Info: brutal-plum_cons.png  used on input line 24.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[6pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) 
-has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.114 
-       <./tileset_rrti.png>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[7pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) 
-has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.163 
-      pdfTeX warning (ext4): destination with the same identifier (name{table.2
-}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.163 
-       <./2d_poms_examples.png>] [8pdfTeX warning (ext4): destination with the 
-same identifier (name{figure.6}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.241 
-       <./brutal-plum_cons.png>]) (./05-Conclusion.tex) (./POMS.bbl
+[6 <./tileset_rrti.png>] [7 <./2d_poms_examples.png>] [8 <./brutal-plum_cons.pn
+g>]) (./05-Conclusion.tex) (./POMS.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 16--20
 []\T1/LibertinusSerif-TLF/m/n/9 (+20) R. Hoet-zlein, just_math, 2023. URL:
  []
@@ -1492,11 +1480,11 @@ Package rerunfilecheck Info: File `POMS.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 31195 strings out of 480171
- 582688 string characters out of 5894489
- 998133 words of memory out of 5000000
- 48014 multiletter control sequences out of 15000+600000
- 646759 words of font info for 402 fonts, out of 8000000 for 9000
+ 32445 strings out of 480171
+ 608103 string characters out of 5894489
+ 1021182 words of memory out of 5000000
+ 49245 multiletter control sequences out of 15000+600000
+ 647792 words of font info for 408 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
  122i,20n,120p,10620b,2604s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_sfissr.e
@@ -1525,11 +1513,12 @@ ve/texmf-dist/fonts/type1/public/libertinus-type1/LibertinusSerif-Regular.pfb><
 are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on POMS.pdf (10 pages, 6825171 bytes).
+/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/symbols/msbm10.pfb>
+Output written on POMS.pdf (10 pages, 6832176 bytes).
 PDF statistics:
- 587 PDF objects out of 1000 (max. 8388607)
+ 591 PDF objects out of 1000 (max. 8388607)
  59 named destinations out of 1000 (max. 500000)
  97428 words of extra memory for PDF output out of 106986 (max. 10000000)
 

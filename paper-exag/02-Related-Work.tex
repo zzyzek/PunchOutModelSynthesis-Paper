@@ -90,7 +90,7 @@ POMS takes the ideas of tile correlation and the TACCL to inform its backtrackin
 without needing the resource requirements that BMS, as a block level solver, would require.
 
 %\begin{table}[h]
-%  \label{table:CBTGComparison}
+%  \label{table:XCBTGComparison}
 %  \centering
 %  \begin{tabular}[t]{lccccc}
 %    \hline
@@ -106,25 +106,22 @@ without needing the resource requirements that BMS, as a block level solver, wou
 %\end{table}
 
 %    & \multicolumn{4}{c}{\textit{Algorithm}} \\
+%    \cline{1-1}
 
 \begin{table}[h]
-  \label{table:CBTGComparison}
   \centering
   \begin{tabular}[t]{l|cccc}
       & \textit{WFC} & \textit{BMS} & \textit{MMS} & \textit{POMS} \\
     \hline
     \specialcellCenter{Solver Type} & Block & Block & Grid & \textbf{Grid} \\
-    \cline{1-1}
     \specialcellCenter{Contradiction \\ \ \ Resilience} & No & Yes & Yes & \textbf{Yes} \\
-    \cline{1-1}
-    \specialcellCenter{Block Step \\ \ \ Consistent} & n/a & n/a & Yes & \textit{\textbf{No}} \\
-    \cline{1-1}
+    \specialcellCenter{Block Step \ \ \ \ \\ \ \ \ \ Consistent} & n/a & n/a & Yes & \textit{\textbf{No}} \\
     \specialcellCenter{Indeterminate \\ \ \ Initial State} & Yes & Yes & No & \textbf{Yes} \\
-    \cline{1-1}
     \specialcellCenter{Ergodic} & Yes & Yes & No & \textbf{Yes} \\
     \hline
   \end{tabular}
-  \caption{ \textbf{WFC}: Gumin's Wave Function Collapse \\ \textbf{BMS}: Breakout Model Synthesis \\ \textbf{MMS}: Merrell's Modify in Blocks Model Synthesis \\ \textbf{POMS}: Punch Out Model Synthesis (our algorithm) }
+  \caption{\textbf{WFC}: Gumin's Wave Function Collapse \\ \textbf{BMS} : Breakout Model Synthesis \\ \textbf{MMS}: Merrell's Modify in Blocks Model Synthesis \\ \textbf{POMS}: Punch Out Model Synthesis (our algorithm)}
+  \label{table:CBTGComparison}
 \end{table}
 
 Table \ref{table:CBTGComparison} provides a summary of the differences between WFC, BMS, MMS and POMS.

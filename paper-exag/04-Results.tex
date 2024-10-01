@@ -119,22 +119,48 @@ displays this phenomenon and will be discussed later in this section.
 
 %     Tile Set & Tile Count & Dimension & \specialcellCenter{Tile Arc Consistent \\ Correlation Length (x/y)} \\
 
-%\begin{table}[ht]
+%%\begin{table}[ht]
+%\begin{table}[h]
+%  \centering
+%  \begin{tabular}[t]{lccc}
+%    \hline
+%     \textit{Tile Set} & \textit{Tile Count} & \textit{Dim.} & \specialcellCenter{\textit{Tile Arc} \\ \textit{Consistent} \\ \textit{Correlation} \\ \textit{Length (x/y)}} \\
+%     \hline
+%     \textit{Pill Mortal} & 190 & 2D & 24 \\
+%     \specialcell{\textit{Overhead Action} \\ \ \ \textit{RPG Overworld}} \cite{LUNARSIGNALS_oarpgo} & 3031 & 2D & 50/70 \\
+%     \textit{Forest Micro} \cite{ThKaspar_micro} & 159 & 2D & Unbounded  \\
+%     \specialcell{\textit{Two Bit Micro} \\ \ \ \textit{Metroidvania} } \cite{0x72_2bmmv} & 1807 & 2D & Unbounded  \\
+%     \textit{Brutal Plum} & 90 & 3D & 16 \\
+%     \hline
+%  \end{tabular}
+%  \caption{ }
+%  \label{table:tilesets}
+%\end{table}
+
+%    & \textit{Pill Mortal} & \specialcell{\textit{Overhead Action} \\ \textit{PRG Overworld}} \cite{LUNARSIGNALS_oarpgo} & \textit{Forest Micro} \cite{ThKaspar_micro} & \specialcell{\textit{Two Bit Micro} \\ \textit{Metroidvania}} \cite{0x72_2bmmv} & \textit{Brutal Plum} \\
+
+%  \caption{\textbf{PM}: \textit{Pill Mortal} tile set \\ \textbf{OARPGO}: \textit{Overhead Action RPG Overworld} tile set \cite{LUNARSIGNALS_oarpgo} \\ \textbf{FM}: \textit{Forest Micro} tile set \cite{ThKaspar_micro} \\ \textbf{2BMMV}: \textit{Two Bit Micro Metroidvania} tile set \cite{0x72_2bmmv} \\ \textbf{BP}: \textit{Brutal Plum} tile set}
+
+%      \specialcell{Window Size \\ (in tiles)}  & $2 \times 2$ & $3 \times 3$ & $2 \times 2$ & $2 \times 2 $ & n/a \\
+%      \specialcell{Overlap \\ (in tiles)}  & $1 \times 2$ & $2 \times 3$ & $1 \times 2$ & $1 \times 2 $ & n/a \\
+
 \begin{table}[h]
-  \caption{ }
-  \label{table:tilesets}
   \centering
-  \begin{tabular}[t]{lccc}
+  \begin{tabular}[t]{l|ccccc}
+    & \textit{PM} & \textit{OARPGO} & \textit{FM} & \textit{2BMMV} & \textit{BP} \\
     \hline
-     \textit{Tile Set} & \textit{Tile Count} & \textit{Dim.} & \specialcellCenter{\textit{Tile Arc} \\ \textit{Consistent} \\ \textit{Correlation} \\ \textit{Length (x/y)}} \\
-     \hline
-     \textit{Pill Mortal} & 190 & 2D & 24 \\
-     \specialcell{\textit{Overhead Action} \\ \ \ \textit{RPG Overworld}} \cite{LUNARSIGNALS_oarpgo} & 3031 & 2D & 50/70 \\
-     \textit{Forest Micro} \cite{ThKaspar_micro} & 159 & 2D & Unbounded  \\
-     \specialcell{\textit{Two Bit Micro} \\ \ \ \textit{Metroidvania} } \cite{0x72_2bmmv} & 1807 & 2D & Unbounded  \\
-     \textit{Brutal Plum} & 90 & 3D & 16 \\
+      Dim. & 2D & 2D & 2D & 2D & 3D \\
+      Tile Size (px) & 8px & 16px & 16px & 24px & n/a \\
+      \specialcell{Supertile \\ \ \ Window \\ \ \ (in tiles)}  & 2x2 & 3x3 & 2x2 & 2x2 & n/a \\
+      \specialcell{Supertile \\ \ \ Overlap \\ \ \ (in tiles)}  & 1x2 & 2x3 & 1x2 & 1x2 & n/a \\
+      Tile Count & 190 & 3031 & 159 & 1807 & 90 \\
+      TACCL (x/y) & 24 & 50/70 & $\infty$ & $\infty$ & 16 \\
+      Block Size & 32 & 50x70 & 48 & 48 & 22 \\
+      BCS & \textit{U} & \textit{U} & \textit{D} & \textit{U} & \textit{U} \\
      \hline
   \end{tabular}
+  \caption{\textit{Pill Mortal} (\textbf{PM}) tile set \\ \textit{Overhead Action RPG Overworld} (\textbf{OARPGO}) tile set \cite{LUNARSIGNALS_oarpgo} \\ \textit{Forest Micro} (\textbf{FM}) tile set \cite{ThKaspar_micro} \\ \textit{Two Bit Micro Metroidvania} (\textbf{2BMMV}) tile set \cite{0x72_2bmmv} \\ \textit{Brutal Plum} (\textbf{BP}) tile set \\ The Block Choice Scheduler (\textit{BCS}) strategy has codes \textit{U} for uniform and \textit{D} for diagonal}
+  \label{table:tilesets}
 \end{table}
 
 The TACCL is an ad-hoc heuristic measure of tile constraint correlation.
@@ -143,8 +169,21 @@ Through the authors investigation, many tile sets and tile constraints will fail
 smaller than the TACCL.
 A more thorough and detailed analysis of the TACCL is beyond the scope of this paper.
 
+Table \ref{table:tilesets} provides information for five tile sets, \textit{Pill Mortal}, \textit{Overhead Action RPG Overworld},
+\textit{Forest Micro}, \textit{Two Bit Micro Metroidvania} and \textit{Brutal Plum}, highlighted in this paper.
+Table \ref{table:tilesets} gives the parameter choice for tile size, super tile window size and supertile overlap, used in
+  the creation of the tile constraints.
+
 Figure \ref{fig:2dexamples} and Figure \ref{fig:brutal_plum} show the TACCL, reference images and example runs
-for the five tile sets listed in Table \ref{table:tilesets}.
+for these five tile sets.
+Table \ref{table:tilesets} shows the tile count, calculated TACCL, block sized used and Block Choice Strategy (BCS)
+used in the example runs.
+Here, the BCS code \textit{U} denotes a block choice schedule that randomely chooses a block center \textit{uniformly} from
+indeterminate cells and the BCS code \textit{D} denotes a \textit{diagonal} block choice schedule, biasing block choices
+to indeterminate cells on a diagonal starting from the upper left of the grid to the lower right.
+
+We group the 2D tilesets into \textit{bounded} and \textit{unbounded} TACCL, with special consideration for
+the \textit{Brutal Plum} tile set.
 
 
 %The Tile Arc Consistent Correlation length (TACCL), reference images and example runs
