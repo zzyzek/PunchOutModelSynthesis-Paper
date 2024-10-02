@@ -10,16 +10,18 @@ a tile constraint set to run.
 
 \begin{figure}[h]
   \includegraphics[width=\linewidth]{tileset_rrti.png}
-  \caption{a) The exemplar image, take from Wo\'zniak's Forest Micro tile set with a single tile highlighted in red with it's neighbors, as they appear in
-           the exemplar image highlighted in orange.
-           b) The inferred tile set, packed into an image with the highlighted tile in red and its neighbor tiles highlighted in orange. Note that even though
-           tiles in the tile set might look the same, these represent different tiles as they have different constraints for which neighbors are permissible.
-           c) A catalog of super tiles, with the highlighted tile in red and its neighbors highlighted in orange. Each super tile consists of a 2x2 window
-           taken from the exemplar image (a). Neighbors are derived from the corresponding overlap of the 2x1 tile window  for left and right neighbors and
-           a 1x2 tile window for the up and down neighbors. Grey regions represent tiles that fall outside of the exemplar image. }
+  \caption{ a) Exemplar image with a single tile and its neighbors highlighted. b) The packed image inferred tile set with the relevant tile highlighted.
+            c) The catalog of 2x2 super tiles used to create the tile constraints from the 1x2 tile overlap, suitably rotated. The same tile highlighted in a) and b) has been highlighted here for comparison. }
   \label{fig:rrti_tileset}
 \end{figure}
 
+%  \caption{a) The exemplar image, take from Wo\'zniak's Forest Micro tile set with a single tile highlighted in red with it's neighbors, as they appear in
+%           the exemplar image highlighted in orange.
+%           b) The inferred tile set, packed into an image with the highlighted tile in red and its neighbor tiles highlighted in orange. Note that even though
+%           tiles in the tile set might look the same, these represent different tiles as they have different constraints for which neighbors are permissible.
+%           c) A catalog of super tiles, with the highlighted tile in red and its neighbors highlighted in orange. Each super tile consists of a 2x2 window
+%           taken from the exemplar image (a). Neighbors are derived from the corresponding overlap of the 2x1 tile window  for left and right neighbors and
+%           a 1x2 tile window for the up and down neighbors. Grey regions represent tiles that fall outside of the exemplar image. }
 
 \subsection{Automatic Tile Constraint Creation}
 
