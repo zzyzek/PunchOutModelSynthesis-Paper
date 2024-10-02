@@ -38,28 +38,28 @@ In general, for some tile constraints, finding a class of fully resolved initial
 For example, it might be possible to find a small tileable block that is then able to be replicated through to the whole grid
 \footnote{ This method was suggested to the authors through personal communication with P. Merrell }.
 
-For other tile constraints, finding any fully resolved grid from an initially indeterminate state might be the goal.
-In such cases, running MMS would defeat the purpose, as MMS can't start without a solution but if a solution is known, MMS wouldn't
-be needed.
-As an example, a tile set can be constructed where a grid realization connects two endpoints via a path
-without explicitly describing where the path meanders through the grid.
-MMS would require a full realization of the path before it could start.
+The inability to handle certain types of unbounded constraints, such as the implicit top and bottom equal river count constraint that appear in
+Wo\'zniak's \textit{Forest Micro} tile set (section 4), is the deeper issue with MMS.
+Choosing a small block size for MMS could miss novel features whereas too large of a block size either decreases
+the likelihood of block resolution or turns MMS into a block level solver.
+
+%For other tile constraints, finding any fully resolved grid from an initially indeterminate state might be the goal.
+%In such cases, running MMS would defeat the purpose, as MMS can't start without a solution but if a solution is known, MMS wouldn't
+%be needed.
+%As an example, a tile set can be constructed where a grid realization connects two endpoints via a path
+%without explicitly describing where the path meanders through the grid.
+%MMS would require a full realization of the path before it could start.
 
 %Depending on tile constraints, discovering an initially resolved grid might be a question of engineering
 %effort, so might not pose a theoretical impediment to using MMS.
 
-POMS sidesteps the need for a fully realized initial configuration by allowing the grid to be in an indeterminate state.
+%POMS sidesteps the need for a fully realized initial configuration by allowing the grid to be in an indeterminate state.
 
 %% maybe put in conclusion?
 %%
 %Note that, to the authors knowledge, no systematic examination of methods or strategies to create initial states
 %to be fed into MMS has been done.
 %The above discussion is informed through personal experimentation and through discussion with P. Merrell.
-
-The inability to handle certain types of unbounded constraints, such as the implicit top and bottom equal river count constraint that appear in
-Wo\'zniak's \textit{Forest Micro} tile set (section 4), is the deeper issue with MMS.
-Choosing a small block size for MMS could miss novel features whereas too large of a block size either decreases
-the likelihood of block resolution or turns MMS into a block level solver.
 
 %MMS ensures success at the cost of novelty whereas POMS embraces novelty but entertains failure.
 %POMS allows for long range implicit constraints, such as unbounded paths or large features, because the grid allows
@@ -86,7 +86,7 @@ used to create algorithms that took advantage of it.
 %algorithm.
 %In some sense, POMS is a natural conversion of BMS from a block level solver to a grid level solver allowing an ``out of core''
 %algorithm.
-POMS takes the ideas of tile correlation and the TACCL to inform its backtracking strategies when applied to the larger grid
+POMS takes the ideas of tile correlation and the TACCL to inform its stochastic backtracking strategies when applied to the larger grid
 without needing the resource requirements that BMS, as a block level solver, would require.
 
 %\begin{table}[h]
@@ -134,7 +134,7 @@ are possible and does not mean \textit{unbiased} as, depending on the tile const
 solution biasing may occur.
 The features of Punch Out Model Synthesis (POMS) in Table \ref{table:CBTGComparison} are highlighted for ease of comparison.
 
-In terms of algorithms to ensure arc consistency, MMS and WFC have used AC3 and AC4.
+In terms of algorithms to ensure arc consistency, Merrell's implementation of MMS \cite{Merrell_mms_2021} and Gumin's implementation of WFC \cite{Gumin_2016} have used AC3 and AC4.
 AC3 is easy to understand and can be performant if tile count is low but quickly suffers as tile count increases \cite{Wallace1993WhyAI}.
 AC4 is optimal, in general, but requires large amounts of auxiliary space \cite{Mohr_Henderson_1986}.
 The reference implementation of POMS uses AC4 exclusively as tile count is often large (1,000 or more).
@@ -183,9 +183,9 @@ be input into WFC to produce novel results \cite{Karth_Smith_2017}.
 
 %Automatic tile constraint creation from exemplar scenes was provided in Gumin's \textit{Wave Function Collapse} (WFC) project, \cite{Gumin_2016}.
 
-Though automatic tile constraint creation and constraint based tile generation are distinct ideas, they are often
+Though automatic tile constraint creation and constraint based tiling generation are distinct ideas, they are often
 bundled together as manually creating tile constraints can be labor intensive and the resulting tile constraints
-are an input requirement to constraint based tile generation problems.
+are an input requirement to constraint based tiling generation problems.
 Gumin's \textit{Wave Function Collapse} project highlighted an automatic tile constraint creation from exemplar
 scenes \cite{Gumin_2016}.
 Many resources exist to explain automatic tile constraint creation in detail but of note are Sherrat's summary in

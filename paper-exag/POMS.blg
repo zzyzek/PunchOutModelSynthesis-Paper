@@ -5,29 +5,31 @@ The style file: elsarticle-num-names.bst
 Database file #1: 06-References.bib
 Warning--entry type for "Gumin_2016" isn't style-file defined
 --line 198 of file 06-References.bib
+Warning--entry type for "Merrell_mms_2021" isn't style-file defined
+--line 207 of file 06-References.bib
 Warning--entry type for "Hoetzlein_2023" isn't style-file defined
---line 210 of file 06-References.bib
+--line 219 of file 06-References.bib
 Warning--entry type for "Sherratt_2019" isn't style-file defined
---line 221 of file 06-References.bib
+--line 230 of file 06-References.bib
 Warning--entry type for "BorisTheBrave_cbtg_2021" isn't style-file defined
---line 231 of file 06-References.bib
+--line 240 of file 06-References.bib
 Warning--entry type for "BorisTheBrave_wfc_2021" isn't style-file defined
---line 239 of file 06-References.bib
-Warning--entry type for "Kleinberg_2019" isn't style-file defined
 --line 248 of file 06-References.bib
+Warning--entry type for "Kleinberg_2019" isn't style-file defined
+--line 257 of file 06-References.bib
 Warning--entry type for "0x72_2bmmv" isn't style-file defined
---line 273 of file 06-References.bib
+--line 282 of file 06-References.bib
 Warning--entry type for "ThKaspar_micro" isn't style-file defined
---line 281 of file 06-References.bib
-I was expecting a `,' or a `}'---line 286 of file 06-References.bib
+--line 290 of file 06-References.bib
+I was expecting a `,' or a `}'---line 295 of file 06-References.bib
  :   
  :   lastaccessed = {August 25, 2024}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
 Warning--entry type for "LUNARSIGNALS_oarpgo" isn't style-file defined
---line 289 of file 06-References.bib
+--line 298 of file 06-References.bib
 Warning--entry type for "Merrell_comparison_2021" isn't style-file defined
---line 544 of file 06-References.bib
+--line 553 of file 06-References.bib
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Warning--missing school in Merrell_2009
 Warning--empty pages in Wallace1993WhyAI
@@ -35,45 +37,45 @@ Warning--empty pages in Karth_Smith_2017
 Warning--empty pages in Newgas_2021
 Warning--empty pages in Alaka_Bidarra_Rafael_2023
 Warning--empty pages in Langendam_etall_2022
-You've used 22 entries,
+You've used 23 entries,
             2918 wiz_defined-function locations,
-            1042 strings with 14918 characters,
-and the built_in function-call counts, 11529 in all, are:
-= -- 911
-> -- 299
-< -- 24
-+ -- 115
-- -- 93
-* -- 1158
-:= -- 1656
-add.period$ -- 51
-call.type$ -- 22
-change.case$ -- 140
+            1046 strings with 15006 characters,
+and the built_in function-call counts, 11922 in all, are:
+= -- 941
+> -- 309
+< -- 25
++ -- 120
+- -- 96
+* -- 1195
+:= -- 1718
+add.period$ -- 53
+call.type$ -- 23
+change.case$ -- 146
 chr.to.int$ -- 22
-cite$ -- 28
-duplicate$ -- 981
-empty$ -- 948
-format.name$ -- 141
-if$ -- 2236
-int.to.chr$ -- 1
+cite$ -- 29
+duplicate$ -- 1015
+empty$ -- 980
+format.name$ -- 145
+if$ -- 2308
+int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 160
-newline$ -- 103
-num.names$ -- 88
-pop$ -- 341
+missing$ -- 165
+newline$ -- 106
+num.names$ -- 92
+pop$ -- 355
 preamble$ -- 1
-purify$ -- 141
+purify$ -- 147
 quote$ -- 0
-skip$ -- 326
+skip$ -- 334
 stack$ -- 0
-substring$ -- 369
-swap$ -- 580
+substring$ -- 381
+swap$ -- 597
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 198
+type$ -- 207
 warning$ -- 6
-while$ -- 73
+while$ -- 76
 width$ -- 0
-write$ -- 313
+write$ -- 324
 (There was 1 error message)
