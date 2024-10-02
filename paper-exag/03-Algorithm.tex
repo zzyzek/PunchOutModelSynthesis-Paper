@@ -1,6 +1,6 @@
 \section{Algorithm}
 
-%\subsection{Description}
+\subsection{Punch Out Model Synthesis}
 
 Punch Out Model Synthesis (POMS) works to progressively resolve chosen
 blocks within a larger grid.
@@ -172,4 +172,77 @@ as there is no need for a fully realized initial state.
 Further, the lax assumptions on initial state allow for more freedom
 in choosing initial restrictions.
 
+%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%
+
+
+\subsection{Tile Arc Consistent Correlation Length}
+
+Choosing a block size for POMS is informed by the tile correlation length,
+as block sizes below the the tile correlation length run the risk of getting
+trapped in a local energy minima without the possibility of escape.
+As a heuristic to estimate the tile correlation length,
+Hoetzlein's \texttt{just\_math} project \cite{Hoetzlein_2023} proposed
+a Tile Arc Consistent Correlation Length (TACCL).
+
+%As a simple, measurable quantity to help understand the correlation length implied by the tile constraints, we define a Tile Arc Consistent Correlation
+%Length (TACCL), as first mentioned in
+The computation of the TACCL is done as a pre-processing step independent of the POMS algorithm.
+The idea is to iterate through each tile in isolation and record the maximum distance constraint propagation reaches when resolving a center cell.
+
+Starting from a small test grid set to an indeterminate state,
+the center cell is resolved to a tile and constraint propagation is performed to put the grid
+into an arc consistent state.
+The size of a bounding box that minimally encompases every cell whose tile domain was altered during the constraint propagation is then saved.
+The grid is then reverted to an indeterminate state and the next tile is chosen to resolve, repeating the process and updating the maximum distances
+of the minimum encompasing bounding box for each tile tested.
+
+The TACCL is the maximum extent of the saved bounding boxes from iterating through all tiles.
+Algorithm \ref{alg:taccl} provides psuedo-code for the TACCL calculation.
+
+\begin{algorithm}
+  \caption{Tile Arc Consistent Correlation Length}
+  \label{alg:taccl}
+  \begin{algorithmic}
+    \State \textbf{Output:} Tile Arc Consistent Correlation Length $L$
+    \State \textbf{Input:} Block Size $(M _ x, M _ y, M _ z)$
+    \State Create a block $B$ of size $(M _ x, M _ y, M _ z)$
+    \State Put block $B$ in a fully indeterminate state
+    \State $L=1$
+    \For { tile every tile $t \in D$ }
+      \State $B' = B$
+      \State Apply initial setup restrictions to $B'$
+      \State Resolve center cell, $c$, in $B'$ to $t$
+      \State Make $B'$ arc consistent
+      \State Find mininum bounding box, $bbox$, \\ \ \ \ \ \ \ \ \ encompassing altered cells of $B'$
+      \If{ $\max _ { x, y, z } bbox  > L$ }
+        \State $L = \max _ { x, y, z } bbox $
+      \EndIf
+    \EndFor
+    \State Return $L$
+  \end{algorithmic}
+\end{algorithm}
+
+For the sake of brevity, no checks are performed in Algorithm \ref{alg:taccl} to determine if the calculated value
+is as large as the input block size ($M _ x, M _ y, M _ z$).
+In such a case, either the TACCL is unbounded or the test block size is smaller than the TACCL and the test block size would
+need to be increased.
+
+The TACCL is meant to estimate the correlation length of an underlying tile constraint set but can be misleading as some
+tile constraints will have a finite TACCL even though correlation lengths can be unbounded.
+An unbounded TACCL implies an unbounded correlation length but the converse is not true and a finite TACCL
+does not necessarily imply a finite correlation length.
+The \textit{Brutal Plum} tile set, that has an unbounded correlation length but finite TACCL,
+displays this phenomenon and will be discussed later (Section 4).
+
+The TACCL is an ad-hoc heuristic measure of tile constraint correlation.
+The motivation for the TACCL usage is from an intuition that there are many local energy minima, that are noisy and approximately a correlation length in size, that must
+be overcome in order to make progress.
+A more thorough and detailed analysis of what encountered energy landscapes looks like,
+what correlation lengths are for various tile sets and further investigation of the benefits and limitations
+of the TACCL are beyond the scope of this paper.
 
