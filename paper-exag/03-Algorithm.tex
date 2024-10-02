@@ -197,12 +197,12 @@ The idea is to iterate through each tile in isolation and record the maximum dis
 Starting from a small test grid set to an indeterminate state,
 the center cell is resolved to a tile and constraint propagation is performed to put the grid
 into an arc consistent state.
-The size of a bounding box that minimally encompases every cell whose tile domain was altered during the constraint propagation is then saved.
+The size of a bounding box that minimally encompasses every cell whose tile domain was altered during the constraint propagation is then saved.
 The grid is then reverted to an indeterminate state and the next tile is chosen to resolve, repeating the process and updating the maximum distances
-of the minimum encompasing bounding box for each tile tested.
+of the minimum encompassing bounding box for each tile tested.
 
 The TACCL is the maximum extent of the saved bounding boxes from iterating through all tiles.
-Algorithm \ref{alg:taccl} provides psuedo-code for the TACCL calculation.
+Algorithm \ref{alg:taccl} provides pseudo-code for the TACCL calculation.
 
 \begin{algorithm}
   \caption{Tile Arc Consistent Correlation Length}
@@ -218,7 +218,7 @@ Algorithm \ref{alg:taccl} provides psuedo-code for the TACCL calculation.
       \State Apply initial setup restrictions to $B'$
       \State Resolve center cell, $c$, in $B'$ to $t$
       \State Make $B'$ arc consistent
-      \State Find mininum bounding box, $bbox$, \\ \ \ \ \ \ \ \ \ encompassing altered cells of $B'$
+      \State Find minimum bounding box, $bbox$, \\ \ \ \ \ \ \ \ \ encompassing altered cells of $B'$
       \If{ $\max _ { x, y, z } bbox  > L$ }
         \State $L = \max _ { x, y, z } bbox $
       \EndIf
