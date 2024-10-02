@@ -8,22 +8,6 @@ Though automatic tile constraint creation is a distinct topic from Constraint Ba
 Tiling Generation (CBTG), the two are closely related as any CBTG algorithm requires
 a tile constraint set to run.
 
-\begin{figure*}[ht]
-  \includegraphics[width=\textwidth]{2d_poms_examples.png}
-  \caption{Tile Arc Consistent Correlation Length (TACCL) plots, source exemplar image and example output for four 2D tile sets as listed in Table \ref{table:tilesets}.
-           The TACCL, exemplar image and example 64x64 output using a block size of 8x8 for the \textit{Pill Mortal} tile set are shown in a), b) and c) respectively. The TACCL, exemplar image and an example 256x256 output using a block size of 50x70 for LUNARSIGNALS' \textit{Overhead Action RPG Overworld} are shown in d), e) and f) respectively. The TACCL, exemplar image and an example 128x128 output using a block size of 48x48 for Wo\'zniak's \textit{Forest Micro} tile set are shown in g), h) and i) respectively. The TACCL, exemplar image and an example 128x128 output using a block size of 48x48 for 0x72's \textit{Two Bit Micro Metroidvania} tile set are shown in j), k), l) respectively. }
-  \label{fig:2dexamples}
-\end{figure*}
-
-\begin{figure}[h]
-  \centering
-  \includegraphics[width=\linewidth]{brutal-plum_cons.png}
-  \caption{The Tile Arc Consistent Correlation Length (TACCL) plot, source tile set and an example 32x32x32 output for the 3d \textit{Brutal Plum} tile set listed in a), b) and c) respectively. A block size of 22x22x22 was used.}
-  \label{fig:brutal_plum}
-\end{figure}
-
-\subsection{Automatic Tile Constraint Creation}
-
 \begin{figure}[h]
   \includegraphics[width=\linewidth]{tileset_rrti.png}
   \caption{a) The exemplar image, take from Wo\'zniak's Forest Micro tile set with a single tile highlighted in red with it's neighbors, as they appear in
@@ -35,6 +19,9 @@ a tile constraint set to run.
            a 1x2 tile window for the up and down neighbors. Grey regions represent tiles that fall outside of the exemplar image. }
   \label{fig:rrti_tileset}
 \end{figure}
+
+
+\subsection{Automatic Tile Constraint Creation}
 
 The four 2D tile sets had their tile constraints inferred from an exemplar image using
 an automated tile constraint generation method.
@@ -69,7 +56,7 @@ If the tile constraints include the ``zero'' tile at the grid boundaries, this w
 For the automatic tile constraint creation from exemplar images, some artistic input is needed in choosing tile size, window size and boundary conditions.
 The tile sizes, window sizes and boundary conditions for the 2D tile sets used in this paper were chosen through inspection and experimentation.
 An in depth explanation of automatic tile constraint creation is beyond the scope of this paper and readers are referred to \cite{Gumin_2016, Sherratt_2019, BorisTheBrave_wfc_2021} for further details.
-The five tile sets we use here are summarized in Table \ref{table:tilesets}.
+%The five tile sets we use here are summarized in Table \ref{table:tilesets}.
 
 %\subsection{Tile Arc Consistent Correlation Length}
 %
@@ -137,7 +124,7 @@ The five tile sets we use here are summarized in Table \ref{table:tilesets}.
       Dimension & 2D & 2D & 2D & 2D & 3D \\
       Tile Size (px) & 8px & 16px & 16px & 24px & n/a \\
 
-      \textit{SuperTile} & & & & & \\
+      \textit{Super Tile} & & & & & \\
       \specialcell{\ \ Window }  & 2x2 & 3x3 & 2x2 & 2x2 & n/a \\
       \specialcell{\ \ Overlap }  & 1x2 & 2x3 & 1x2 & 1x2 & n/a \\
       Tile Count & 190 & 3031 & 159 & 1807 & 90 \\
@@ -170,22 +157,38 @@ The five tile sets we use here are summarized in Table \ref{table:tilesets}.
 %be overcome in order to make progress.
 %A more thorough and detailed analysis typical energy landscapes, correlation length in general and the TACCL in particular is beyond the scope of this paper.
 
-Table \ref{table:tilesets} provides information for five tile sets, \textit{Pill Mortal}, \textit{Overhead Action RPG Overworld},
+Table \ref{table:tilesets} provides summary information for five tile sets, \textit{Pill Mortal}, \textit{Overhead Action RPG Overworld},
 \textit{Forest Micro}, \textit{Two Bit Micro Metroidvania} and \textit{Brutal Plum}, highlighted in this paper.
-The tile size, supertile window and supertile overlap parameter choices are provided as they are used in the automatic tile constraint generation
+The tile size, super tile window and super tile overlap parameter choices are provided as they are used in the automatic tile constraint generation
 along with the boundary conditions and the resulting tile count for each tile set.
 The Block Choice Scheduler (BCS) and blocks sizes are also provided that were used to generate the example outputs in Figure \ref{fig:2dexamples} and Figure \ref{fig:brutal_plum}.
 
-Here, the \textit{uniform} BCS denotes a block choice schedule that randomly chooses a block centers uniformly from
+Here, the \textit{uniform} BCS denotes a block choice schedule that randomly chooses a block center uniformly from
 indeterminate cells in the grid.
 A \textit{diagonal} BCS denotes block center choices weighted preferentially to the upper left corner and
-\textit{center out} BCS denotes block center choices weighted preferentially towards the center of the grid,
-with both restricting choices to indeterminate grid cells.
+\textit{center out} BCS denotes block center choices weighted preferentially towards the center of the grid.
+%with both restricting choices to indeterminate grid cells.
 
-Figure \ref{fig:2dexamples} and Figure \ref{fig:brutal_plum} show the TACCL, reference images and example runs
-for these five tile sets.
+%Figure \ref{fig:2dexamples} and Figure \ref{fig:brutal_plum} show the TACCL, reference images and example runs
+%for these five tile sets.
 We group the 2D tile sets into \textit{bounded} and \textit{unbounded} TACCL, with special consideration for
 the \textit{Brutal Plum} tile set.
+
+
+\begin{figure*}[ht]
+  \includegraphics[width=\textwidth]{2d_poms_examples.png}
+  \caption{Tile Arc Consistent Correlation Length (TACCL) plots, source exemplar image and example output for four 2D tile sets as listed in Table \ref{table:tilesets}.
+           The TACCL, exemplar image and example 64x64 output using a block size of 8x8 for the \textit{Pill Mortal} tile set are shown in a), b) and c) respectively. The TACCL, exemplar image and an example 256x256 output using a block size of 50x70 for LUNARSIGNALS' \textit{Overhead Action RPG Overworld} are shown in d), e) and f) respectively. The TACCL, exemplar image and an example 128x128 output using a block size of 48x48 for Wo\'zniak's \textit{Forest Micro} tile set are shown in g), h) and i) respectively. The TACCL, exemplar image and an example 128x128 output using a block size of 48x48 for 0x72's \textit{Two Bit Micro Metroidvania} tile set are shown in j), k), l) respectively. }
+  \label{fig:2dexamples}
+\end{figure*}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=\linewidth]{brutal-plum_cons.png}
+  \caption{The Tile Arc Consistent Correlation Length (TACCL) plot, source tile set and an example 32x32x32 output for the 3d \textit{Brutal Plum} tile set listed in a), b) and c) respectively. A block size of 22x22x22 was used.}
+  \label{fig:brutal_plum}
+\end{figure}
+
 
 
 %The Tile Arc Consistent Correlation length (TACCL), reference images and example runs
@@ -284,7 +287,7 @@ using a 1x2 tile overlap and taking the upper left hand corner tile as the repre
 As can be seen by Figure \ref{fig:2dexamples} (label \textit{j}), the 2BMMV tile set has unbounded correlation length, but the constraint is weak
 enough to be overcome by running POMS with a block size of 48x48 and a block choice scheduler that chooses block centers from
 unresolved grid cell positions uniformly.
-An example output for the 2BMMV for a 128x128 grid using a 48x48 block size and uniform block choice schedule can be seen in \ref{fig:2dexamples} (label \textit{i}).
+An example output for the 2BMMV for a 128x128 grid using a 48x48 block size and uniform block choice schedule can be seen in Figure \ref{fig:2dexamples} (label \textit{i}).
 The unbounded correlation length comes from the boundary restrictions which might disappear if care were taken
 to create wrap around tile constraints.
 
@@ -299,7 +302,7 @@ The global constraint is not captured by the Tile Arc Consistent Correlation Len
 the failure of the TACCL heuristic to properly capture an unbounded correlation length embedded in the tile set.
 
 Though the correlation length for the \textit{Brutal Plum} tile constraints is unbounded, POMS still is able to reliably find realizations with
-block size 22x22x22, an example output of which is highlighted in Figure \ref{fig:brtual_plum} (label \textit{c}).
+block size 22x22x22, an example output of which is highlighted in Figure \ref{fig:brutal_plum} (label \textit{c}).
 For aesthetic reasons, a tile weighting that increases the likelihood of the empty tile, the arch tiles and
 stair tiles was chosen.
 The reader is referred to the reference implementation \footnote{ \label{poms-url} \url{https://github.com/zzyzek/PunchOutModelSynthesis} }

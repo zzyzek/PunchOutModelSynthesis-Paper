@@ -89,8 +89,8 @@ Here, \textit{pinning} means setting a cell's tile domain to a certain set of va
 and not allowing any constraint propagation to be performed on the cell.
 The pinned cell's tile domain can affect a neighboring cell tile but is otherwise not
 considered for constraint propagation.
-For the block boundary pinning, the block boundary cell's tile domain is restricted to a single tile value,
-taken from the tile at the grid cell.
+%For the block boundary pinning, the block boundary cell's tile domain is restricted to a single tile value,
+%taken from the tile at the grid cell.
 Pinning ensures that the block can integrate into the larger grid by guaranteeing
 the boundary conditions of the block match the related regions in the grid.
 
@@ -113,14 +113,7 @@ put the block in an arc consistent state.
 %When first choosing a block, an initial attempt is made to put it into an arc consistent state.
 If the block is successfully put in an initial arc consistent state, the block level resolution algorithm proceeds and attempts to find a fully realized block.
 If a fully realized block is found, it's put back into the grid and the algorithm
-continues on by choosing another block until the grid is fully realized.
-
-Should the initial attempt to put the block choice into an arc consistent state fail,
-the block region is reverted to an indeterminate state in the grid.
-The motivation for reverting the whole block region, as opposed to just relying on erosion,
-is that if a block cannot be put into an initial arc consistent state, subject to its pinned
-boundary values, there might be a strong contradiction that requires an aggressive
-back-off strategy.
+continues on by choosing another block to process.
 
 If the initial block level arc consistency attempt succeeded but the block level resolution
 algorithm failed to find a fully realized block,
@@ -128,6 +121,14 @@ boundary tiles of fully resolved regions are probabilistically reverted to an in
 The process of probabilistically reverting boundary cell locations to indeterminate states is called \textit{erosion},
 with the \textit{probability of erosion} being a tunable parameter that sets the probability that a cell located on a resolved boundary
 is reverted.
+
+
+Should the initial attempt to put the block choice into an arc consistent state fail,
+the block region is reverted to an indeterminate state in the grid.
+The motivation for reverting the whole block region, as opposed to just relying on erosion,
+is that if a block cannot be put into an initial arc consistent state, subject to its pinned
+boundary values, there might be a strong contradiction that requires an aggressive
+back-off strategy.
 
 Algorithm \ref{alg:POMS} gives pseudo code for the Punch Out Model Synthesis (POMS) algorithm.
 Figure \ref{fig:alg} gives an overview of the POMS algorithm, highlighting
@@ -137,9 +138,9 @@ tile set for a 64x64 grid size with 32x32 block size.
 
 The probability of erosion is managed by the \textit{Erosion Choice Scheduler} (ECS) as referenced in Algorithm \ref{alg:POMS}.
 We have found that a good choice for ECS is to increase the erosion probability by the number of failed attempts, allowing
-for a more aggressive erosion strategy should block resolution become increasingly difficult.
-Without the erosion, block level solvers could be doomed
-to perpetually attempt resolution on blocks with identical initial state.
+for a more aggressive erosion should block resolution become increasingly difficult.
+Without the erosion, block level solvers could
+perpetually attempt resolution on blocks with identical initial state.
 The erosion provides a backtracking mechanism, allowing for a change in initial state
 of chosen blocks and removal of implied contradictions that can occur from previously resolved regions in the grid.
 
@@ -239,10 +240,10 @@ does not necessarily imply a finite correlation length.
 The \textit{Brutal Plum} tile set, that has an unbounded correlation length but finite TACCL,
 displays this phenomenon and will be discussed later (Section 4).
 
-The TACCL is an ad-hoc heuristic measure of tile constraint correlation.
-The motivation for the TACCL usage is from an intuition that there are many local energy minima, that are noisy and approximately a correlation length in size, that must
-be overcome in order to make progress.
-A more thorough and detailed analysis of what encountered energy landscapes looks like,
-what correlation lengths are for various tile sets and further investigation of the benefits and limitations
-of the TACCL are beyond the scope of this paper.
+%The TACCL is an ad-hoc heuristic measure of tile constraint correlation.
+%The motivation for the TACCL usage is from an intuition that there are many local energy minima, that are noisy and approximately a correlation length in size, that must
+%be overcome in order to make progress.
+%A more thorough and detailed analysis of what encountered energy landscapes looks like,
+%what correlation lengths are for various tile sets and further investigation of the benefits and limitations
+%of the TACCL are beyond the scope of this paper.
 

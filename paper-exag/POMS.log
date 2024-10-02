@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.5.21)  1 OCT 2024 22:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.5.21)  2 OCT 2024 00:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1643,41 +1643,33 @@ Package pdftex.def Info: pm_slideshow.png  used on input line 32.
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
 put line 42.
  [4] [5 <./poms_figalg.pdf> <./pm_slideshow.png>]
-Underfull \hbox (badness 1642) in paragraph at lines 194--196
+Underfull \hbox (badness 1642) in paragraph at lines 195--197
 []\T1/LibertinusSerif-TLF/m/n/9 (+20) The com-pu-ta-tion of the TACCL is done a
 s a pre-
  []
 
 ) (./04-Results.tex
-<2d_poms_examples.png, id=350, 2609.75pt x 1682.285pt>
+<tileset_rrti.png, id=351, 576.62234pt x 615.06383pt>
+File: tileset_rrti.png Graphic file (type png)
+<use tileset_rrti.png>
+Package pdftex.def Info: tileset_rrti.png  used on input line 12.
+(pdftex.def)             Requested size: 214.48395pt x 228.78073pt.
+ [6 <./tileset_rrti.png>]
+<2d_poms_examples.png, id=376, 2609.75pt x 1682.285pt>
 File: 2d_poms_examples.png Graphic file (type png)
 <use 2d_poms_examples.png>
-Package pdftex.def Info: 2d_poms_examples.png  used on input line 12.
+Package pdftex.def Info: 2d_poms_examples.png  used on input line 179.
 (pdftex.def)             Requested size: 452.9679pt x 291.99135pt.
-<brutal-plum_cons.png, id=352, 1526.89595pt x 2186.55191pt>
+<brutal-plum_cons.png, id=378, 1526.89595pt x 2186.55191pt>
 File: brutal-plum_cons.png Graphic file (type png)
 <use brutal-plum_cons.png>
-Package pdftex.def Info: brutal-plum_cons.png  used on input line 20.
+Package pdftex.def Info: brutal-plum_cons.png  used on input line 187.
 (pdftex.def)             Requested size: 214.48395pt x 307.1161pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<tileset_rrti.png, id=353, 576.62234pt x 615.06383pt>
-File: tileset_rrti.png Graphic file (type png)
-<use tileset_rrti.png>
-Package pdftex.def Info: tileset_rrti.png  used on input line 28.
-(pdftex.def)             Requested size: 214.48395pt x 228.78073pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[6] [7 <./2d_poms_examples.png>] [8 <./brutal-plum_cons.png> <./tileset_rrti.pn
-g>]
-
-LaTeX Warning: Reference `fig:brtual_plum' on page 9 undefined on input line 30
-2.
-
-) (./05-Conclusion.tex) (./POMS.bbl
+[7] [8 <./2d_poms_examples.png>]) (./05-Conclusion.tex) (./POMS.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 16--20
 []\T1/LibertinusSerif-TLF/m/n/9 (+20) R. Hoet-zlein, just_math, 2023. URL:
  []
@@ -1700,7 +1692,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 21--25
  com / 2021 / 10 / 31 /
  []
 
-[9]
+
 Underfull \hbox (badness 10000) in paragraph at lines 40--44
 []\T1/LibertinusSerif-TLF/m/n/9 (+20) M. Gu-min, Wave func-tion col-lapse al-go
 -
@@ -1724,7 +1716,7 @@ Underfull \hbox (badness 1859) in paragraph at lines 63--70
 n-tel-li-gence 28
  []
 
-
+[9 <./brutal-plum_cons.png>]
 Underfull \hbox (badness 5908) in paragraph at lines 162--166
 []\T1/LibertinusSerif-TLF/m/n/9 (+20) A. New-gas, Wave func-tion col-lapse ex-p
 lained,
@@ -1759,20 +1751,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 177--180
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.24995pt have occurred.
 
-
-LaTeX Warning: There were undefined references.
-
 Package rerunfilecheck Info: File `POMS.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 42409 strings out of 480171
- 827306 string characters out of 5894489
- 1207585 words of memory out of 5000000
- 59002 multiletter control sequences out of 15000+600000
- 647136 words of font info for 404 fonts, out of 8000000 for 9000
+ 42405 strings out of 480171
+ 827187 string characters out of 5894489
+ 1207583 words of memory out of 5000000
+ 59001 multiletter control sequences out of 15000+600000
+ 646759 words of font info for 402 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
- 122i,20n,120p,10620b,2604s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 122i,21n,120p,10620b,2604s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_sfissr.e
 nc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_mfadfl.
 enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_tll2u3
@@ -1803,9 +1792,9 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist
 type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/amsfonts/symbols/msbm10.pfb>
-Output written on POMS.pdf (10 pages, 6847813 bytes).
+Output written on POMS.pdf (10 pages, 6846442 bytes).
 PDF statistics:
- 625 PDF objects out of 1000 (max. 8388607)
+ 623 PDF objects out of 1000 (max. 8388607)
  64 named destinations out of 1000 (max. 500000)
  97472 words of extra memory for PDF output out of 106986 (max. 10000000)
 
