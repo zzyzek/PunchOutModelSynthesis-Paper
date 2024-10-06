@@ -117,7 +117,7 @@ continues on by choosing another block to process.
 
 If the initial block level arc consistency attempt succeeded but the block level resolution
 algorithm failed to find a fully realized block,
-boundary tiles of fully resolved regions are probabilistically reverted to an indeterminate state.
+boundary tiles of fully resolved regions in the whole grid are probabilistically reverted to an indeterminate state.
 The process of probabilistically reverting boundary cell locations to indeterminate states is called \textit{erosion},
 with the \textit{probability of erosion} being a tunable parameter that sets the probability that a cell located on a resolved boundary
 is reverted.
@@ -134,7 +134,7 @@ Algorithm \ref{alg:POMS} gives pseudo code for the Punch Out Model Synthesis (PO
 Figure \ref{fig:alg} gives an overview of the POMS algorithm, highlighting
 a single step.
 Figure \ref{fig:pmrun} shows a slideshow of POMS being run on the \textit{Pill Mortal}
-tile set for a 64x64 grid size with 32x32 block size.
+tile set for a 64x64 grid size with a 32x32 block size.
 
 The probability of erosion is managed by the \textit{Erosion Choice Scheduler} (ECS) as referenced in Algorithm \ref{alg:POMS}.
 We have found that a good choice for ECS is to increase the erosion probability by the number of failed attempts, allowing

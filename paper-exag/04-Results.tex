@@ -20,7 +20,7 @@ a tile constraint set to run.
 %           b) The inferred tile set, packed into an image with the highlighted tile in red and its neighbor tiles highlighted in orange. Note that even though
 %           tiles in the tile set might look the same, these represent different tiles as they have different constraints for which neighbors are permissible.
 %           c) A catalog of super tiles, with the highlighted tile in red and its neighbors highlighted in orange. Each super tile consists of a 2x2 window
-%           taken from the exemplar image (a). Neighbors are derived from the corresponding overlap of the 2x1 tile window  for left and right neighbors and
+%           taken from the exemplar image (a). Neighbors are derived from the corresponding overlap of the 1x2 tile window  for left and right neighbors and
 %           a 1x2 tile window for the up and down neighbors. Grey regions represent tiles that fall outside of the exemplar image. }
 
 \subsection{Automatic Tile Constraint Creation}
@@ -39,8 +39,8 @@ A single tile is highlighted in red and its neighbors are highlighted in yellow 
 Figure \ref{fig:rrti_tileset} uses a tile size of 8x8 pixels, with a 2x2 super tile size.
 The upper left hand tile is used as the displayed representative tile, which can be seen by comparing the non dimmed tiles in the
 super tile list from Figure \ref{fig:rrti_tileset} (\textit{c}) to the packed tile set image (\textit{b}).
-A 2x1 overlapping band is in each direction, suitably rotated, to find which super tiles neighbor other super tiles.
-An interested reader can confirm that there is a 2x1 overlap to the highlighted red super tile to each of its highlighted yellow neighbors
+A 1x2 overlapping band is in each direction, suitably rotated, to find which super tiles neighbor other super tiles.
+An interested reader can confirm that there is a 1x2 overlap to the highlighted red super tile to each of its highlighted yellow neighbors
 in Figure \ref{fig:rrti_tileset}.
 
 Boundary constraints need special consideration.
@@ -211,11 +211,11 @@ The \textit{Pill Mortal} tile constraints were generated from the exemplar image
 an 8x8px tile size, hard boundary conditions with a 2x2 super tile window, a 1x2 tile overlap and the upper left hand corner tile as the representative
 display tile.
 The generated realization in Figure \ref{fig:2dexamples} (label \textit{c}) was created from a POMS run with block size 32x32 on a 128x128 grid.
-A uniform weighting for all 190 tiles was used.
+%A uniform weighting for all 190 tiles was used.
 A uniform block choice scheduler policy was chosen that selected block centers uniformly at random from the set all unresolved grid cells.
 
 LUNARSIGNALS' \textit{OARPGO} tile constraints were generated from the exemplar image shown (Figure \ref{fig:2dexamples}, label \textit{e}), using
-an 16x16px tile size, wrap around conditions with a 3x3 super tile window, 2x3 tile overlap and and the middle tile as the representative
+an 16x16px tile size, wrap around conditions with a 3x3 super tile window, 2x3 tile overlap and the middle tile as the representative
 display tile.
 In this case, a 3x3 window was chosen as a smaller 2x2 window was observed to not give good aesthetic results.
 
@@ -252,10 +252,10 @@ The last two tile sets in Figure \ref{fig:2dexamples}, Wo\'zniak's \textit{Fores
 both have unbounded Tile Arc Consistent Correlation Lengths (TACCL).
 
 The tile constraints for Wo\'zniak's \textit{Forest Micro} tile set were generated from the exemplar image shown (Figure \ref{fig:2dexamples}, label \textit{h}), using
-an 16x16px tile size, hard boundary conditions with a 2x2 super tile window using a 1x2 tile overlap and taking the upper left hand corner tile as the representative
+an 16x16px tile size, hard boundary conditions with a 2x2 super tile window, a 1x2 tile overlap and taking the upper left hand corner tile as the representative
 display tile.
-The generated realization in Figure \ref{fig:2dexamples} (label \textit{i}) was created from a POMS run with block size 48x48 on a 128x128 grid
-and a uniform tile weighting for all 159 tiles.
+The generated realization in Figure \ref{fig:2dexamples} (label \textit{i}) was created from a POMS run with block size 48x48 on a 128x128 grid.
+%and a uniform tile weighting for all 159 tiles.
 A diagonal weighted block choice scheduler policy was chosen that selected block centers from the set all unresolved grid cells weighted by their Euclidean distance
 to the upper left corner of the grid.
 

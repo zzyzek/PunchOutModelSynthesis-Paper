@@ -4,7 +4,7 @@ To our knowledge, Merrell was the first to introduce the modern formulation of C
 \footnote{The term \textit{Constraint Based Tile Generators} was coined by Adam Newgas \cite{BorisTheBrave_cbtg_2021} and has been adopted in this paper,
 with slightly different wording, as the name for the specialization of the more general Constraint Satisfaction Problem.}
 \cite{Merrell_2007, Merrell_2009}.
-Merrell introduced a Modify in blocks Model Synthesis (MMS) algorithm that starts with a fully resolved grid
+Merrell introduced a Modify in Blocks Model Synthesis (MMS) algorithm that starts with a fully resolved grid
 and applies a one shot block level constraint solver on sub-blocks within the grid.
 
 Merrell noticed that the block level algorithm undergoes a phase transition of solvability
@@ -163,8 +163,8 @@ it's unclear how possible or how difficult it is convert tile constraints from e
 In particular, all tile sets considered in this paper are fallible models.
 
 Newgas provides \texttt{Tessera}, a software project that implements WFC along with options for a variety of constraints \cite{Newgas_2021}.
-Nie et al. provide an extension to WFC to infinite grids but require the tile set to be \textit{complete} or \textit{sub-complete}
-which may be difficult for tile sets in the wild \cite{Nie_etall_2023}.
+Nie et al. provide an extension to WFC to infinite grids but require the tile set to be \textit{complete} or \textit{sub-complete} \cite{Nie_etall_2023}
+which may be difficult for tile sets in the wild.
 Cooper introduces \texttt{Sturgeon} that incorporates a mid level API to specify more explicit and longer range constraints as an addition
 to WFC \cite{Cooper_2022}.
 Though Cooper's \texttt{Sturgeon} program and ideas look promising, the sizes involved are relatively small (40x40 and below)
