@@ -25,7 +25,7 @@ a tile constraint set to run.
 
 \subsection{Automatic Tile Constraint Creation}
 
-The four 2D tile sets had their tile constraints inferred from an exemplar image using
+The four 2D tile sets used in this paper had their tile constraints inferred from an exemplar image using
 an automated tile constraint generation method.
 The exemplar image is split into tiles and a sliding super tile window, of a larger size than the tile itself, is moved over the exemplar image.
 The super tiles are deduplicated and checked for overlapping bands to other super tiles.
@@ -39,7 +39,7 @@ A single tile is highlighted in red and its neighbors are highlighted in yellow 
 Figure \ref{fig:rrti_tileset} uses a tile size of 8x8 pixels, with a 2x2 super tile size.
 The upper left hand tile is used as the displayed representative tile, which can be seen by comparing the non dimmed tiles in the
 super tile list from Figure \ref{fig:rrti_tileset} (\textit{c}) to the packed tile set image (\textit{b}).
-A 1x2 overlapping band is in each direction, suitably rotated, to find which super tiles neighbor other super tiles.
+A 1x2 overlapping band is tested for equality in each direction, suitably rotated, to find which super tiles neighbor other super tiles.
 An interested reader can confirm that there is a 1x2 overlap to the highlighted red super tile to each of its highlighted yellow neighbors
 in Figure \ref{fig:rrti_tileset}.
 
@@ -163,7 +163,8 @@ Table \ref{table:tilesets} provides summary information for five tile sets, \tex
 \textit{Forest Micro}, \textit{Two Bit Micro Metroidvania} and \textit{Brutal Plum}, highlighted in this paper.
 The tile size, super tile window and super tile overlap parameter choices are provided as they are used in the automatic tile constraint generation
 along with the boundary conditions and the resulting tile count for each tile set.
-The Block Choice Scheduler (BCS) and blocks sizes are also provided that were used to generate the example outputs in Figure \ref{fig:2dexamples} and Figure \ref{fig:brutal_plum}.
+%The Block Choice Scheduler (BCS) and blocks sizes are also provided that were used to generate the example outputs in Figure \ref{fig:2dexamples} and Figure \ref{fig:brutal_plum}.
+Also provided are the Block Choice Scheduler (BCS) and blocks sizes that were used to generate the example outputs in Figure \ref{fig:2dexamples} and Figure \ref{fig:brutal_plum}.
 
 Here, the \textit{uniform} BCS denotes a block choice schedule that randomly chooses a block center uniformly from
 indeterminate cells in the grid.

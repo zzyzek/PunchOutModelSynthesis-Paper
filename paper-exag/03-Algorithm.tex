@@ -103,7 +103,7 @@ Block regions are chosen by a \textit{Block Choice Scheduler} (BCS) as reference
 From our experimentation, the BCS is problem specific and will be discussed later (Section 4).
 
 Once a block is chosen, the block is initialized by adding the full tile domain of tile values
-to every block cell, applying setup restrictions and then running an initial constraint propagation
+to every cell in the block, applying setup restrictions and then running an initial constraint propagation
 that attempts to put the block in an arc consistent state.
 The setup restrictions only allow for tiles to be added, removed
 or pinned on an individual cell.

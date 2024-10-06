@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.5.21)  6 OCT 2024 01:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.5.21)  6 OCT 2024 02:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1658,13 +1658,13 @@ Package pdftex.def Info: tileset_rrti.png  used on input line 12.
 <2d_taccl_exemplar_out_fig.pdf, id=387, 597.50786pt x 385.19911pt>
 File: 2d_taccl_exemplar_out_fig.pdf Graphic file (type pdf)
 <use 2d_taccl_exemplar_out_fig.pdf>
-Package pdftex.def Info: 2d_taccl_exemplar_out_fig.pdf  used on input line 182.
+Package pdftex.def Info: 2d_taccl_exemplar_out_fig.pdf  used on input line 183.
 
 (pdftex.def)             Requested size: 452.9679pt x 292.01965pt.
 <bp_taccl_ts_example.pdf, id=389, 597.50786pt x 845.04686pt>
 File: bp_taccl_ts_example.pdf Graphic file (type pdf)
 <use bp_taccl_ts_example.pdf>
-Package pdftex.def Info: bp_taccl_ts_example.pdf  used on input line 192.
+Package pdftex.def Info: bp_taccl_ts_example.pdf  used on input line 193.
 (pdftex.def)             Requested size: 214.48395pt x 303.33981pt.
 
 
@@ -1756,11 +1756,11 @@ Package rerunfilecheck Info: File `POMS.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 42402 strings out of 480171
- 827226 string characters out of 5894489
- 1207035 words of memory out of 5000000
+ 42399 strings out of 480171
+ 827127 string characters out of 5894489
+ 1208035 words of memory out of 5000000
  59001 multiletter control sequences out of 15000+600000
- 646616 words of font info for 400 fonts, out of 8000000 for 9000
+ 646239 words of font info for 398 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
  122i,20n,120p,10620b,2604s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_sfissr.e
@@ -1793,7 +1793,7 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist
 type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/amsfonts/symbols/msbm10.pfb>
-Output written on POMS.pdf (10 pages, 7374705 bytes).
+Output written on POMS.pdf (10 pages, 7374811 bytes).
 PDF statistics:
  718 PDF objects out of 1000 (max. 8388607)
  64 named destinations out of 1000 (max. 500000)
