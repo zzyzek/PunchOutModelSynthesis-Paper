@@ -144,6 +144,7 @@ An in depth explanation of automatic tile constraint creation is beyond the scop
 
       \hline
       TACCL (x/y) & 24 & 50/70 & $\infty$ & $\infty$ & 16 \\
+      Soften Size & 8 & 12-24 & 8 & 8-24 & 1-8 \\
       Block Size & 32 & 50x70 & 48 & 48 & 22 \\
 
      \hline
@@ -161,16 +162,25 @@ An in depth explanation of automatic tile constraint creation is beyond the scop
 
 Table \ref{table:tilesets} provides summary information for five tile sets, \textit{Pill Mortal}, \textit{Overhead Action RPG Overworld},
 \textit{Forest Micro}, \textit{Two Bit Micro Metroidvania} and \textit{Brutal Plum}, highlighted in this paper.
-The tile size, super tile window and super tile overlap parameter choices are provided as they are used in the automatic tile constraint generation
-along with the boundary conditions and the resulting tile count for each tile set.
+The tile size, super tile window size, super tile window overlap parameter and boundary conditions are provided as they are used in the automatic tile constraint generation
+for the resulting tile counts listed.
+%along with the boundary conditions and the resulting tile count for each tile set.
 %The Block Choice Scheduler (BCS) and blocks sizes are also provided that were used to generate the example outputs in Figure \ref{fig:2dexamples} and Figure \ref{fig:brutal_plum}.
-Also provided are the Block Choice Scheduler (BCS) and blocks sizes that were used to generate the example outputs in Figure \ref{fig:2dexamples} and Figure \ref{fig:brutal_plum}.
+Also provided are the Block Choice Scheduler (BCS), soften size and blocks sizes that were used to generate the example outputs in Figure \ref{fig:2dexamples} and Figure \ref{fig:brutal_plum}.
+
 
 Here, the \textit{uniform} BCS denotes a block choice schedule that randomly chooses a block center uniformly from
 indeterminate cells in the grid.
 A \textit{diagonal} BCS denotes block center choices weighted preferentially to the upper left corner and
 \textit{center out} BCS denotes block center choices weighted preferentially towards the center of the grid.
 %with both restricting choices to indeterminate grid cells.
+
+The soften size is specific to the Breakout Model Synthesis (BMS) block level solver and the values shown in Table \ref{table:tilesets} were chosen through experimentation.
+We document the soften size for completeness but a more thorough investigation of the soften size's impact on solvability
+is beyond the scope of this paper.
+%the reader is referred to 
+%and the reader
+%is referred to Algorithm \ref{alg:bms} in Appendix A or to Hoetzlein's \texttt{just\_math} 
 
 %Figure \ref{fig:2dexamples} and Figure \ref{fig:brutal_plum} show the TACCL, reference images and example runs
 %for these five tile sets.
