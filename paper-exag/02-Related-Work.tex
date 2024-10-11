@@ -8,7 +8,7 @@ Merrell introduced a Modify in Blocks Model Synthesis (MMS) algorithm that start
 and applies a one shot block level constraint solver on sub-blocks within the grid.
 
 Merrell noticed that the block level algorithm undergoes a phase transition of solvability
-\footnote{ Note that the phase transition is only for \textit{fallible} models. \textit{Infallible} models will be discussed briefly later in this section }
+\footnote{ Note that the phase transition is only for \textit{fallible} models. \textit{Infallible} models will be discussed briefly later in this section. }
 , with a decreasing probability
 for successful block resolution as block size increases.
 Instead of attempting to resolve a large grid in one try, the MMS algorithm progressively resolves sub-blocks and re-integrates them back into the grid.
@@ -36,7 +36,7 @@ to create a fully resolved configuration.
 
 In general, for some tile constraints, finding a class of fully resolved initial configurations might be done through engineering effort.
 For example, it might be possible to find a small tileable block that is then able to be replicated through to the whole grid
-\footnote{ This method was suggested through personal communication with P. Merrell }.
+\footnote{ This method was suggested through personal communication with P. Merrell. }.
 
 The inability to handle certain types of unbounded constraints, such as the implicit top and bottom equal river count constraint that appear in
 Wo\'zniak's \textit{Forest Micro} tile set (section 4), is the deeper issue with MMS.
@@ -70,7 +70,8 @@ the likelihood of block resolution or turns MMS into a block level solver.
 
 Gumin introduced the Wave Function Collapse (WFC) project which improved the block level solver used in MMS
 and added facilities for automatic tile constraint deduction from exemplar scenes \cite{Gumin_2016}.
-WFC uses a maximum entropy heuristic to choose which cells to resolve.
+WFC uses a principle of maximum entropy heuristic \footnote{Using a \textit{principle of maximum entropy} implies picking a cell to resolve of \textit{minimum} entropy at each step.}
+to choose which cells to resolve.
 Though extensions are possible, WFC as presented by Gumin is a one-shot block level solver, giving up should a contradiction be encountered.
 
 Since MMS is a grid level solver, other block level solvers can be used, such as WFC, to resolve underlying blocks,
