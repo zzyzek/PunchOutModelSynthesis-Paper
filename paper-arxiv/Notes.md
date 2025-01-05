@@ -16,7 +16,13 @@ EXAG 2024 to be submitted then.
 
 ---
 
+* ACM class: I.6.3 ; I.6.5 ; G.3 
+* MSC class: 
+
+---
+
 Links for arXiv submission:
 
+* [arXiv: Submission Guidelines](https://info.arxiv.org/help/submit/index.html)
 * [Checklist](https://www.ianhuston.net/2011/03/checklist-for-arxiv-submission/)
 * [Upload a paper to arXiv.org](https://trevorcampbell.me/html/arxiv.html)
